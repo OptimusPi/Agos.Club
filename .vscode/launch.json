@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/src",
+      "runtimeExecutable": "/usr/bin/google-chrome-stable",
+      "runtimeArgs": ["--remote-debugging-port=9222"] // Make sure your running Chrome instance has this set when you launched it
+    }
+  ]
+}
