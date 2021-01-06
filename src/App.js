@@ -1,17 +1,12 @@
+import React from 'react';
 import headerImg from './assets/header.png';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="text-center">
       <header className="App-header">
-        <img src={headerImg} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
+        <img src={headerImg} className="" alt="Agos Header" />
+        <p>Hello World</p>
       </header>
     </div>
   );
