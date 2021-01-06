@@ -49,6 +49,7 @@
     "@material-ui/lab": "^4.0.0-alpha.56",
     "@material-ui/pickers": "^3.2.10",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "classnames": "^2.2.6",
     "clsx": "^1.1.1",
     "date-fns": "^2.16.1",
     "date-fns-tz": "^1.0.12",

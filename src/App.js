@@ -1,33 +1,39 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
-import ProTip from './ProTip';
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+import Header from './components/Header';
+import Home from './pages/Home';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { ThemeProvider, CssBaseline } from '@material-ui/core';
+import { lightTheme } from './utils/theme';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <Container maxWidth="sm">
-      <Box my={4}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Create React App v4-beta example
-        </Typography>
-        <ProTip />
-        <Copyright />
-      </Box>
-    </Container>
+    <ThemeProvider theme={lightTheme}>
+      <CssBaseline />
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path={['/', '/home', '/index']}>
+            <Home />
+          </Route>
+          <Route exact path={['/maps']}>
+            <Home />
+          </Route>
+          <Route exact path={['/weapons']}>
+            <Home />
+          </Route>
+          <Route exact path={['/hats']}>
+            <Home />
+          </Route>
+          <Route exact path={['/beasts']}>
+            <Home />
+          </Route>
+          <Route exact path={['/misc']}>
+            <Home />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+      <Footer />
+    </ThemeProvider>
   );
 }

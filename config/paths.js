@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   root: path.resolve(__dirname, '../'),
@@ -10,5 +10,4 @@ module.exports = {
   entry: path.resolve(__dirname, '../', 'src/index.js'),
   indexHtml: path.resolve(__dirname, '../', 'public/index.html'),
   favicon: path.resolve(__dirname, '../', 'public/favicon.ico'),
-  // chartJs: path.resolve(__dirname, '../', 'vendor/Chart.js'),
-}
+};
