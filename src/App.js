@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Home from './pages/Home';
+import Maps from './pages/Maps';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ThemeProvider, CssBaseline } from '@material-ui/core';
 import { lightTheme } from './utils/theme';
@@ -17,7 +18,7 @@ export default function App() {
             <Home />
           </Route>
           <Route exact path={['/maps']}>
-            <Home />
+            <Maps />
           </Route>
           <Route exact path={['/weapons']}>
             <Home />
@@ -33,7 +34,7 @@ export default function App() {
           </Route>
         </Switch>
       </BrowserRouter>
-      <Footer />
+      {/* <Footer /> */}
     </ThemeProvider>
   );
 }
