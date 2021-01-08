@@ -1,4 +1,5 @@
 import empty from '../assets/weapons/empty.png';
+
 import broom from '../assets/weapons/broom.png';
 import candyCaneMultimint from '../assets/weapons/candy_cane_multimint.png';
 import candyCanePeppermint from '../assets/weapons/candy_cane_peppermint.png';
@@ -20,6 +21,8 @@ import shoddySword from '../assets/weapons/shoddy_sword.png';
 import spiritForce from '../assets/weapons/spirit_force.png';
 import whip from '../assets/weapons/whip.png';
 import woodenClub from '../assets/weapons/wooden_club.png';
+
+import anniversaryHat from '../assets/hats/anniversary_hat.png';
 
 const getWeaponImageFromName = (name) => {
   if (name === 'Broom') return broom;
@@ -46,4 +49,9 @@ const getWeaponImageFromName = (name) => {
   else return empty;
 };
 
-export { getWeaponImageFromName };
+const getHatImageFromName = (name) => {
+  if (name === 'Anniversary Hat') return anniversaryHat;
+  else return empty;
+};
+
+export { getWeaponImageFromName, getHatImageFromName };
