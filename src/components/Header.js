@@ -2,7 +2,6 @@ import React from 'react';
 import cl from 'classnames';
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, IconButton } from '@material-ui/core';
-import AddBoxIcon from '@material-ui/icons/AddBox';
 import AppLogo from '../assets/logo.png';
 import { useAtomicStyles } from '../utils/styles';
 
