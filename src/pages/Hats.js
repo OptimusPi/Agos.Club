@@ -28,7 +28,7 @@ export default function Weapons() {
           pageSizeOptions: [10, 20, 50],
           headerStyle: { position: 'sticky', top: 0 },
           maxBodyHeight: '80vh',
-          exportButton: false,
+          exportButton: true,
           exportFileName: 'Agos Hats Data',
         }}
         icons={getTableIcons()}
