@@ -1,8 +1,7 @@
 import React from 'react';
 import cl from 'classnames';
 import { Link } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Button, IconButton } from '@material-ui/core';
-import AppLogo from '../assets/logo.png';
+import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
 import { useAtomicStyles } from '../utils/styles';
 
 export default function Header() {
