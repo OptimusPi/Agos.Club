@@ -1,8 +1,8 @@
-import MetropolisMediumFont from './fonts/Metropolis-Medium.woff'
-import MetropolisBoldFont from './fonts/Metropolis-SemiBold.woff'
-import RobotoRegularFont from './fonts/Roboto-Regular.woff'
-import RobotoMediumFont from './fonts/Roboto-Medium.woff'
-import RobotoBoldFont from './fonts/Roboto-Bold.woff'
+import MetropolisMediumFont from './fonts/Metropolis-Medium.woff';
+import MetropolisBoldFont from './fonts/Metropolis-SemiBold.woff';
+import RobotoRegularFont from './fonts/Roboto-Regular.woff';
+import RobotoMediumFont from './fonts/Roboto-Medium.woff';
+import RobotoBoldFont from './fonts/Roboto-Bold.woff';
 
 const MetropolisRegular = {
   fontFamily: 'Metropolis',
@@ -14,7 +14,7 @@ const MetropolisRegular = {
       local('Metrolpolis-Medium'),
       url(${MetropolisMediumFont}) format('woff')
     `,
-}
+};
 
 const MetropolisBold = {
   fontFamily: 'Metropolis',
@@ -26,7 +26,7 @@ const MetropolisBold = {
       local('Metrolpolis-Bold'),
       url(${MetropolisBoldFont}) format('woff')
     `,
-}
+};
 
 const RobotoRegular = {
   fontFamily: 'Roboto',
@@ -38,7 +38,7 @@ const RobotoRegular = {
       local('Roboto-Regular'),
       url(${RobotoRegularFont}) format('woff')
     `,
-}
+};
 
 const RobotoMedium = {
   fontFamily: 'Roboto',
@@ -50,7 +50,7 @@ const RobotoMedium = {
         local('Roboto-Medium'),
         url(${RobotoMediumFont}) format('woff')
       `,
-}
+};
 
 const RobotoBold = {
   fontFamily: 'Roboto',
@@ -62,7 +62,7 @@ const RobotoBold = {
       local('Roboto-Bold'),
       url(${RobotoBoldFont}) format('woff')
     `,
-}
+};
 
 export default {
   MetropolisRegular,
@@ -70,4 +70,4 @@ export default {
   RobotoRegular,
   RobotoMedium,
   RobotoBold,
-}
+};
