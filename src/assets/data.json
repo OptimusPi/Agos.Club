@@ -42,5 +42,17 @@
       "traits": "None",
       "holders": "Everybody 90+"
     }
+  ],
+  "hats": [
+    {
+      "name": "Anniversary Hat",
+      "value": 1,
+      "rarity": 5,
+      "sources": "Anniversary Present",
+      "description": "Stats only in effect during Anniversary event.",
+      "nicknames": "",
+      "traits": "None",
+      "holders": "Most Folks"
+    }
   ]
 }

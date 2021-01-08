@@ -1,6 +1,6 @@
 import React from 'react';
 import MaterialTable from 'material-table';
-import { Box } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 import { getTableIcons } from '../utils/table';
 import { getWeaponData } from '../utils/data';
 import WeaponsCard from '../components/WeaponsCard';
@@ -9,6 +9,12 @@ import { getWeaponImageFromName } from '../utils/images';
 export default function Weapons() {
   return (
     <Box my={4} mx={4}>
+      <Typography variant="subtitle1" color="secondary" gutterBottom>
+        Note: Please let me know if something is wrong or if you have any suggestions in{' '}
+        <a href="https://discord.com/channels/301473545735897108/795724403291193364" target="_blank">
+          #fan_based
+        </a>
+      </Typography>
       <MaterialTable
         title="Agos Weapons"
         options={{
@@ -73,5 +79,14 @@ const getStarLookup = () => {
 };
 
 const getRarityLookup = () => {
-  return { 1: 'Common', 2: 'Moderate', 3: 'Rare', 4: 'Ultra Rare', 5: 'Mega Rare' };
+  return {
+    1: 'Very Common',
+    2: 'Common',
+    3: 'Uncommon',
+    4: 'Semi Rare',
+    5: 'Rare',
+    6: 'Very Rare',
+    7: 'Ultra Rare',
+    9: 'Hyper Rare',
+  };
 };

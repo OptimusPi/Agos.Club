@@ -13,15 +13,12 @@ export default function Header() {
       <AppBar position="static">
         <Toolbar>
           <Link to="/">
-            <IconButton edge="start" aria-label="home">
-              <img src={AppLogo} width="32" height="32" alt="Home" />
-            </IconButton>
+            <Typography variant="h6" color="secondary" className={ac['mr-1']}>
+              Agos.Club
+            </Typography>
           </Link>
-          <Typography variant="h6" color="secondary" className={ac['mr-1']}>
-            Agos.Club
-          </Typography>
-          <Typography variant="overline" color="secondary" className={cl(ac['italic'], ac['flex-grow'])}>
-            (v1.0)
+          <Typography variant="subtitle3" color="secondary" className={ac['flex-grow']}>
+            By TickTockMan
           </Typography>
           <Link to="/maps">
             <Button className={cl(ac['mr-1'])}>Maps</Button>
