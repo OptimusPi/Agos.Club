@@ -59,7 +59,7 @@ const getWeaponImageFromName = (name) => {
   else if (name === 'Candy Cane Peppermint') return candyCanePeppermint;
   else if (name === 'Candy Cane Spearmint') return candyCaneSpearmint;
   else if (name === 'Carved Axe') return carvedAxe;
-  else if (name === 'Chefs Knife') return chefsKnife;
+  else if (name === "Chef's Knife") return chefsKnife;
   else if (name === 'Classic Sword') return classicSword;
   else if (name === 'Cuckoo Clock') return cuckooClock;
   else if (name === 'Flower Flail') return flowerFlail;

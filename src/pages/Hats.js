@@ -60,13 +60,18 @@ const getColumns = () => {
   return [
     { title: 'Name', field: 'name' },
     { title: 'Rarity', field: 'rarity', lookup: getRarityLookup() },
+    { title: 'Sources', field: 'sources' },
+    { title: 'Strength', field: 'strength', type: 'numeric' },
+    { title: 'Vitality', field: 'vitality', type: 'numeric' },
+    { title: 'Agility', field: 'agility', type: 'numeric' },
+    { title: 'Intelligence', field: 'intelligence', type: 'numeric' },
+    { title: 'Defense', field: 'defense', type: 'numeric' },
     {
       title: 'Sell Value',
       field: 'value',
-      type: 'number',
-      render: (rowData) => '$' + formatNumber(rowData.value) + ' coinz',
+      type: 'numeric',
+      render: (rowData) => '$' + formatNumber(rowData.value) + ' gold',
     },
-    { title: 'Sources', field: 'sources' },
   ];
 };
 
