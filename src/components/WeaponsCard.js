@@ -46,18 +46,26 @@ export default function WeaponsCard({ name, description, holders, nicknames, tra
           <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
-                <Typography variant="subtitle1">
-                  {name} {nicknames && { nicknames }}
-                </Typography>
-                <Typography variant="body2" color="textSecondary" gutterBottom>
-                  Traits: {traits}
-                </Typography>
+                {nicknames ? (
+                  <Typography variant="subtitle1">
+                    {name} ({nicknames})
+                  </Typography>
+                ) : (
+                  <Typography variant="subtitle1">{name}</Typography>
+                )}
+                {traits && (
+                  <Typography variant="body2" color="textSecondary" gutterBottom>
+                    Traits: {traits}
+                  </Typography>
+                )}
                 <Typography variant="body2" gutterBottom style={{ flexGrow: 1 }}>
                   {description}
                 </Typography>
-                <Typography variant="body3" color="textSecondary">
-                  Known Holders: {holders}
-                </Typography>
+                {holders && (
+                  <Typography variant="body3" color="textSecondary">
+                    Known Holders: {holders}
+                  </Typography>
+                )}
               </Grid>
             </Grid>
           </Grid>

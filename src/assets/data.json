@@ -8,11 +8,11 @@
       "speed": 2,
       "value": 350,
       "rarity": 1,
-      "sources": "Knights, Bligs",
+      "sources": "Knight, Blig",
       "description": "An overused, unfurbished blade.",
-      "nicknames": "POS, Shoddy",
-      "traits": "None",
-      "holders": "Literally everybody"
+      "nicknames": "Shoddy",
+      "traits": "",
+      "holders": ""
     },
     {
       "name": "Rubber Sledge",
@@ -22,11 +22,11 @@
       "speed": 2,
       "value": 6000,
       "rarity": 2,
-      "sources": "Merchant, Spirits",
+      "sources": "General Store, Spirit",
       "description": "Wheee!",
       "nicknames": "Hammer",
       "traits": "Greater Force",
-      "holders": "Everybody"
+      "holders": ""
     },
     {
       "name": "Classic Sword",
@@ -34,13 +34,83 @@
       "stamina": 3,
       "cooldown": 4,
       "speed": 3,
-      "value": 6000,
+      "value": 8500,
       "rarity": 5,
-      "sources": "Lvl 90, Spirits",
+      "sources": "Lvl 90, Spirit",
       "description": "You earned it.",
       "nicknames": "Classic",
-      "traits": "None",
-      "holders": "Everybody 90+"
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Oak 2x4",
+      "power": 4,
+      "stamina": 3,
+      "cooldown": 3,
+      "speed": 2,
+      "value": 2800,
+      "rarity": 5,
+      "sources": "Cowboy, Spirit",
+      "description": "Game Item.",
+      "nicknames": "Oak",
+      "traits": "Basic Stagger",
+      "holders": ""
+    },
+    {
+      "name": "Roman Candle",
+      "power": 1,
+      "stamina": 2,
+      "cooldown": 1,
+      "speed": 3,
+      "value": 16500,
+      "rarity": 5,
+      "sources": "Fireworks Lootbox",
+      "description": "Will turn on PvP automatically when used.",
+      "nicknames": "Candle",
+      "traits": "Basic Entity, Basic Burn",
+      "holders": ""
+    },
+    {
+      "name": "Rapier",
+      "power": 4,
+      "stamina": 2,
+      "cooldown": 3,
+      "speed": 2,
+      "value": 29900,
+      "rarity": 6,
+      "sources": "Knight",
+      "description": "Game Item",
+      "nicknames": "",
+      "traits": "Superb Bleed",
+      "holders": "TickTockMan"
+    },
+    {
+      "name": "Whip",
+      "power": 2,
+      "stamina": 5,
+      "cooldown": 5,
+      "speed": 4,
+      "value": 1800,
+      "rarity": 3,
+      "sources": "Forest Guardian, Cowboy",
+      "description": "Shorter than advertised, but it is genuine leather.",
+      "nicknames": "",
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Kodachi",
+      "power": 2,
+      "stamina": 3,
+      "cooldown": 5,
+      "speed": 3,
+      "value": 5309,
+      "rarity": 6,
+      "sources": "Ninja",
+      "description": "A slice so nice you do it twice.",
+      "nicknames": "",
+      "traits": "Basic Echo",
+      "holders": ""
     }
   ],
   "hats": [
@@ -51,8 +121,328 @@
       "sources": "Anniversary Present",
       "description": "Stats only in effect during Anniversary event.",
       "nicknames": "",
-      "traits": "None",
-      "holders": "Most Folks"
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Bit Hat",
+      "value": 50000,
+      "rarity": 6,
+      "sources": "Inconspicuous Mushroom",
+      "description": "Somehow, you feel a bit different.",
+      "nicknames": "",
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Bleeps Horns",
+      "value": 5000,
+      "rarity": 6,
+      "sources": "Bleep",
+      "description": "Tackle your problems head first!",
+      "nicknames": "Horns",
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Bowler Hat",
+      "value": 1500,
+      "rarity": 1,
+      "sources": "General Store",
+      "description": "Yeah, see.",
+      "nicknames": "",
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Demon Mask",
+      "value": 180,
+      "rarity": 4,
+      "sources": "Halloween Treat, Henry",
+      "description": "Demonic...",
+      "nicknames": "",
+      "traits": "Ultra Enduring, Basic Bravery",
+      "holders": ""
+    },
+    {
+      "name": "Earmuffs",
+      "value": 2300,
+      "rarity": 4,
+      "sources": "Fox",
+      "description": "What?",
+      "nicknames": "",
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Faded Mask",
+      "value": 180,
+      "rarity": 4,
+      "sources": "Pumpkin",
+      "description": "It is...",
+      "nicknames": "",
+      "traits": "Basic Launch",
+      "holders": ""
+    },
+    {
+      "name": "Fighter's Headband",
+      "value": 4000,
+      "rarity": 4,
+      "sources": "Ninja",
+      "description": "Fighting is much easier without sweat in the eyes.",
+      "nicknames": "Headband",
+      "traits": "Superb Caffeine, Basic Focus",
+      "holders": ""
+    },
+    {
+      "name": "Flower Pin",
+      "value": 1800,
+      "rarity": 6,
+      "sources": "Flowa",
+      "description": "Viciously plucked from the ground. You mad man.",
+      "nicknames": "Pin",
+      "traits": "Greater Caffeine, Ultra Antidote",
+      "holders": ""
+    },
+    {
+      "name": "Fox Ears",
+      "value": 7560,
+      "rarity": 5,
+      "sources": "Fox",
+      "description": "Game Item",
+      "nicknames": "",
+      "traits": "Basic Caffeine",
+      "holders": ""
+    },
+    {
+      "name": "Hairband",
+      "value": 500,
+      "rarity": 5,
+      "sources": "Weak Chest",
+      "description": "Gotta keep that hair in order!",
+      "nicknames": "",
+      "traits": "Superb Caffeine, Superb Enduring",
+      "holders": ""
+    },
+    {
+      "name": "Hard Hat",
+      "value": 7500,
+      "rarity": 4,
+      "sources": "Rizard",
+      "description": "Sticks at work",
+      "nicknames": "",
+      "traits": "Advanced Enduring, Greater Unyielding, Basic React",
+      "holders": ""
+    },
+    {
+      "name": "Headguard",
+      "value": 20,
+      "rarity": 1,
+      "sources": "General Store, Weak Chest",
+      "description": "For those who take a few too many hits to the head.",
+      "nicknames": "",
+      "traits": "Superb Enduring, Basic Unyielding",
+      "holders": ""
+    },
+    {
+      "name": "Headphones",
+      "value": 1,
+      "rarity": 7,
+      "sources": "Igufed",
+      "description": "A thank you for helping pre-release!",
+      "nicknames": "",
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Heli Hat",
+      "value": 30000,
+      "rarity": 9,
+      "sources": "Henry",
+      "description": "Makes other people jealous.",
+      "nicknames": "",
+      "traits": "Hyper Light Foot",
+      "holders": ""
+    },
+    {
+      "name": "Leaf Hat",
+      "value": 750,
+      "rarity": 3,
+      "sources": "Forest Guardian, Ninja, Spirit",
+      "description": "",
+      "nicknames": "",
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Newspaper Hat",
+      "value": 2,
+      "rarity": 1,
+      "sources": "Novice Blig, Blig",
+      "description": "I'm on top of the news, or the news is on top of me.",
+      "nicknames": "",
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Ninja Cover",
+      "value": 16899,
+      "rarity": 6,
+      "sources": "Ninja",
+      "description": "Game Item",
+      "nicknames": "Nin Mask",
+      "traits": "Basic Launch, Basic Boost",
+      "holders": ""
+    },
+    {
+      "name": "Oni Mask",
+      "value": 25,
+      "rarity": 6,
+      "sources": "Private Shop",
+      "description": "Strikes fear into the hearts of mobs.",
+      "nicknames": "Oni",
+      "traits": "Extreme Bravery",
+      "holders": ""
+    },
+    {
+      "name": "Pot",
+      "value": 5500,
+      "rarity": 4,
+      "sources": "Bleep",
+      "description": "Uncomfortable but has stainless steel protection.",
+      "nicknames": "",
+      "traits": "Greater React",
+      "holders": ""
+    },
+    {
+      "name": "Red-stained Mask",
+      "value": 180,
+      "rarity": 4,
+      "sources": "Pumpkin",
+      "description": "It kind of is...",
+      "nicknames": "",
+      "traits": "Basic Boost",
+      "holders": ""
+    },
+    {
+      "name": "Reindeer Antlers",
+      "value": 1225,
+      "rarity": 4,
+      "sources": "Christmas Present",
+      "description": "Game ItemTraits only active during Christmas Event",
+      "nicknames": "",
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Ribbow",
+      "value": 500,
+      "rarity": 5,
+      "sources": "Weak Chest",
+      "description": "This over sized bow is hard to wear.",
+      "nicknames": "",
+      "traits": "Superb Caffeine, Superb Enduring",
+      "holders": ""
+    },
+    {
+      "name": "Rudolf's Antlers",
+      "value": 1,
+      "rarity": 6,
+      "sources": "Christmas Present",
+      "description": "Unknown",
+      "nicknames": "",
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Santa's Hat",
+      "value": 1225,
+      "rarity": 4,
+      "sources": "Christmas Present",
+      "description": "Ho Ho Ho",
+      "nicknames": "",
+      "traits": "Ultra Rotting, Hyper Caffeine, Basic Layers",
+      "holders": ""
+    },
+    {
+      "name": "Snow Hat",
+      "value": 7500,
+      "rarity": 4,
+      "sources": "Fox",
+      "description": "Can survive a blizzard with this!",
+      "nicknames": "",
+      "traits": "Superb Layers",
+      "holders": ""
+    },
+    {
+      "name": "Spirit Mask",
+      "value": 18000,
+      "rarity": 6,
+      "sources": "Spirit, Elder Spirit",
+      "description": "Game Item",
+      "nicknames": "",
+      "traits": "Greater Specs",
+      "holders": ""
+    },
+    {
+      "name": "Straw Hat",
+      "value": 20,
+      "rarity": 2,
+      "sources": "Blig, Bleep, Flowa, Weak Chest, Desert Sweeper",
+      "description": "Do you feel like a modern pirate?",
+      "nicknames": "",
+      "traits": "Basic Launch",
+      "holders": ""
+    },
+    {
+      "name": "Truffle Top",
+      "value": 22000,
+      "rarity": 6,
+      "sources": "Rare Truffle",
+      "description": "Are you a fungi or not?",
+      "nicknames": "",
+      "traits": "Extreme Antidote",
+      "holders": ""
+    },
+    {
+      "name": "Vintage Hat",
+      "value": 500,
+      "rarity": 1,
+      "sources": "General Store, Weak Chest",
+      "description": "on the fly on the fly on the fkin fly",
+      "nicknames": "",
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Witch's Hat",
+      "value": 1,
+      "rarity": 6,
+      "sources": "Forest Guardian, Ghost",
+      "description": "While mounted using either the Witch's Broom or Broken Witch's Broom, your gravity is greatly reduced.",
+      "nicknames": "",
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Wooden Mask",
+      "value": 2888,
+      "rarity": 5,
+      "sources": "Forest Guardian, Spirit",
+      "description": "Game Item",
+      "nicknames": "",
+      "traits": "",
+      "holders": ""
+    },
+    {
+      "name": "Wren's Roost",
+      "value": 2000,
+      "rarity": 4,
+      "sources": "Egg",
+      "description": "Game Item",
+      "nicknames": "",
+      "traits": "Greater Antidote, Superb Specs",
+      "holders": ""
     }
   ]
 }

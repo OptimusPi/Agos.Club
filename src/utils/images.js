@@ -23,6 +23,35 @@ import whip from '../assets/weapons/whip.png';
 import woodenClub from '../assets/weapons/wooden_club.png';
 
 import anniversaryHat from '../assets/hats/anniversary_hat.png';
+import bitHat from '../assets/hats/bit_hat.png';
+import bleepHorns from '../assets/hats/bleeps_horns.png';
+import bowlerHat from '../assets/hats/bowler_hat.png';
+import demonMask from '../assets/hats/demon_mask.png';
+import earmuffs from '../assets/hats/earmuffs.png';
+import fadedMask from '../assets/hats/faded_mask.png';
+import headband from '../assets/hats/fighters_headband.png';
+import flowerPin from '../assets/hats/flower_pin.png';
+import foxEars from '../assets/hats/fox_ears.png';
+import hairband from '../assets/hats/hairband.png';
+import hardHat from '../assets/hats/hard_hat.png';
+import headguard from '../assets/hats/headguard.png';
+import headphones from '../assets/hats/headphones.png';
+import heliHat from '../assets/hats/heli_hat.png';
+import leafHat from '../assets/hats/leaf_hat.png';
+import newspaperHat from '../assets/hats/newspaper_hat.png';
+import ninjaCover from '../assets/hats/ninja_cover.png';
+import pot from '../assets/hats/pot.png';
+import raindeerAntlers from '../assets/hats/raindeer_antlers.png';
+import redStainedMask from '../assets/hats/red-stained_mask.png';
+import ribbow from '../assets/hats/ribbow.png';
+import rudolfAntlers from '../assets/hats/rudolfs_antlers.png';
+import santaHat from '../assets/hats/santa_hat.png';
+import snowHat from '../assets/hats/snow_hat.png';
+import spiritMask from '../assets/hats/spirit_mask.png';
+import strawHat from '../assets/hats/straw_hat.png';
+import truffleTop from '../assets/hats/truffle_top.png';
+import vintageHat from '../assets/hats/vintage_hat.png';
+import woodenMask from '../assets/hats/wooden_mask.png';
 
 const getWeaponImageFromName = (name) => {
   if (name === 'Broom') return broom;
@@ -51,6 +80,38 @@ const getWeaponImageFromName = (name) => {
 
 const getHatImageFromName = (name) => {
   if (name === 'Anniversary Hat') return anniversaryHat;
+  else if (name === 'Bit Hat') return bitHat;
+  else if (name === 'Bleeps Horns') return bleepHorns;
+  else if (name === 'Bowler Hat') return bowlerHat;
+  else if (name === 'Demon Mask') return demonMask;
+  else if (name === 'Earmuffs') return earmuffs;
+  else if (name === 'Faded Mask') return fadedMask;
+  else if (name === "Fighter's Headband") return headband;
+  else if (name === 'Flower Pin') return flowerPin;
+  else if (name === 'Fox Ears') return foxEars;
+  else if (name === 'Hairband') return hairband;
+  else if (name === 'Hard Hat') return hardHat;
+  else if (name === 'Headguard') return headguard;
+  else if (name === 'Headphones') return headphones;
+  else if (name === 'Heli Hat') return heliHat;
+  else if (name === 'Leaf Hat') return leafHat;
+  else if (name === 'Newspaper Hat') return newspaperHat;
+  else if (name === 'Ninja Cover') return ninjaCover;
+  else if (name === 'Oni Mask') return empty;
+  else if (name === 'Pot') return pot;
+  else if (name === 'Red-stained Mask') return redStainedMask;
+  else if (name === 'Reindeer Antlers') return raindeerAntlers;
+  else if (name === 'Ribbow') return ribbow;
+  else if (name === "Rudolf's Antlers") return rudolfAntlers;
+  else if (name === "Santa's Hat") return santaHat;
+  else if (name === 'Snow Hat') return snowHat;
+  else if (name === 'Spirit Mask') return spiritMask;
+  else if (name === 'Straw Hat') return strawHat;
+  else if (name === 'Truffle Top') return truffleTop;
+  else if (name === 'Vintage Hat') return vintageHat;
+  else if (name === "Witch's Hat") return empty;
+  else if (name === 'Wooden Mask') return woodenMask;
+  else if (name === "Wren's Roost") return empty;
   else return empty;
 };
 
