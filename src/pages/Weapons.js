@@ -53,6 +53,7 @@ function formatNumber(num) {
 const getColumns = () => {
   return [
     { title: 'Name', field: 'name' },
+    { title: 'Rarity', field: 'rarity', lookup: getRarityLookup() },
     { title: 'Power', field: 'power', lookup: getStarLookup() },
     { title: 'Stamina', field: 'stamina', lookup: getStarLookup() },
     { title: 'Cooldown', field: 'cooldown', lookup: getStarLookup() },
@@ -63,7 +64,7 @@ const getColumns = () => {
       type: 'number',
       render: (rowData) => '$' + formatNumber(rowData.value) + ' coinz',
     },
-    { title: 'Rarity', field: 'rarity', lookup: getRarityLookup() },
+    { title: 'Sources', field: 'sources' },
   ];
 };
 

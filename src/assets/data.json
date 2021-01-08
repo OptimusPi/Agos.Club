@@ -22,11 +22,25 @@
       "speed": 2,
       "value": 6000,
       "rarity": 2,
-      "sources": "Grassland Merchant, Spirit",
+      "sources": "Merchant, Spirits",
       "description": "Wheee!",
       "nicknames": "Hammer",
       "traits": "Greater Force",
       "holders": "Everybody"
+    },
+    {
+      "name": "Classic Sword",
+      "power": 4,
+      "stamina": 3,
+      "cooldown": 4,
+      "speed": 3,
+      "value": 6000,
+      "rarity": 5,
+      "sources": "Lvl 90, Spirits",
+      "description": "You earned it.",
+      "nicknames": "Classic",
+      "traits": "None",
+      "holders": "Everybody 90+"
     }
   ]
 }
