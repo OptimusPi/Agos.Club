@@ -10,9 +10,9 @@ const lightMuiTheme = createMuiTheme({
       grey: 'rgba(0, 0, 0, 0.87)',
     },
     primary: {
-      light: '#58a5f0',
-      main: '#0277bd',
-      dark: '#004c8c',
+      light: '#f5ffff',
+      main: '#c2e3fc',
+      dark: '#91b1c9',
       contrastText: '#fff',
     },
     secondary: {

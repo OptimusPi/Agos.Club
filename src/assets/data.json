@@ -1,0 +1,32 @@
+{
+  "weapons": [
+    {
+      "name": "Shoddy Sword",
+      "power": 2,
+      "stamina": 4,
+      "cooldown": 4,
+      "speed": 2,
+      "value": 350,
+      "rarity": 1,
+      "sources": "Knights, Bligs",
+      "description": "An overused, unfurbished blade.",
+      "nicknames": "POS, Shoddy",
+      "traits": "None",
+      "holders": "Literally everybody"
+    },
+    {
+      "name": "Rubber Sledge",
+      "power": 4,
+      "stamina": 4,
+      "cooldown": 4,
+      "speed": 2,
+      "value": 6000,
+      "rarity": 2,
+      "sources": "Grassland Merchant, Spirit",
+      "description": "Wheee!",
+      "nicknames": "Hammer",
+      "traits": "Greater Force",
+      "holders": "Everybody"
+    }
+  ]
+}

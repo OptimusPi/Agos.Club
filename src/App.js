@@ -2,10 +2,13 @@ import React from 'react';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Maps from './pages/Maps';
+import Hats from './pages/Hats';
+import Mobs from './pages/Mobs';
+import More from './pages/More';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ThemeProvider, CssBaseline } from '@material-ui/core';
 import { lightTheme } from './utils/theme';
-import Footer from './components/Footer';
+import Weapons from './pages/Weapons';
 
 export default function App() {
   return (
@@ -14,23 +17,23 @@ export default function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route exact path={['/', '/home', '/index']}>
+          <Route exact path={['/']}>
             <Home />
           </Route>
           <Route exact path={['/maps']}>
             <Maps />
           </Route>
           <Route exact path={['/weapons']}>
-            <Home />
+            <Weapons />
           </Route>
           <Route exact path={['/hats']}>
-            <Home />
+            <Hats />
           </Route>
-          <Route exact path={['/beasts']}>
-            <Home />
+          <Route exact path={['/mobs']}>
+            <Mobs />
           </Route>
-          <Route exact path={['/misc']}>
-            <Home />
+          <Route exact path={['/more']}>
+            <More />
           </Route>
         </Switch>
       </BrowserRouter>

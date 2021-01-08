@@ -14,40 +14,30 @@ export default function Header() {
       <AppBar position="static">
         <Toolbar>
           <Link to="/">
-            <IconButton edge="start" className={ac['header-icon']} aria-label="home">
+            <IconButton edge="start" aria-label="home">
               <img src={AppLogo} width="32" height="32" alt="Home" />
             </IconButton>
           </Link>
-          <Typography variant="h6" className={ac['mr-1']}>
+          <Typography variant="h6" color="secondary" className={ac['mr-1']}>
             Agos.Club
           </Typography>
-          <Typography variant="overline" className={cl(ac['italic'], ac['flex-grow'])}>
+          <Typography variant="overline" color="secondary" className={cl(ac['italic'], ac['flex-grow'])}>
             (v1.0)
           </Typography>
           <Link to="/maps">
-            <Button startIcon={<AddBoxIcon />} className={cl(ac['header-icon'], ac['mr-1'])}>
-              Maps
-            </Button>
+            <Button className={cl(ac['mr-1'])}>Maps</Button>
           </Link>
           <Link to="/weapons">
-            <Button startIcon={<AddBoxIcon />} className={cl(ac['header-icon'], ac['mr-1'])}>
-              Weapons
-            </Button>
+            <Button className={cl(ac['mr-1'])}>Weapons</Button>
           </Link>
           <Link to="/hats">
-            <Button startIcon={<AddBoxIcon />} className={cl(ac['header-icon'], ac['mr-1'])}>
-              Hats
-            </Button>
+            <Button className={cl(ac['mr-1'])}>Hats</Button>
           </Link>
-          <Link to="/beasts">
-            <Button startIcon={<AddBoxIcon />} className={cl(ac['header-icon'], ac['mr-1'])}>
-              Beasts
-            </Button>
+          <Link to="/mobs">
+            <Button className={cl(ac['mr-1'])}>Mobs</Button>
           </Link>
-          <Link to="/misc">
-            <Button startIcon={<AddBoxIcon />} className={cl(ac['header-icon'], ac['mr-1'])}>
-              Misc
-            </Button>
+          <Link to="/more">
+            <Button className={cl(ac['mr-1'])}>More</Button>
           </Link>
         </Toolbar>
       </AppBar>
