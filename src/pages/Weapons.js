@@ -65,10 +65,11 @@ const getColumns = () => {
     { title: 'Stamina', field: 'stamina', lookup: getStarLookup() },
     { title: 'Cooldown', field: 'cooldown', lookup: getStarLookup() },
     { title: 'Speed', field: 'speed', lookup: getStarLookup() },
+    { title: 'Stamina Cost ', field: 'staminaCost', type: 'numeric' },
     {
       title: 'Sell Value',
       field: 'value',
-      type: 'number',
+      type: 'numeric',
       render: (rowData) => '$' + formatNumber(rowData.value) + ' gold',
     },
   ];
@@ -87,6 +88,6 @@ const getRarityLookup = () => {
     5: 'Rare',
     6: 'Very Rare',
     7: 'Ultra Rare',
-    9: 'Hyper Rare',
+    8: 'Hyper Rare',
   };
 };

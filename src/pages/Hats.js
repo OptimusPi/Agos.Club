@@ -84,6 +84,6 @@ const getRarityLookup = () => {
     5: 'Rare',
     6: 'Very Rare',
     7: 'Ultra Rare',
-    9: 'Hyper Rare',
+    8: 'Hyper Rare',
   };
 };
