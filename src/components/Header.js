@@ -42,7 +42,7 @@ export default function Header() {
         key={cloudUri}
         src={cloudUri}
         animate={{ translateX: [0, width - 380, 0] }}
-        transition={{ duration: 30, loop: Infinity, repeatDelay: 2, delay: 2, ease: 'linear' }}
+        transition={{ duration: 60, loop: Infinity, repeatDelay: 2, delay: 2, ease: 'linear' }}
         style={{ position: 'absolute', marginTop: 3 }}
       />
       <AppBar position="static">
