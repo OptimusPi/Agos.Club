@@ -10,7 +10,7 @@
       "value": 1,
       "rarity": 7,
       "sources": "Garfield",
-      "description": "",
+      "description": "??",
       "nicknames": "",
       "traits": "",
       "holders": ""
@@ -40,7 +40,7 @@
       "value": 1,
       "rarity": 8,
       "sources": "??",
-      "description": "",
+      "description": "??",
       "nicknames": "",
       "traits": "",
       "holders": ""
@@ -71,7 +71,7 @@
       "rarity": 5,
       "sources": "Rizard",
       "description": "Forged from the depths of the Mountain.",
-      "nicknames": "",
+      "nicknames": "Axe",
       "traits": "Superb Bleed",
       "holders": ""
     },
@@ -126,12 +126,12 @@
       "stamina": 2,
       "cooldown": 3,
       "speed": 2,
-      "staminaCost": -1,
+      "staminaCost": 30,
       "value": 49000,
       "rarity": 6,
       "sources": "Desert Ranger",
       "description": "Game Item",
-      "nicknames": "",
+      "nicknames": "DE",
       "traits": "",
       "holders": ""
     },
@@ -175,7 +175,7 @@
       "value": 1,
       "rarity": 7,
       "sources": "??",
-      "description": "",
+      "description": "??",
       "nicknames": "",
       "traits": "",
       "holders": ""
@@ -191,7 +191,7 @@
       "rarity": 6,
       "sources": "Ninja",
       "description": "A slice so nice you do it twice.",
-      "nicknames": "",
+      "nicknames": "Kod",
       "traits": "Basic Echo",
       "holders": ""
     },
@@ -265,7 +265,7 @@
       "value": 1,
       "rarity": 7,
       "sources": "??",
-      "description": "",
+      "description": "??",
       "nicknames": "",
       "traits": "",
       "holders": ""
@@ -326,7 +326,7 @@
       "rarity": 6,
       "sources": "Perry's Shop",
       "description": "Where are you getting all of these arrows...",
-      "nicknames": "",
+      "nicknames": "Bow",
       "traits": "Basic Entity",
       "holders": ""
     },
@@ -366,12 +366,12 @@
       "stamina": 4,
       "cooldown": 3,
       "speed": 5,
-      "staminaCost": -1,
+      "staminaCost": 15,
       "value": 14999,
       "rarity": 4,
       "sources": "Igufeds Totally Awesome Looking Ship",
       "description": "Game Item",
-      "nicknames": "",
+      "nicknames": "Sabre, Sab",
       "traits": "",
       "holders": ""
     },
@@ -386,7 +386,7 @@
       "rarity": 8,
       "sources": "Spirit",
       "description": "You feel a shiver down your spine...",
-      "nicknames": "",
+      "nicknames": "Scythe",
       "traits": "Basic Lasting Strike, Advanced Freeze",
       "holders": ""
     },
@@ -475,8 +475,8 @@
       "value": 1,
       "rarity": 4,
       "sources": "Forest Guardian",
-      "description": "",
-      "nicknames": "A thick stick or a square club?",
+      "description": "A thick stick or a square club?",
+      "nicknames": "Club",
       "traits": "",
       "holders": ""
     }
@@ -807,9 +807,9 @@
       "intelligence": 0,
       "defense": 0,
       "sources": "Forest Guardian, Rare Truffle, Spirit",
-      "description": "",
+      "description": "Natural and free is the way to be!",
       "nicknames": "",
-      "traits": "",
+      "traits": "Superb Caffeine",
       "holders": ""
     },
     {
