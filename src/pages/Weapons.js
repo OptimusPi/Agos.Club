@@ -24,11 +24,10 @@ export default function Weapons() {
           filtering: true,
           search: false,
           sorting: true,
-          pageSize: 10,
-          pageSizeOptions: [10, 20, 50],
+          paging: false,
           headerStyle: { position: 'sticky', top: 0 },
-          maxBodyHeight: '80vh',
-          exportButton: true,
+          maxBodyHeight: '60vh',
+          exportButton: { csv: true },
           exportFileName: 'Agos Weapons Data',
         }}
         icons={getTableIcons()}

@@ -24,10 +24,9 @@ export default function Weapons() {
           filtering: true,
           search: false,
           sorting: true,
-          pageSize: 10,
-          pageSizeOptions: [10, 20, 50],
+          paging: false,
           headerStyle: { position: 'sticky', top: 0 },
-          maxBodyHeight: '80vh',
+          maxBodyHeight: '60vh',
           exportButton: true,
           exportFileName: 'Agos Hats Data',
         }}
