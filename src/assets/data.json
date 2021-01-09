@@ -663,6 +663,21 @@
       "holders": ""
     },
     {
+      "name": "GM Helm",
+      "value": 1,
+      "rarity": 8,
+      "strength": 10,
+      "vitality": 10,
+      "agility": 10,
+      "intelligence": 10,
+      "defense": 10,
+      "sources": "Igufed",
+      "description": "??",
+      "nicknames": "",
+      "traits": "",
+      "holders": ""
+    },
+    {
       "name": "Goldfish Bandana",
       "value": 3999,
       "rarity": 3,
