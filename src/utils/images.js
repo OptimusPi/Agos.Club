@@ -1,6 +1,5 @@
 import emptyItem from '../assets/empty_item.png';
 
-import agosIllusion from '../assets/weapons/agos_illusion.png';
 import ancientHydroSpear from '../assets/weapons/ancient_hydro_spear.png';
 import blazingEdge from '../assets/weapons/blazing_edge.png';
 import broom from '../assets/weapons/broom.png';
@@ -15,6 +14,7 @@ import cuckooClock from '../assets/weapons/cuckoo_clock.png';
 import desertClaymore from '../assets/weapons/desert_claymore.png';
 import flowerFlail from '../assets/weapons/flower_flail.png';
 import heavyStone from '../assets/weapons/heavy_stone.png';
+import kingdomSlayer from '../assets/weapons/kingdom_slayer.png';
 import kodachi from '../assets/weapons/kodachi.png';
 import maple2x4 from '../assets/weapons/maple_2x4.png';
 import newspaper from '../assets/weapons/newspaper.png';
@@ -44,6 +44,7 @@ import fieryFalconVeil from '../assets/hats/fiery_falcon_veil.png';
 import flowerPin from '../assets/hats/flower_pin.png';
 import foxEars from '../assets/hats/fox_ears.png';
 import gmHelm from '../assets/hats/gm_helm.png';
+import goldfishBandana from '../assets/hats/goldfish_bandana.png';
 import hairband from '../assets/hats/hairband.png';
 import hardHat from '../assets/hats/hard_hat.png';
 import headguard from '../assets/hats/headguard.png';
@@ -58,19 +59,23 @@ import raindeerAntlers from '../assets/hats/raindeer_antlers.png';
 import redStainedMask from '../assets/hats/red-stained_mask.png';
 import ribbow from '../assets/hats/ribbow.png';
 import rudolfAntlers from '../assets/hats/rudolfs_antlers.png';
+import sharkHelm from '../assets/hats/shark_helm.png';
 import soldiersCap from '../assets/hats/soldiers_cap.png';
 import santaHat from '../assets/hats/santa_hat.png';
 import snowHat from '../assets/hats/snow_hat.png';
 import spiritMask from '../assets/hats/spirit_mask.png';
 import strawHat from '../assets/hats/straw_hat.png';
+import tenGallonHat from '../assets/hats/10_gallon_hat.png';
 import truffleTop from '../assets/hats/truffle_top.png';
 import vintageHat from '../assets/hats/vintage_hat.png';
+import witchsHat from '../assets/hats/witchs_hat.png';
+import wizardsHat from '../assets/hats/wizards_hat.png';
 import woodenMask from '../assets/hats/wooden_mask.png';
 import wrensRoost from '../assets/hats/wrens_roost.png';
 
 const getWeaponImageFromName = (name) => {
   if (name === 'Ancient Hydro Spear') return ancientHydroSpear;
-  else if (name === 'Agos Illusion') return agosIllusion;
+  else if (name === 'Agos Illusion') return emptyItem;
   else if (name === 'Blazing Edge') return blazingEdge;
   else if (name === 'Broom') return broom;
   else if (name === 'Orangemint Candy Cane') return candyCaneOrange;
@@ -84,7 +89,7 @@ const getWeaponImageFromName = (name) => {
   else if (name === 'Desert Claymore') return desertClaymore;
   else if (name === 'Flower Flail') return flowerFlail;
   else if (name === 'Heavy Stone') return heavyStone;
-  else if (name === 'Kingdom Slayer') return emptyItem;
+  else if (name === 'Kingdom Slayer') return kingdomSlayer;
   else if (name === 'Kodachi') return kodachi;
   else if (name === 'Maple 2x4') return maple2x4;
   else if (name === 'Newspaper') return newspaper;
@@ -105,11 +110,12 @@ const getWeaponImageFromName = (name) => {
 };
 
 const getHatImageFromName = (name) => {
-  if (name === '10 Gallon Hat') return emptyItem;
+  if (name === '10 Gallon Hat') return tenGallonHat;
   else if (name === 'Anniversary Hat') return anniversaryHat;
   else if (name === 'Bit Hat') return bitHat;
   else if (name === 'Bleeps Horns') return bleepHorns;
   else if (name === 'Bowler Hat') return bowlerHat;
+  else if (name === 'Dark Knight Helm') return emptyItem;
   else if (name === 'Demon Mask') return demonMask;
   else if (name === 'Earmuffs') return earmuffs;
   else if (name === 'Faded Mask') return fadedMask;
@@ -118,12 +124,13 @@ const getHatImageFromName = (name) => {
   else if (name === 'Flower Pin') return flowerPin;
   else if (name === 'Fox Ears') return foxEars;
   else if (name === 'GM Helm') return gmHelm;
-  else if (name === 'Goldfish Bandana') return emptyItem;
+  else if (name === 'Goldfish Bandana') return goldfishBandana;
   else if (name === 'Hairband') return hairband;
   else if (name === 'Hard Hat') return hardHat;
   else if (name === 'Headguard') return headguard;
   else if (name === 'Headphones') return headphones;
   else if (name === 'Heli Hat') return heliHat;
+  else if (name === 'HYGFBN3') return emptyItem;
   else if (name === 'Leaf Hat') return leafHat;
   else if (name === 'Newspaper Hat') return newspaperHat;
   else if (name === 'Ninja Cover') return ninjaCover;
@@ -134,14 +141,16 @@ const getHatImageFromName = (name) => {
   else if (name === 'Ribbow') return ribbow;
   else if (name === "Rudolf's Antlers") return rudolfAntlers;
   else if (name === "Santa's Hat") return santaHat;
-  else if (name === 'Shark Helm') return emptyItem;
+  else if (name === 'Shark Helm') return sharkHelm;
   else if (name === 'Snow Hat') return snowHat;
   else if (name === "Soldier's Cap") return soldiersCap;
   else if (name === 'Spirit Mask') return spiritMask;
   else if (name === 'Straw Hat') return strawHat;
   else if (name === 'Truffle Top') return truffleTop;
   else if (name === 'Vintage Hat') return vintageHat;
-  else if (name === "Witch's Hat") return emptyItem;
+  else if (name === 'White Knight Helm') return emptyItem;
+  else if (name === "Witch's Hat") return witchsHat;
+  else if (name === "Wizard's Hat") return wizardsHat;
   else if (name === 'Wooden Mask') return woodenMask;
   else if (name === "Wren's Roost") return wrensRoost;
   else return emptyItem;
