@@ -1,8 +1,10 @@
 import React from 'react';
 import cl from 'classnames';
 import { Link } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Button, Icon, IconButton } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Button, Icon } from '@material-ui/core';
 import { useAtomicStyles } from '../utils/styles';
+import { motion } from 'framer-motion';
+import cloudUri from '../assets/clouds.png';
 
 import mapsIconUri from '../assets/icons/maps.png';
 import weaponsIconUri from '../assets/icons/weapons.png';
@@ -21,9 +23,28 @@ const getIcon = (assetUri, name) => {
 
 export default function Header() {
   const ac = useAtomicStyles();
+  const [width, setWidth] = React.useState(window.innerWidth);
+  console.log(window.innerWidth);
+
+  const handleResize = (e) => {
+    setWidth(window.innerWidth);
+  };
+
+  React.useEffect(() => {
+    handleResize();
+  });
+
+  window.addEventListener('resize', handleResize);
 
   return (
     <div className={ac['flex-grow']}>
+      <motion.img
+        key={cloudUri}
+        src={cloudUri}
+        animate={{ translateX: [0, width - 380, 0] }}
+        transition={{ duration: 30, loop: Infinity, repeatDelay: 2, delay: 2, ease: 'linear' }}
+        style={{ position: 'absolute', marginTop: 3 }}
+      />
       <AppBar position="static">
         <Toolbar>
           <Link to="/">
@@ -36,7 +57,7 @@ export default function Header() {
               .Club
             </Typography>
           </Link>
-          <Typography variant="subtitle3" color="secondary" className={ac['flex-grow']}>
+          <Typography variant="subtitle2" color="secondary" className={ac['flex-grow']}>
             An{' '}
             <a href="https://agos.world" rel="noreferrer" target="_blank">
               Agos

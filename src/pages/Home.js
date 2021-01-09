@@ -8,7 +8,7 @@ export default function Home() {
         <Typography variant="h4" component="h1" gutterBottom>
           Hmm eventually I'll put stuff here
         </Typography>
-        <Typography variant="subtitle3" color="secondary" gutterBottom>
+        <Typography variant="subtitle2" color="secondary" gutterBottom>
           Site created by TickTockMan. Special thanks to top contributors: Dronzin, Lucifer.
         </Typography>
         <Typography variant="subtitle1" color="secondary" gutterBottom>
