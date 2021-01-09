@@ -1,7 +1,7 @@
 import emptyItem from '../assets/empty_item.png';
 
 import agosIllusion from '../assets/weapons/agos_illusion.png';
-import ancientHydroSpear from '../assets/hats/ancient_hydro_spear.png';
+import ancientHydroSpear from '../assets/weapons/ancient_hydro_spear.png';
 import blazingEdge from '../assets/weapons/blazing_edge.png';
 import broom from '../assets/weapons/broom.png';
 import candyCaneMultimint from '../assets/weapons/candy_cane_multimint.png';
@@ -12,7 +12,7 @@ import carvedAxe from '../assets/weapons/carved_axe.png';
 import chefsKnife from '../assets/weapons/chefs_knife.png';
 import classicSword from '../assets/weapons/classic_sword.png';
 import cuckooClock from '../assets/weapons/cuckoo_clock.png';
-import desertClaymore from '../assets/hats/desert_claymore.png';
+import desertClaymore from '../assets/weapons/desert_claymore.png';
 import flowerFlail from '../assets/weapons/flower_flail.png';
 import heavyStone from '../assets/weapons/heavy_stone.png';
 import kodachi from '../assets/weapons/kodachi.png';
@@ -24,7 +24,7 @@ import rapier from '../assets/weapons/rapier.png';
 import recurveBow from '../assets/weapons/recurve_bow.png';
 import romanCandle from '../assets/weapons/roman_candle.png';
 import rubberSledge from '../assets/weapons/rubber_sledge.png';
-import sailorsSabre from '../assets/hats/sailors_sabre.png';
+import sailorsSabre from '../assets/weapons/sailors_sabre.png';
 import shiverScythe from '../assets/weapons/shiver_scythe.png';
 import shoddySword from '../assets/weapons/shoddy_sword.png';
 import spiritForce from '../assets/weapons/spirit_force.png';
@@ -40,6 +40,7 @@ import demonMask from '../assets/hats/demon_mask.png';
 import earmuffs from '../assets/hats/earmuffs.png';
 import fadedMask from '../assets/hats/faded_mask.png';
 import headband from '../assets/hats/fighters_headband.png';
+import fieryFalconVeil from '../assets/hats/fiery_falcon_veil.png';
 import flowerPin from '../assets/hats/flower_pin.png';
 import foxEars from '../assets/hats/fox_ears.png';
 import gmHelm from '../assets/hats/gm_helm.png';
@@ -51,11 +52,13 @@ import heliHat from '../assets/hats/heli_hat.png';
 import leafHat from '../assets/hats/leaf_hat.png';
 import newspaperHat from '../assets/hats/newspaper_hat.png';
 import ninjaCover from '../assets/hats/ninja_cover.png';
+import oniMask from '../assets/hats/oni_mask.png';
 import pot from '../assets/hats/pot.png';
 import raindeerAntlers from '../assets/hats/raindeer_antlers.png';
 import redStainedMask from '../assets/hats/red-stained_mask.png';
 import ribbow from '../assets/hats/ribbow.png';
 import rudolfAntlers from '../assets/hats/rudolfs_antlers.png';
+import soldiersCap from '../assets/hats/soldiers_cap.png';
 import santaHat from '../assets/hats/santa_hat.png';
 import snowHat from '../assets/hats/snow_hat.png';
 import spiritMask from '../assets/hats/spirit_mask.png';
@@ -63,10 +66,11 @@ import strawHat from '../assets/hats/straw_hat.png';
 import truffleTop from '../assets/hats/truffle_top.png';
 import vintageHat from '../assets/hats/vintage_hat.png';
 import woodenMask from '../assets/hats/wooden_mask.png';
-import soldiersCap from '../assets/hats/soldiers_cap.png';
+import wrensRoost from '../assets/hats/wrens_roost.png';
 
 const getWeaponImageFromName = (name) => {
-  if (name === 'Agos Illusion') return agosIllusion;
+  if (name === 'Ancient Hydro Spear') return ancientHydroSpear;
+  else if (name === 'Agos Illusion') return agosIllusion;
   else if (name === 'Blazing Edge') return blazingEdge;
   else if (name === 'Broom') return broom;
   else if (name === 'Orangemint Candy Cane') return candyCaneOrange;
@@ -77,7 +81,7 @@ const getWeaponImageFromName = (name) => {
   else if (name === "Chef's Knife") return chefsKnife;
   else if (name === 'Classic Sword') return classicSword;
   else if (name === 'Cuckoo Clock') return cuckooClock;
-  else if (name === 'Desert Claymore') return emptyItem;
+  else if (name === 'Desert Claymore') return desertClaymore;
   else if (name === 'Flower Flail') return flowerFlail;
   else if (name === 'Heavy Stone') return heavyStone;
   else if (name === 'Kingdom Slayer') return emptyItem;
@@ -97,8 +101,6 @@ const getWeaponImageFromName = (name) => {
   else if (name === 'Whip') return whip;
   else if (name === 'Wooden Club') return woodenClub;
   else if (name === "Sailor's Sabre") return sailorsSabre;
-  else if (name === 'Ancient Hydro Spear') return ancientHydroSpear;
-  else if (name === 'Desert Claymore') return desertClaymore;
   else return emptyItem;
 };
 
@@ -111,7 +113,7 @@ const getHatImageFromName = (name) => {
   else if (name === 'Demon Mask') return demonMask;
   else if (name === 'Earmuffs') return earmuffs;
   else if (name === 'Faded Mask') return fadedMask;
-  else if (name === 'Fiery Falcon Veil') return emptyItem;
+  else if (name === 'Fiery Falcon Veil') return fieryFalconVeil;
   else if (name === "Fighter's Headband") return headband;
   else if (name === 'Flower Pin') return flowerPin;
   else if (name === 'Fox Ears') return foxEars;
@@ -125,7 +127,7 @@ const getHatImageFromName = (name) => {
   else if (name === 'Leaf Hat') return leafHat;
   else if (name === 'Newspaper Hat') return newspaperHat;
   else if (name === 'Ninja Cover') return ninjaCover;
-  else if (name === 'Oni Mask') return emptyItem;
+  else if (name === 'Oni Mask') return oniMask;
   else if (name === 'Pot') return pot;
   else if (name === 'Red-stained Mask') return redStainedMask;
   else if (name === 'Reindeer Antlers') return raindeerAntlers;
@@ -141,7 +143,7 @@ const getHatImageFromName = (name) => {
   else if (name === 'Vintage Hat') return vintageHat;
   else if (name === "Witch's Hat") return emptyItem;
   else if (name === 'Wooden Mask') return woodenMask;
-  else if (name === "Wren's Roost") return emptyItem;
+  else if (name === "Wren's Roost") return wrensRoost;
   else return emptyItem;
 };
 
