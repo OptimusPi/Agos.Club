@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, Icon } from '@material-ui/core';
 import { useAtomicStyles } from '../utils/styles';
 import { motion } from 'framer-motion';
-import cloudUri from '../assets/clouds.png';
+import cloudUri from '../assets/clouds_full.png';
+import cloud1Uri from '../assets/clouds_1.png';
+import cloud2Uri from '../assets/clouds_2.png';
+import cloud3Uri from '../assets/clouds_3.png';
 
 import mapsIconUri from '../assets/icons/maps.png';
 import weaponsIconUri from '../assets/icons/weapons.png';
@@ -41,8 +44,61 @@ export default function Header() {
       <motion.img
         key={cloudUri}
         src={cloudUri}
-        animate={{ translateX: [0, width - 380, 0] }}
-        transition={{ duration: 150, loop: Infinity, repeatDelay: 1, delay: 1 }}
+        animate={{
+          translateX: [0, width - 380, 0],
+          translateY: [0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0],
+        }}
+        transition={{ duration: 220, loop: Infinity, repeatDelay: 0, delay: 0 }}
+        style={{ position: 'absolute', marginTop: 3 }}
+      />
+      <motion.img
+        key={cloud1Uri}
+        src={cloud1Uri}
+        animate={{
+          translateX: [(width - 137) / 2 + 137 / 2, 0, width - 137, (width - 137) / 2 + 137 / 2],
+          translateY: [0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0],
+        }}
+        transition={{ duration: 210, loop: Infinity, repeatDelay: 0, delay: 0 }}
+        style={{ position: 'absolute', marginTop: 3 }}
+      />
+      <motion.img
+        key={cloud2Uri}
+        src={cloud2Uri}
+        animate={{
+          translateX: [(width - 189) / 2 - 189, width - 189, 0, (width - 189) / 2 - 189],
+          translateY: [0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0],
+        }}
+        transition={{ duration: 200, loop: Infinity, repeatDelay: 0, delay: 0 }}
+        style={{ position: 'absolute', marginTop: 3 }}
+      />
+      <motion.img
+        key={cloudUri}
+        src={cloudUri}
+        animate={{
+          translateX: [width - 380, 0, width - 380],
+          translateY: [0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0],
+        }}
+        transition={{ duration: 190, loop: Infinity, repeatDelay: 0, delay: 0 }}
+        style={{ position: 'absolute', marginTop: 3 }}
+      />
+      <motion.img
+        key={cloud3Uri}
+        src={cloud3Uri}
+        animate={{
+          translateX: [562, 0, width - 62, 562],
+          translateY: [0, -5, 0, -5, 0],
+        }}
+        transition={{ duration: 150, loop: Infinity, repeatDelay: 0, delay: 0 }}
+        style={{ position: 'absolute', marginTop: 3 }}
+      />
+      <motion.img
+        key={cloud3Uri}
+        src={cloud3Uri}
+        animate={{
+          translateX: [width - 562, width - 62, 0, width - 562],
+          translateY: [0, -5, 0, -5, 0],
+        }}
+        transition={{ duration: 1700, loop: Infinity, repeatDelay: 0, delay: 0 }}
         style={{ position: 'absolute', marginTop: 3 }}
       />
       <AppBar position="static">
