@@ -21,6 +21,9 @@ import shoddySword from '../assets/weapons/shoddy_sword.png';
 import spiritForce from '../assets/weapons/spirit_force.png';
 import whip from '../assets/weapons/whip.png';
 import woodenClub from '../assets/weapons/wooden_club.png';
+import sailorsSabre from '../assets/hats/sailors_sabre.png';
+import ancientHydroSpear from '../assets/hats/ancient_hydro_spear.png';
+import desertClaymore from '../assets/hats/desert_claymore.png';
 
 import anniversaryHat from '../assets/hats/anniversary_hat.png';
 import bitHat from '../assets/hats/bit_hat.png';
@@ -52,12 +55,14 @@ import strawHat from '../assets/hats/straw_hat.png';
 import truffleTop from '../assets/hats/truffle_top.png';
 import vintageHat from '../assets/hats/vintage_hat.png';
 import woodenMask from '../assets/hats/wooden_mask.png';
+import soldiersCap from '../assets/hats/soldiers_cap.png';
 
 const getWeaponImageFromName = (name) => {
   if (name === 'Broom') return broom;
-  else if (name === 'Candy Cane Multimint') return candyCaneMultimint;
-  else if (name === 'Candy Cane Peppermint') return candyCanePeppermint;
-  else if (name === 'Candy Cane Spearmint') return candyCaneSpearmint;
+  else if (name === 'Orangemint Candy Cane') return empty;
+  else if (name === 'Multimint Candy Cane') return candyCaneMultimint;
+  else if (name === 'Peppermint Candy Cane') return candyCanePeppermint;
+  else if (name === 'Spearmint Candy Cane') return candyCaneSpearmint;
   else if (name === 'Carved Axe') return carvedAxe;
   else if (name === "Chef's Knife") return chefsKnife;
   else if (name === 'Classic Sword') return classicSword;
@@ -75,6 +80,9 @@ const getWeaponImageFromName = (name) => {
   else if (name === 'Spirit Force') return spiritForce;
   else if (name === 'Whip') return whip;
   else if (name === 'Wooden Club') return woodenClub;
+  else if (name === "Sailor's Sabre") return sailorsSabre;
+  else if (name === 'Ancient Hydro Spear') return ancientHydroSpear;
+  else if (name === 'Desert Claymore') return desertClaymore;
   else return empty;
 };
 
@@ -105,6 +113,7 @@ const getHatImageFromName = (name) => {
   else if (name === "Rudolf's Antlers") return rudolfAntlers;
   else if (name === "Santa's Hat") return santaHat;
   else if (name === 'Snow Hat') return snowHat;
+  else if (name === "Soldier's Cap") return soldiersCap;
   else if (name === 'Spirit Mask') return spiritMask;
   else if (name === 'Straw Hat') return strawHat;
   else if (name === 'Truffle Top') return truffleTop;
