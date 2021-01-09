@@ -47,6 +47,9 @@ export const useAtomicStyles = makeStyles((theme) => ({
   'mr-1': {
     marginRight: theme.spacing(1),
   },
+  'mr-2': {
+    marginRight: theme.spacing(2),
+  },
   'm-1': {
     margin: theme.spacing(1),
   },

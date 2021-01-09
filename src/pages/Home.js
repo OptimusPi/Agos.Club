@@ -9,7 +9,7 @@ export default function Home() {
           Hmm eventually I'll put stuff here
         </Typography>
         <Typography variant="subtitle3" color="secondary" gutterBottom>
-          Contributors: Dronzin, Lucifer
+          Site created by TickTockMan. Special thanks to top contributors: Dronzin, Lucifer.
         </Typography>
         <Typography variant="subtitle1" color="secondary" gutterBottom>
           Note: Please let me know if something is wrong or if you have any suggestions in{' '}

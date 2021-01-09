@@ -32,12 +32,16 @@ export default function Header() {
             </Icon>
           </Link>
           <Link to="/">
-            <Typography variant="h6" color="secondary" className={ac['mr-1']}>
+            <Typography variant="h6" color="secondary" className={ac['mr-2']}>
               .Club
             </Typography>
           </Link>
           <Typography variant="subtitle3" color="secondary" className={ac['flex-grow']}>
-            By TickTockMan
+            An{' '}
+            <a href="https://agos.world" rel="noreferrer" target="_blank">
+              Agos
+            </a>{' '}
+            Fansite
           </Typography>
           <Link to="/maps">
             <Button className={cl(ac['mr-1'])} startIcon={getIcon(mapsIconUri, 'maps')}>
