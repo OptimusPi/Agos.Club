@@ -1,6 +1,6 @@
 import React from 'react';
 import MaterialTable from 'material-table';
-import { Box, Typography } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import { getTableIcons } from '../utils/table';
 import { getWeaponData } from '../utils/data';
 import WeaponsCard from '../components/WeaponsCard';

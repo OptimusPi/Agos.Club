@@ -141,25 +141,36 @@ export default function Maps() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} classes={classes} imgSource={MapImage1} index={0}>
-        <Typography>Normal Spawns: Novice Blig, Blig, Bleep, Flowa</Typography>
-        <Typography>Anniversary Event Spawns: Presents</Typography>
-        <Typography>Christmas Event Spawns: Presents, Santa, Grinch</Typography>
-        <Typography>Halloween Spawns: Pumpkins</Typography>
-        <Typography>Other: Weak Chest, Inconspicuous Mushroom</Typography>
+        <Typography>Normal Spawns: Novice Blig, Blig, Bleep, Flowa, Rogue GM</Typography>
+        <Typography>Anniversary Event Spawns: Present</Typography>
+        <Typography>
+          Christmas Event Spawns: Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch
+        </Typography>
+        <Typography>Halloween Spawns: Pumpkin, Skiddish Pumpkin, Giant Pumpkin</Typography>
+        <Typography>
+          Other: Rare Truffle, Inconspicuous Mushroom, Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest
+        </Typography>
       </TabPanel>
       <TabPanel value={value} classes={classes} imgSource={MapImage2} index={1}>
-        <Typography>Normal Spawns: Forest Guardian, Spirit, Ninja, Elder Spirit (Rare)</Typography>
-        <Typography>Anniversary Event Spawns: Presents</Typography>
+        <Typography>
+          Normal Spawns: Forest Guardian, Spirit, Ninja, Elder Spirit, Spirit Minion, Forest Bird, Rogue GM
+        </Typography>
+        <Typography>Anniversary Event Spawns: Present</Typography>
         <Typography>Christmas Event Spawns: Presents, Santa, Grinch</Typography>
-        <Typography>Halloween Spawns: Pumpkins</Typography>
-        <Typography>Other: Weak Chest, Inconspicuous Mushroom, Rare Truffle, Bird Egg</Typography>
+        <Typography>Halloween Spawns: Forest Guardian Ghost, Pumpkin, Skiddish Pumpkin, Giant Pumpkin</Typography>
+        <Typography>
+          Other: Regular/Rare/Spoiled Bird Egg, Rare Truffle, Inconspicuous Mushroom, Weak Chest, Wood Chest, Steel
+          Chest, Gold Chest, Giant Chest
+        </Typography>
       </TabPanel>
       <TabPanel value={value} classes={classes} imgSource={MapImage3} index={2}>
-        <Typography>Normal Spawns: Rizard, Fox</Typography>
-        <Typography>Anniversary Event Spawns: Presents</Typography>
-        <Typography>Christmas Event Spawns: Presents, Santa, Grinch</Typography>
-        <Typography>Halloween Spawns: Pumpkins</Typography>
-        <Typography>Other: Weak Chest</Typography>
+        <Typography>Normal Spawns: Rizard, Arctic Fox, Rogue GM</Typography>
+        <Typography>Anniversary Event Spawns: Present</Typography>
+        <Typography>
+          Christmas Event Spawns: Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch
+        </Typography>
+        <Typography>Halloween Spawns: Pumpkin, Skiddish Pumpkin, Giant Pumpkin</Typography>
+        <Typography>Other: Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest</Typography>
       </TabPanel>
     </div>
   );

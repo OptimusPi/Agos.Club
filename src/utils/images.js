@@ -73,6 +73,9 @@ import wizardsHat from '../assets/hats/wizards_hat.png';
 import woodenMask from '../assets/hats/wooden_mask.png';
 import wrensRoost from '../assets/hats/wrens_roost.png';
 
+import emptyMob from '../assets/mob/_empty_mob.png';
+import blig from '../assets/mob/blig.png';
+
 const getWeaponImageFromName = (name) => {
   if (name === 'Ancient Hydro Spear') return ancientHydroSpear;
   else if (name === 'Agos Illusion') return emptyItem;
@@ -156,4 +159,10 @@ const getHatImageFromName = (name) => {
   else return emptyItem;
 };
 
-export { getWeaponImageFromName, getHatImageFromName };
+const getMobImageFromName = (name) => {
+  if (name === 'Blig') return blig;
+  else if (name === 'Novice Blig') return blig;
+  else return emptyMob;
+};
+
+export { getWeaponImageFromName, getHatImageFromName, getMobImageFromName };

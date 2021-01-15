@@ -1277,5 +1277,27 @@
       "traits": "Greater Antidote, Superb Specs",
       "holders": ""
     }
+  ],
+  "mobs": [
+    {
+      "name": "Blig",
+      "nicknames": "",
+      "area": "Grasslands",
+      "description": "Pesky little pigs. At lease they provide a good source of XP when leveling to 100. Kill these to spawn a Bleep.",
+      "defense": "Unknown",
+      "vitality": "Unknown",
+      "abilities": "Oink Oink",
+      "dots": "As if"
+    },
+    {
+      "name": "Novice Blig",
+      "nicknames": "",
+      "area": "Grasslands",
+      "description": "Soooo weak. Stop killing these after like level 10.",
+      "defense": "Unknown",
+      "vitality": "Unknown",
+      "abilities": "Oink Oink",
+      "dots": "As if"
+    }
   ]
 }
