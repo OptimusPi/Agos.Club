@@ -115,7 +115,6 @@ const getHatImageFromName = (name) => {
   else if (name === 'Bit Hat') return bitHat;
   else if (name === "Bleep's Horns") return bleepHorns;
   else if (name === 'Bowler Hat') return bowlerHat;
-  else if (name === 'Dark Knight Helm') return emptyItem;
   else if (name === 'Demon Mask') return demonMask;
   else if (name === 'Earmuffs') return earmuffs;
   else if (name === 'Faded Mask') return fadedMask;
@@ -132,6 +131,7 @@ const getHatImageFromName = (name) => {
   else if (name === 'HeliHat') return heliHat;
   else if (name === 'HYGFBN3') return emptyItem;
   else if (name === 'Leaf Hat') return leafHat;
+  else if (name === 'Mighty Keeper Helmet') return emptyItem;
   else if (name === 'Newspaper Hat') return newspaperHat;
   else if (name === 'Ninja Cover') return ninjaCover;
   else if (name === 'Oni Mask') return oniMask;
