@@ -1,71 +1,45 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import ButtonBase from '@material-ui/core/ButtonBase';
-import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    margin: 10,
-    backgroundColor: theme.palette.primary.light,
-  },
-  paper: {
     backgroundColor: theme.palette.primary.light,
     padding: theme.spacing(2),
-    margin: 'auto',
+    margin: theme.spacing(1),
     maxWidth: '100%',
-  },
-  image: {
-    width: 128,
-    height: 128,
-    backgroundColor: theme.palette.primary.main,
-    borderRadius: '50%',
-  },
-  img: {
-    margin: 'auto',
-    display: 'block',
-    maxWidth: 64,
-    maxHeight: 64,
   },
 }));
 
-export default function MobCard({ name, description, nicknames, defense, vitality, abilities, dots, image }) {
+export default function MobCard({ mobInfo }) {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Paper className={classes.paper} elevation={0}>
-        <Grid container spacing={2}>
-          <Grid item>
-            <ButtonBase className={classes.image}>
-              <img className={classes.img} alt={name} src={image} />
-            </ButtonBase>
-          </Grid>
-          <Grid item xs={12} sm container>
-            <Grid item xs container direction="column" spacing={2}>
-              <Grid item xs>
-                {nicknames ? (
-                  <Typography variant="subtitle1">
-                    {name} ({nicknames})
-                  </Typography>
-                ) : (
-                  <Typography variant="subtitle1">{name}</Typography>
-                )}
-                <Typography variant="body2" gutterBottom style={{ flexGrow: 1 }}>
-                  {description}
-                </Typography>
-                {dots && (
-                  <Typography variant="body3" color="textSecondary">
-                    DOTs: {dots}
-                  </Typography>
-                )}
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Paper>
-    </div>
+    <Paper className={classes.root} elevation={2}>
+      <Typography variant="h5">
+        {mobInfo.name} {mobInfo.nicknames && '(' + mobInfo.nicknames + ')'}
+      </Typography>
+      <Typography variant="subtitle1" gutterBottom>
+        {mobInfo.description}
+      </Typography>
+      <Box display="flex">
+        <Typography variant="body1">Defense:&nbsp;</Typography>
+        <Typography variant="body1">{mobInfo.defense}</Typography>
+      </Box>
+      <Box display="flex">
+        <Typography variant="body1">Vitality:&nbsp;</Typography>
+        <Typography variant="body1">{mobInfo.vitality}</Typography>
+      </Box>
+      <Box display="flex">
+        <Typography variant="body1">Abilities:&nbsp;</Typography>
+        <Typography variant="body1">{mobInfo.abilities}</Typography>
+      </Box>
+      <Box display="flex">
+        <Typography variant="body1">DOTs:&nbsp;</Typography>
+        <Typography variant="body1">{mobInfo.dots}</Typography>
+      </Box>
+    </Paper>
   );
 }

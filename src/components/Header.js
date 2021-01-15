@@ -42,7 +42,7 @@ export default function Header() {
   return (
     <div className={ac['flex-grow']}>
       <motion.img
-        key={cloudUri}
+        key="Cloud1"
         src={cloudUri}
         animate={{
           translateX: [0, width - 380, 0],
@@ -52,7 +52,7 @@ export default function Header() {
         style={{ position: 'absolute', marginTop: 3 }}
       />
       <motion.img
-        key={cloud1Uri}
+        key="Cloud2"
         src={cloud1Uri}
         animate={{
           translateX: [(width - 137) / 2 + 137 / 2, 0, width - 137, (width - 137) / 2 + 137 / 2],
@@ -62,7 +62,7 @@ export default function Header() {
         style={{ position: 'absolute', marginTop: 3 }}
       />
       <motion.img
-        key={cloud2Uri}
+        key="Cloud3"
         src={cloud2Uri}
         animate={{
           translateX: [(width - 189) / 2 - 189, width - 189, 0, (width - 189) / 2 - 189],
@@ -72,7 +72,7 @@ export default function Header() {
         style={{ position: 'absolute', marginTop: 3 }}
       />
       <motion.img
-        key={cloudUri}
+        key="Cloud4"
         src={cloudUri}
         animate={{
           translateX: [width - 380, 0, width - 380],
@@ -82,7 +82,7 @@ export default function Header() {
         style={{ position: 'absolute', marginTop: 3 }}
       />
       <motion.img
-        key={cloud3Uri}
+        key="Cloud5"
         src={cloud3Uri}
         animate={{
           translateX: [562, 0, width - 62, 562],
@@ -92,7 +92,7 @@ export default function Header() {
         style={{ position: 'absolute', marginTop: 3 }}
       />
       <motion.img
-        key={cloud3Uri}
+        key="Cloud6"
         src={cloud3Uri}
         animate={{
           translateX: [width - 562, width - 62, 0, width - 562],

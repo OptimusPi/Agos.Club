@@ -9,3 +9,7 @@ export const getWeaponData = () => {
 export const getHatData = () => {
   return dataObject().hats;
 };
+
+export const getMobData = () => {
+  return dataObject().mobs;
+};

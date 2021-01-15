@@ -75,6 +75,23 @@ import wrensRoost from '../assets/hats/wrens_roost.png';
 
 import emptyMob from '../assets/mob/_empty_mob.png';
 import blig from '../assets/mob/blig.png';
+import flowa from '../assets/mob/flowa.png';
+import guardian from '../assets/mob/forest_guardian.png';
+import ninja from '../assets/mob/ninja.png';
+import spirit from '../assets/mob/spirit.png';
+import elder from '../assets/mob/elder.png';
+import fox from '../assets/mob/fox.png';
+import rizard from '../assets/mob/rizard.png';
+import soldier from '../assets/mob/soldier.png';
+import castleGuard from '../assets/mob/royal_guard.png';
+import jeff from '../assets/mob/desert_sweeper.png';
+import carl from '../assets/mob/desert_ranger.png';
+import bigPresent from '../assets/mob/bigpresent.png';
+import bleep from '../assets/mob/bleep.png';
+import grinch from '../assets/mob/grinch.png';
+import normalBird from '../assets/mob/normal_bird.png';
+import santa from '../assets/mob/santa.png';
+import weakChest from '../assets/mob/weak_chest.png';
 
 const getWeaponImageFromName = (name) => {
   if (name === 'Ancient Hydro Spear') return ancientHydroSpear;
@@ -162,6 +179,33 @@ const getHatImageFromName = (name) => {
 const getMobImageFromName = (name) => {
   if (name === 'Blig') return blig;
   else if (name === 'Novice Blig') return blig;
+  else if (name === 'Bleep') return bleep;
+  else if (name === 'Flowa') return flowa;
+  else if (name === 'Forest Guardian') return guardian;
+  else if (name === 'Ninja') return ninja;
+  else if (name === 'Forest Spirit') return spirit;
+  else if (name === 'Elder Spirit') return elder;
+  else if (name === 'Spirit Minion') return emptyMob;
+  else if (name === 'Forest Bird') return normalBird;
+  else if (name === 'Rare Forest Bird') return emptyMob;
+  else if (name === 'Arctic Fox') return fox;
+  else if (name === 'Rizard') return rizard;
+  else if (name === 'Soldier') return soldier;
+  else if (name === 'Volunteer Castle Guard') return castleGuard;
+  else if (name === 'Trainee Castle Guard') return castleGuard;
+  else if (name === 'Standard Castle Guard') return castleGuard;
+  else if (name === 'Elite Castle Guard') return castleGuard;
+  else if (name === 'Distinguished Castle Guard') return castleGuard;
+  else if (name === 'Noble Castle Guard') return castleGuard;
+  else if (name === 'Royal Castle Guard') return castleGuard;
+  else if (name === 'Wise Gatekeeper') return emptyMob;
+  else if (name === 'Mighty Gatekeeper') return emptyMob;
+  else if (name === 'Castle Sorceress') return emptyMob;
+  else if (name === 'Desert Dweller') return jeff;
+  else if (name === 'Desert Rancher') return carl;
+  else if (name === 'Desert Enforcer') return emptyMob;
+  else if (name === 'Colossal Urchin') return emptyMob;
+  else if (name === 'Rogue GM') return emptyMob;
   else return emptyMob;
 };
 

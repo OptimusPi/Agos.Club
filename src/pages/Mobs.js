@@ -1,12 +1,18 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Box, Accordion, AccordionSummary, AccordionDetails, Grid } from '@material-ui/core';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { Typography, Box, Accordion, AccordionSummary, AccordionDetails, Grid, Tooltip, Zoom } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import { getMobImageFromName } from '../utils/images';
+import { getMobData } from '../utils/data';
 import MobCard from '../components/MobCard';
 import forestIconUri from '../assets/mob_page/forest.png';
 import grasslandsIconUri from '../assets/mob_page/grasslands.png';
+import mountainIconUri from '../assets/mob_page/mountain.png';
+import castleIconUri from '../assets/mob_page/castle.png';
+import desertIconUri from '../assets/mob_page/desert.png';
+import destroyablesIconUri from '../assets/mob_page/destroyables.png';
+import eventsIconUri from '../assets/mob_page/events.png';
 
 const useStyles = makeStyles((theme) => ({
   heading: {
@@ -15,15 +21,43 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(2),
   },
   img: {
-    maxWidth: 64,
-    maxHeight: 64,
+    maxWidth: 128,
+    maxHeight: 128,
   },
   imgRounded: {
-    maxWidth: 64,
-    maxHeight: 64,
+    maxWidth: 96,
+    maxHeight: 96,
     borderRadius: 15,
   },
 }));
+
+const MobGridItem = ({ mobDatum, classes }) => {
+  const HtmlTooltip = withStyles((theme) => ({
+    tooltip: {
+      backgroundColor: theme.palette.primary.dark,
+      border: '1px solid #dadde9',
+      maxWidth: '600px',
+    },
+  }))(Tooltip);
+
+  console.log(mobDatum);
+  return (
+    <Grid item>
+      <HtmlTooltip
+        key={mobDatum.name}
+        className={classes.tooltip}
+        TransitionComponent={Zoom}
+        TransitionProps={{ timeout: 400 }}
+        interactive
+        arrow
+        placement="bottom"
+        title={<MobCard mobInfo={mobDatum} />}
+      >
+        <img className={classes.img} alt={name} src={getMobImageFromName(mobDatum.name)} />
+      </HtmlTooltip>
+    </Grid>
+  );
+};
 
 export default function Mobs() {
   const classes = useStyles();
@@ -40,49 +74,110 @@ export default function Mobs() {
           </Box>
         </AccordionSummary>
         <AccordionDetails>
-          <Grid>
-            <img className={classes.img} alt={name} src={getMobImageFromName('Blig')} />
+          <Grid container justify="flex-start" alignItems="center" spacing={4}>
+            {getMobData().map((item, index) => {
+              if (item.area.includes('Grasslands') || item.area.includes('Everywhere'))
+                return <MobGridItem mobDatum={item} classes={classes} />;
+              return null;
+            })}
           </Grid>
         </AccordionDetails>
       </Accordion>
-      <Accordion disabled>
+      <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
           <Box display="flex" alignItems="center">
-            <img className={classes.img} alt={name} src={forestIconUri} />
+            <img className={classes.imgRounded} alt={name} src={forestIconUri} />
             <Typography variant="subtitle1" className={classes.heading}>
               Forest
             </Typography>
           </Box>
         </AccordionSummary>
-        <AccordionDetails></AccordionDetails>
+        <AccordionDetails>
+          <Grid container justify="flex-start" alignItems="center" spacing={4}>
+            {getMobData().map((item, index) => {
+              if (item.area.includes('Forest') || item.area.includes('Everywhere'))
+                return <MobGridItem mobDatum={item} classes={classes} />;
+              return null;
+            })}
+          </Grid>
+        </AccordionDetails>
       </Accordion>
-      <Accordion disabled>
+      <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel3a-content" id="panel3a-header">
-          <Typography className={classes.heading}>Mountain</Typography>
+          <Box display="flex" alignItems="center">
+            <img className={classes.imgRounded} alt={name} src={mountainIconUri} />
+            <Typography variant="subtitle1" className={classes.heading}>
+              Mountain & Caves
+            </Typography>
+          </Box>
         </AccordionSummary>
-        <AccordionDetails></AccordionDetails>
+        <AccordionDetails>
+          <Grid container justify="flex-start" alignItems="center" spacing={4}>
+            {getMobData().map((item, index) => {
+              if (item.area.includes('Mountain') || item.area.includes('Everywhere'))
+                return <MobGridItem mobDatum={item} classes={classes} />;
+              return null;
+            })}
+          </Grid>
+        </AccordionDetails>
       </Accordion>
-      <Accordion disabled>
+      <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel4a-content" id="panel4a-header">
-          <Typography className={classes.heading}>Castle</Typography>
+          <Box display="flex" alignItems="center">
+            <img className={classes.imgRounded} alt={name} src={castleIconUri} />
+            <Typography variant="subtitle1" className={classes.heading}>
+              Castle
+            </Typography>
+          </Box>
         </AccordionSummary>
-        <AccordionDetails></AccordionDetails>
+        <AccordionDetails>
+          <Grid container justify="flex-start" alignItems="center" spacing={4}>
+            {getMobData().map((item, index) => {
+              if (item.area.includes('Castle') || item.area.includes('Everywhere'))
+                return <MobGridItem mobDatum={item} classes={classes} />;
+              return null;
+            })}
+          </Grid>
+        </AccordionDetails>
       </Accordion>
-      <Accordion disabled>
+      <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel5a-content" id="panel5a-header">
-          <Typography className={classes.heading}>Desert & Beach</Typography>
+          <Box display="flex" alignItems="center">
+            <img className={classes.imgRounded} alt={name} src={desertIconUri} />
+            <Typography variant="subtitle1" className={classes.heading}>
+              Desert & Beach
+            </Typography>
+          </Box>
         </AccordionSummary>
-        <AccordionDetails></AccordionDetails>
+        <AccordionDetails>
+          <Grid container justify="flex-start" alignItems="center" spacing={4}>
+            {getMobData().map((item, index) => {
+              if (item.area.includes('Desert') || item.area.includes('Beach') || item.area.includes('Everywhere'))
+                return <MobGridItem mobDatum={item} classes={classes} />;
+              return null;
+            })}
+          </Grid>
+        </AccordionDetails>
       </Accordion>
-      <Accordion disabled>
+      <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel6a-content" id="panel6a-header">
-          <Typography className={classes.heading}>Destroyables</Typography>
+          <Box display="flex" alignItems="center">
+            <img className={classes.imgRounded} alt={name} src={destroyablesIconUri} />
+            <Typography variant="subtitle1" className={classes.heading}>
+              Destroyables
+            </Typography>
+          </Box>
         </AccordionSummary>
         <AccordionDetails></AccordionDetails>
       </Accordion>
-      <Accordion disabled>
+      <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel7a-content" id="panel7a-header">
-          <Typography className={classes.heading}>Event & More</Typography>
+          <Box display="flex" alignItems="center">
+            <img className={classes.imgRounded} alt={name} src={eventsIconUri} />
+            <Typography variant="subtitle1" className={classes.heading}>
+              Events & More
+            </Typography>
+          </Box>
         </AccordionSummary>
         <AccordionDetails></AccordionDetails>
       </Accordion>

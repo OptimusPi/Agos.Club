@@ -1280,8 +1280,20 @@
   ],
   "mobs": [
     {
+      "name": "Novice Blig",
+      "nicknames": "",
+      "type": "mob",
+      "area": "Grasslands",
+      "description": "Soooo weak. Stop killing these after like level 10.",
+      "defense": "Unknown",
+      "vitality": "Unknown",
+      "abilities": "Oink Oink",
+      "dots": "As if"
+    },
+    {
       "name": "Blig",
       "nicknames": "",
+      "type": "mob",
       "area": "Grasslands",
       "description": "Pesky little pigs. At lease they provide a good source of XP when leveling to 100. Kill these to spawn a Bleep.",
       "defense": "Unknown",
@@ -1290,14 +1302,301 @@
       "dots": "As if"
     },
     {
-      "name": "Novice Blig",
+      "name": "Bleep",
       "nicknames": "",
+      "type": "mob",
       "area": "Grasslands",
-      "description": "Soooo weak. Stop killing these after like level 10.",
-      "defense": "Unknown",
-      "vitality": "Unknown",
-      "abilities": "Oink Oink",
-      "dots": "As if"
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Flowa",
+      "nicknames": "",
+      "type": "mob",
+      "area": "Grasslands",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Forest Guardian",
+      "nicknames": "Groot",
+      "type": "mob",
+      "area": "Forest",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Ninja",
+      "nicknames": "Nin",
+      "type": "mob",
+      "area": "Forest",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Forest Spirit",
+      "nicknames": "Spirit",
+      "type": "mob",
+      "area": "Forest",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Elder Spirit",
+      "nicknames": "Elder",
+      "type": "mob",
+      "area": "Forest",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Spirit Minion",
+      "nicknames": "Minion",
+      "type": "mob",
+      "area": "Forest",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Forest Bird",
+      "nicknames": "Blue Bird",
+      "type": "mob",
+      "area": "Forest",
+      "description": "Try to hit me!",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Rare Forest Bird",
+      "nicknames": "Red Bird",
+      "type": "mob",
+      "area": "Forest",
+      "description": "Try to hit me!",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Rizard",
+      "nicknames": "",
+      "type": "mob",
+      "area": "Mountain",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Arctic Fox",
+      "nicknames": "Fox",
+      "type": "mob",
+      "area": "Mountain",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Soldier",
+      "nicknames": "",
+      "type": "mob",
+      "area": "Castle",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Volunteer Castle Guard",
+      "nicknames": "",
+      "type": "mob",
+      "area": "Castle",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Trainee Castle Guard",
+      "nicknames": "",
+      "type": "mob",
+      "area": "Castle",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Standard Castle Guard",
+      "nicknames": "",
+      "type": "mob",
+      "area": "Castle",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Elite Castle Guard",
+      "nicknames": "",
+      "type": "mob",
+      "area": "Castle",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Distinguished Castle Guard",
+      "nicknames": "",
+      "type": "mob",
+      "area": "Castle",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Noble Castle Guard",
+      "nicknames": "",
+      "type": "mob",
+      "area": "Castle",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Royal Castle Guard",
+      "nicknames": "Cannon Dude",
+      "type": "mob",
+      "area": "Castle",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Wise Gatekeeper",
+      "nicknames": "White Knight",
+      "type": "mob",
+      "area": "Castle",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Mighty Gatekeeper",
+      "nicknames": "Dark Knight",
+      "type": "mob",
+      "area": "Castle",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Castle Sorceress",
+      "nicknames": "Sorc",
+      "type": "mob",
+      "area": "Castle",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Desert Dweller",
+      "nicknames": "Jeff, Sweeper",
+      "type": "mob",
+      "area": "Desert",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Desert Rancher",
+      "nicknames": "Carl, Cowboy",
+      "type": "mob",
+      "area": "Desert",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Desert Enforcer",
+      "nicknames": "Enforcer",
+      "type": "mob",
+      "area": "Desert",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Colossal Urchin",
+      "nicknames": "Urch",
+      "type": "mob",
+      "area": "Beach",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
+    },
+    {
+      "name": "Rogue GM",
+      "nicknames": "Garfield",
+      "type": "mob",
+      "area": "Everywhere",
+      "description": "Todo",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Todo",
+      "dots": "Todo"
     }
   ]
 }

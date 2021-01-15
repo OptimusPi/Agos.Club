@@ -22,6 +22,11 @@ const lightMuiTheme = createMuiTheme({
       contrastText: '#fff',
     },
   },
+  typography: {
+    subtitle1: {
+      lineHeight: 1.4,
+    },
+  },
   overrides: {
     MuiCssBaseline: {
       '@global': {
