@@ -6,7 +6,7 @@ export default function More() {
     <>
       <Box my={4} mx={4}>
         <Typography variant="h4" component="h1" gutterBottom>
-          Try again later. I'm thinking Abilities, Cosmetics, Consumables, Secrets, Players
+          Try again later.
         </Typography>
       </Box>
     </>

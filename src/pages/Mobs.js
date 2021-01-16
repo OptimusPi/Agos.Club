@@ -40,16 +40,15 @@ const MobGridItem = ({ mobDatum, classes }) => {
     },
   }))(Tooltip);
 
-  console.log(mobDatum);
   return (
     <Grid item>
       <HtmlTooltip
-        key={mobDatum.name}
         className={classes.tooltip}
         TransitionComponent={Zoom}
         TransitionProps={{ timeout: 400 }}
         interactive
         arrow
+        enterTouchDelay={0}
         placement="bottom"
         title={<MobCard mobInfo={mobDatum} />}
       >
@@ -77,8 +76,8 @@ export default function Mobs() {
           <Grid container justify="flex-start" alignItems="center" spacing={4}>
             {getMobData().map((item, index) => {
               if (item.area.includes('Grasslands') || item.area.includes('Everywhere'))
-                return <MobGridItem mobDatum={item} classes={classes} />;
-              return null;
+                return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
+              return <div key={index}></div>;
             })}
           </Grid>
         </AccordionDetails>
@@ -96,7 +95,7 @@ export default function Mobs() {
           <Grid container justify="flex-start" alignItems="center" spacing={4}>
             {getMobData().map((item, index) => {
               if (item.area.includes('Forest') || item.area.includes('Everywhere'))
-                return <MobGridItem mobDatum={item} classes={classes} />;
+                return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
               return null;
             })}
           </Grid>
@@ -115,7 +114,7 @@ export default function Mobs() {
           <Grid container justify="flex-start" alignItems="center" spacing={4}>
             {getMobData().map((item, index) => {
               if (item.area.includes('Mountain') || item.area.includes('Everywhere'))
-                return <MobGridItem mobDatum={item} classes={classes} />;
+                return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
               return null;
             })}
           </Grid>
@@ -134,7 +133,7 @@ export default function Mobs() {
           <Grid container justify="flex-start" alignItems="center" spacing={4}>
             {getMobData().map((item, index) => {
               if (item.area.includes('Castle') || item.area.includes('Everywhere'))
-                return <MobGridItem mobDatum={item} classes={classes} />;
+                return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
               return null;
             })}
           </Grid>
@@ -153,7 +152,7 @@ export default function Mobs() {
           <Grid container justify="flex-start" alignItems="center" spacing={4}>
             {getMobData().map((item, index) => {
               if (item.area.includes('Desert') || item.area.includes('Beach') || item.area.includes('Everywhere'))
-                return <MobGridItem mobDatum={item} classes={classes} />;
+                return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
               return null;
             })}
           </Grid>
