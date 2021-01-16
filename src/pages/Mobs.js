@@ -47,6 +47,8 @@ const MobGridItem = ({ mobDatum, classes }) => {
         TransitionComponent={Zoom}
         TransitionProps={{ timeout: 400 }}
         interactive
+        leaveDelay={1000}
+        leaveTouchDelay={10000}
         arrow
         enterTouchDelay={0}
         placement="bottom"
