@@ -16,11 +16,10 @@ export default function Weapons() {
           showTitle: true,
           selection: false,
           filtering: true,
-          search: false,
+          search: true,
           sorting: true,
           paging: false,
           headerStyle: { position: 'sticky', top: 0 },
-          maxBodyHeight: '60vh',
           exportButton: true,
           exportFileName: 'Agos Hats Data',
         }}
@@ -60,7 +59,7 @@ const getColumns = () => {
     { title: 'Intelligence', field: 'intelligence', type: 'numeric' },
     { title: 'Defense', field: 'defense', type: 'numeric' },
     {
-      title: 'Sell Value',
+      title: 'Value',
       field: 'value',
       type: 'numeric',
       render: (rowData) => '$' + formatNumber(rowData.value) + ' gold',
