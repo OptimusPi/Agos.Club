@@ -58,6 +58,7 @@ const options = {
         trailingComma: 'all', // none, es5, all
         bracketSpacing: true,
         jsxBracketSameLine: false,
+        endOfLine: 'auto',
       },
     ],
     // http://eslint.org/docs/rules/

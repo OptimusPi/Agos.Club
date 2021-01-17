@@ -86,12 +86,12 @@ import soldier from '../assets/mob/soldier.png';
 import castleGuard from '../assets/mob/royal_guard.png';
 import jeff from '../assets/mob/desert_sweeper.png';
 import carl from '../assets/mob/desert_ranger.png';
-import bigPresent from '../assets/mob/bigpresent.png';
 import bleep from '../assets/mob/bleep.png';
-import grinch from '../assets/mob/grinch.png';
 import normalBird from '../assets/mob/normal_bird.png';
-import santa from '../assets/mob/santa.png';
-import weakChest from '../assets/mob/weak_chest.png';
+// import bigPresent from '../assets/mob/bigpresent.png';
+// import grinch from '../assets/mob/grinch.png';
+// import santa from '../assets/mob/santa.png';
+// import weakChest from '../assets/mob/weak_chest.png';
 
 const getWeaponImageFromName = (name) => {
   if (name === 'Ancient Hydro Spear') return ancientHydroSpear;
