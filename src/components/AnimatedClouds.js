@@ -24,7 +24,7 @@ export default function AnimatedClouds() {
         key="Cloud1"
         src={cloudUri}
         animate={{
-          translateX: [0, width - 380, 0],
+          translateX: [0, width - 385, 0],
           translateY: [0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0],
         }}
         transition={{ duration: 220, repeat: Infinity, repeatDelay: 0, delay: 0 }}
@@ -34,7 +34,7 @@ export default function AnimatedClouds() {
         key="Cloud2"
         src={cloud1Uri}
         animate={{
-          translateX: [(width - 137) / 2 + 137 / 2, 0, width - 137, (width - 137) / 2 + 137 / 2],
+          translateX: [(width - 137) / 2 + 137 / 2 - 5, 0, width - 137 - 5, (width - 137) / 2 + 137 / 2 - 5],
           translateY: [0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0],
         }}
         transition={{ duration: 210, repeat: Infinity, repeatDelay: 0, delay: 0 }}
@@ -44,7 +44,7 @@ export default function AnimatedClouds() {
         key="Cloud3"
         src={cloud2Uri}
         animate={{
-          translateX: [(width - 189) / 2 - 189, width - 189, 0, (width - 189) / 2 - 189],
+          translateX: [(width - 189) / 2 - 189 - 5, width - 189 - 5, 0, (width - 189) / 2 - 189 - 5],
           translateY: [0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0],
         }}
         transition={{ duration: 200, repeat: Infinity, repeatDelay: 0, delay: 0 }}
@@ -54,7 +54,7 @@ export default function AnimatedClouds() {
         key="Cloud4"
         src={cloudUri}
         animate={{
-          translateX: [width - 380, 0, width - 380],
+          translateX: [width - 385, 0, width - 385],
           translateY: [0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0],
         }}
         transition={{ duration: 190, repeat: Infinity, repeatDelay: 0, delay: 0 }}
@@ -64,7 +64,7 @@ export default function AnimatedClouds() {
         key="Cloud5"
         src={cloud3Uri}
         animate={{
-          translateX: [562, 0, width - 62, 562],
+          translateX: [555, 0, width - 80, 555],
           translateY: [0, -5, 0, -5, 0],
         }}
         transition={{ duration: 150, repeat: Infinity, repeatDelay: 0, delay: 0 }}
@@ -74,7 +74,7 @@ export default function AnimatedClouds() {
         key="Cloud6"
         src={cloud3Uri}
         animate={{
-          translateX: [width - 562, width - 62, 0, width - 562],
+          translateX: [width - 570, width - 70, 0, width - 570],
           translateY: [0, -5, 0, -5, 0],
         }}
         transition={{ duration: 1700, repeat: Infinity, repeatDelay: 0, delay: 0 }}
