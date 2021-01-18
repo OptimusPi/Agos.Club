@@ -22,7 +22,7 @@ export default function Weapons() {
           headerStyle: { position: 'sticky', top: 0 },
           exportButton: true,
           exportFileName: 'Agos Hats Data',
-          maxBodyHeight: 'calc(100vh - 170px)',
+          maxBodyHeight: 'calc(100vh - 200px)',
         }}
         icons={getTableIcons()}
         onRowClick={(event, rowData, togglePanel) => togglePanel()}
