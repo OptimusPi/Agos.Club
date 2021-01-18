@@ -24,7 +24,7 @@ export default function AnimatedClouds() {
         key="Cloud1"
         src={cloudUri}
         animate={{
-          translateX: [0, width - 385, 0],
+          translateX: [0, width - 400, 0],
           translateY: [0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0],
         }}
         transition={{ duration: 220, repeat: Infinity, repeatDelay: 0, delay: 0 }}
@@ -54,7 +54,7 @@ export default function AnimatedClouds() {
         key="Cloud4"
         src={cloudUri}
         animate={{
-          translateX: [width - 385, 0, width - 385],
+          translateX: [width - 400, 0, width - 400],
           translateY: [0, -5, 0, -5, 0, -5, 0, -5, 0, -5, 0],
         }}
         transition={{ duration: 190, repeat: Infinity, repeatDelay: 0, delay: 0 }}

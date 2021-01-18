@@ -31,7 +31,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function WeaponsCard({ name, description, holders, nicknames, traits, image }) {
+function formatNumber(num) {
+  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+}
+
+export default function WeaponsCard({ name, description, holders, nicknames, traits, value, image }) {
   const classes = useStyles();
 
   return (
@@ -58,12 +62,17 @@ export default function WeaponsCard({ name, description, holders, nicknames, tra
                     Traits: {traits}
                   </Typography>
                 )}
-                <Typography variant="body2" gutterBottom style={{ flexGrow: 1 }}>
+                <Typography variant="body2" gutterBottom>
                   {description}
                 </Typography>
                 {holders && (
-                  <Typography variant="body3" color="textSecondary">
+                  <Typography variant="body3" color="textSecondary" gutterBottom>
                     Known Holders: {holders}
+                  </Typography>
+                )}
+                {value && (
+                  <Typography variant="caption" color="textSecondary">
+                    Value: {'$' + formatNumber(value) + ' gold'}
                   </Typography>
                 )}
               </Grid>

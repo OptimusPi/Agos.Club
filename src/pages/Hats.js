@@ -8,20 +8,21 @@ import { getHatImageFromName } from '../utils/images';
 
 export default function Weapons() {
   return (
-    <Box my={4} mx={4}>
+    <Box my={2} mx={2}>
       <MaterialTable
-        title="Agos Hats"
+        title="Hats"
         options={{
           toolbar: true,
           showTitle: true,
           selection: false,
           filtering: true,
-          search: true,
+          search: false,
           sorting: true,
           paging: false,
           headerStyle: { position: 'sticky', top: 0 },
           exportButton: true,
           exportFileName: 'Agos Hats Data',
+          maxBodyHeight: 'calc(100vh - 170px)',
         }}
         icons={getTableIcons()}
         onRowClick={(event, rowData, togglePanel) => togglePanel()}
@@ -35,6 +36,7 @@ export default function Weapons() {
               holders={rowData.holders}
               nicknames={rowData.nicknames}
               traits={rowData.traits}
+              value={rowData.value}
               image={getHatImageFromName(rowData.name)}
             />
           );
@@ -42,10 +44,6 @@ export default function Weapons() {
       />
     </Box>
   );
-}
-
-function formatNumber(num) {
-  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
 }
 
 const getColumns = () => {
@@ -58,12 +56,6 @@ const getColumns = () => {
     { title: 'Agility', field: 'agility', type: 'numeric' },
     { title: 'Intelligence', field: 'intelligence', type: 'numeric' },
     { title: 'Defense', field: 'defense', type: 'numeric' },
-    {
-      title: 'Value',
-      field: 'value',
-      type: 'numeric',
-      render: (rowData) => '$' + formatNumber(rowData.value) + ' gold',
-    },
   ];
 };
 
