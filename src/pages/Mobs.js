@@ -47,8 +47,8 @@ const MobGridItem = ({ mobDatum, classes }) => {
         TransitionComponent={Zoom}
         TransitionProps={{ timeout: 400 }}
         interactive
-        leaveDelay={1000}
-        leaveTouchDelay={10000}
+        leaveDelay={50}
+        leaveTouchDelay={5000}
         arrow
         enterTouchDelay={0}
         placement="bottom"
@@ -169,7 +169,15 @@ export default function Mobs() {
             </Typography>
           </Box>
         </AccordionSummary>
-        <AccordionDetails></AccordionDetails>
+        <AccordionDetails>
+          <Grid container justify="flex-start" alignItems="center" spacing={4}>
+            {getMobData().map((item, index) => {
+              if (item.type.includes('destroyable'))
+                return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
+              return null;
+            })}
+          </Grid>
+        </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel7a-content" id="panel7a-header">
@@ -180,7 +188,14 @@ export default function Mobs() {
             </Typography>
           </Box>
         </AccordionSummary>
-        <AccordionDetails></AccordionDetails>
+        <AccordionDetails>
+          <Grid container justify="flex-start" alignItems="center" spacing={4}>
+            {getMobData().map((item, index) => {
+              if (item.type.includes('event')) return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
+              return null;
+            })}
+          </Grid>
+        </AccordionDetails>
       </Accordion>
     </Box>
   );

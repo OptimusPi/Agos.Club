@@ -88,10 +88,15 @@ import jeff from '../assets/mob/desert_sweeper.png';
 import carl from '../assets/mob/desert_ranger.png';
 import bleep from '../assets/mob/bleep.png';
 import normalBird from '../assets/mob/normal_bird.png';
-// import bigPresent from '../assets/mob/bigpresent.png';
-// import grinch from '../assets/mob/grinch.png';
-// import santa from '../assets/mob/santa.png';
-// import weakChest from '../assets/mob/weak_chest.png';
+import giantPresent from '../assets/mob/bigpresent.png';
+import grinch from '../assets/mob/grinch.png';
+import santa from '../assets/mob/santa.png';
+import weakChest from '../assets/mob/weak_chest.png';
+import giantChest from '../assets/mob/giant_chest.png';
+import goldChest from '../assets/mob/gold_chest.png';
+import ship from '../assets/mob/ship.png';
+import mushroom from '../assets/mob/mushroom.png';
+import truffle from '../assets/mob/truffle.png';
 
 const getWeaponImageFromName = (name) => {
   if (name === 'Ancient Hydro Spear') return ancientHydroSpear;
@@ -206,6 +211,15 @@ const getMobImageFromName = (name) => {
   else if (name === 'Desert Enforcer') return emptyMob;
   else if (name === 'Colossal Urchin') return emptyMob;
   else if (name === 'Rogue GM') return emptyMob;
+  else if (name === 'Santa') return santa;
+  else if (name === 'Grinch') return grinch;
+  else if (name === 'Giant Present') return giantPresent;
+  else if (name === 'Weak Chest') return weakChest;
+  else if (name === 'Giant Chest') return giantChest;
+  else if (name === 'Gold Chest') return goldChest;
+  else if (name === 'igufeds Totally Awesome Looking Ship') return ship;
+  else if (name === 'Inconspicuous Mushroom') return mushroom;
+  else if (name === 'Rare Truffle') return truffle;
   else return emptyMob;
 };
 

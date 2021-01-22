@@ -107,8 +107,13 @@ export default function Header() {
 
   return (
     <>
-      <AnimatedClouds />
       <AppBar position="static">
+        <Hidden smDown>
+          <AnimatedClouds large={true} />
+        </Hidden>
+        <Hidden mdUp>
+          <AnimatedClouds large={false} />
+        </Hidden>
         <Toolbar>
           <div className={classes.flexGrow}>
             <Icon edge="start" aria-label="home" component={Link} to="/">
