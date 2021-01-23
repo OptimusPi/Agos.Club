@@ -97,6 +97,9 @@ import goldChest from '../assets/mob/gold_chest.png';
 import ship from '../assets/mob/ship.png';
 import mushroom from '../assets/mob/mushroom.png';
 import truffle from '../assets/mob/truffle.png';
+import snome from '../assets/mob/snome.png';
+import steelChest from '../assets/mob/steel_chest.png';
+import woodChest from '../assets/mob/wood_chest.png';
 
 const getWeaponImageFromName = (name) => {
   if (name === 'Ancient Hydro Spear') return ancientHydroSpear;
@@ -220,6 +223,9 @@ const getMobImageFromName = (name) => {
   else if (name === 'igufeds Totally Awesome Looking Ship') return ship;
   else if (name === 'Inconspicuous Mushroom') return mushroom;
   else if (name === 'Rare Truffle') return truffle;
+  else if (name === 'Chubby Snowman') return snome;
+  else if (name === 'Steel Chest') return steelChest;
+  else if (name === 'Wood Chest') return woodChest;
   else return emptyMob;
 };
 
