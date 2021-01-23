@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Typography,
-  Box,
   Grid,
   Card,
   CardContent,
@@ -11,9 +10,10 @@ import {
   TableCell,
   TableRow,
   TableBody,
-  Link,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import dekuSrc from '../assets/deku_tree.png';
+import dekuTransSrc from '../assets/deku_tree_trans.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,6 +21,24 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(3),
     marginLeft: theme.spacing(3),
     marginRight: theme.spacing(3),
+    [theme.breakpoints.up('md')]: {
+      backgroundImage: `url(${dekuSrc})`,
+      backgroundPosition: 'right',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'auto 100%',
+    },
+    [theme.breakpoints.down('sm')]: {
+      backgroundImage: `url(${dekuTransSrc})`,
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'auto 100%',
+    },
+  },
+  table: {
+    width: '75%',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+    },
   },
   grid: {
     paddingTop: theme.spacing(),
@@ -65,7 +83,7 @@ export default function Home() {
       <Typography variant="h5" component="h2" style={{ marginTop: '2rem', marginBottom: '.5rem' }}>
         Known Missing Content
       </Typography>
-      <TableContainer component={Paper}>
+      <TableContainer component={Paper} className={classes.table}>
         <Table size="small">
           <TableBody>
             <TableRow>
@@ -95,7 +113,7 @@ export default function Home() {
               <TableCell>Abilities, Cosmetics, Consumables, Secrets</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell className={classes.bold}>Corrections or Suggestions?</TableCell>
+              <TableCell className={classes.bold}>Correction?</TableCell>
               <TableCell>
                 <Typography variant="p" color="secondary" gutterBottom>
                   Let me know on the game discord channel{' '}
@@ -116,7 +134,7 @@ export default function Home() {
         Tournament Winners!
       </Typography>
       <Grid className={classes.grid} container spacing={3}>
-        <Grid item lg={3} sm={6} xl={3} xs={12}>
+        <Grid item lg={3} sm={3} xl={3} xs={12}>
           <Card className={classes.card}>
             <CardContent>
               <Grid container justify="space-between" spacing={3}>
