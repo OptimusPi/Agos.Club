@@ -94,7 +94,7 @@ export default function Home() {
               <TableCell className={classes.bold}>Weapons</TableCell>
               <TableCell>
                 Combos / Damage / DOTs; Oil Dagger (stats), Kingdom Slayer (image & stats), Blazing Edge (stats),
-                Virulent, Igu's Cannon, Ground Pound, Punch, Kick
+                Virulent, Igu's Cannon, Ground Pound
               </TableCell>
             </TableRow>
             <TableRow>
