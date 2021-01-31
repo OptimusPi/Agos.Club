@@ -65,15 +65,18 @@ export default function WeaponsCard({ name, description, holders, nicknames, tra
                 <Typography variant="body2" gutterBottom>
                   {description}
                 </Typography>
-                {holders && (
-                  <Typography variant="body3" color="textSecondary" gutterBottom>
-                    Known Holders: {holders}
-                  </Typography>
-                )}
                 {value && (
                   <Typography variant="caption" color="textSecondary">
                     Value: {'$' + formatNumber(value) + ' gold'}
                   </Typography>
+                )}
+                {holders && (
+                  <>
+                    <br />
+                    <Typography variant="caption" color="textSecondary">
+                      Known Holders: {holders}
+                    </Typography>
+                  </>
                 )}
               </Grid>
             </Grid>
