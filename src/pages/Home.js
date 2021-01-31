@@ -140,6 +140,14 @@ export default function Home() {
               <Grid container justify="space-between" spacing={3}>
                 <Grid item>
                   <Typography color="textSecondary" gutterBottom variant="h6">
+                    January 31, 2021
+                  </Typography>
+                  <Typography color="textPrimary" variant="h3">
+                    RCT
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography color="textSecondary" gutterBottom variant="h6">
                     January 16, 2021
                   </Typography>
                   <Typography color="textPrimary" variant="h3">
