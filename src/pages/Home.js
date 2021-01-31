@@ -146,6 +146,17 @@ export default function Home() {
                     RCT
                   </Typography>
                 </Grid>
+              </Grid>
+              <Typography color="textSecondary" variant="caption">
+                Defeated sk8, KrazyKilla, Lucifer
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item lg={3} sm={3} xl={3} xs={12}>
+          <Card className={classes.card}>
+            <CardContent>
+              <Grid container justify="space-between" spacing={3}>
                 <Grid item>
                   <Typography color="textSecondary" gutterBottom variant="h6">
                     January 16, 2021
@@ -161,7 +172,6 @@ export default function Home() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item lg={3} sm={6} xl={3} xs={12}></Grid>
       </Grid>
     </div>
   );
