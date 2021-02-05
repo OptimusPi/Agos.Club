@@ -14,7 +14,7 @@ import cuckooClock from '../assets/weapons/cuckoo_clock.png';
 import desertClaymore from '../assets/weapons/desert_claymore.png';
 import flowerFlail from '../assets/weapons/flower_flail.png';
 import heavyStone from '../assets/weapons/heavy_stone.png';
-import kingdomSlayer from '../assets/weapons/kingdom_slayer.png';
+import agosIllusion from '../assets/weapons/agos_illusion.png';
 import kodachi from '../assets/weapons/kodachi.png';
 import maple2x4 from '../assets/weapons/maple_2x4.png';
 import newspaper from '../assets/weapons/newspaper.png';
@@ -97,10 +97,13 @@ import goldChest from '../assets/mob/gold_chest.png';
 import ship from '../assets/mob/ship.png';
 import mushroom from '../assets/mob/mushroom.png';
 import truffle from '../assets/mob/truffle.png';
+import snome from '../assets/mob/snome.png';
+import steelChest from '../assets/mob/steel_chest.png';
+import woodChest from '../assets/mob/wood_chest.png';
 
 const getWeaponImageFromName = (name) => {
   if (name === 'Ancient Hydro Spear') return ancientHydroSpear;
-  else if (name === 'Agos Illusion') return emptyItem;
+  else if (name === 'Agos Illusion') return agosIllusion;
   else if (name === 'Blazing Edge') return blazingEdge;
   else if (name === 'Broom') return broom;
   else if (name === 'Orangemint Candy Cane') return candyCaneOrange;
@@ -114,7 +117,7 @@ const getWeaponImageFromName = (name) => {
   else if (name === 'Desert Claymore') return desertClaymore;
   else if (name === 'Flower Flail') return flowerFlail;
   else if (name === 'Heavy Stone') return heavyStone;
-  else if (name === 'Kingdom Slayer') return kingdomSlayer;
+  else if (name === 'Kingdom Slayer') return emptyItem;
   else if (name === 'Kodachi') return kodachi;
   else if (name === 'Maple 2x4') return maple2x4;
   else if (name === 'Newspaper') return newspaper;
@@ -220,6 +223,9 @@ const getMobImageFromName = (name) => {
   else if (name === 'igufeds Totally Awesome Looking Ship') return ship;
   else if (name === 'Inconspicuous Mushroom') return mushroom;
   else if (name === 'Rare Truffle') return truffle;
+  else if (name === 'Chubby Snowman') return snome;
+  else if (name === 'Steel Chest') return steelChest;
+  else if (name === 'Wood Chest') return woodChest;
   else return emptyMob;
 };
 

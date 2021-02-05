@@ -93,8 +93,8 @@ export default function Home() {
             <TableRow>
               <TableCell className={classes.bold}>Weapons</TableCell>
               <TableCell>
-                Combos / Damage / DOTs; Oil Dagger (stats), Agos Illusion (image and stats), Kingdom Slayer (stats),
-                Blazing Edge (stats), Virulent, Punch, Kick, Igu's Cannon, Ground Pound
+                Combos / Damage / DOTs; Oil Dagger (stats), Kingdom Slayer (image & stats), Blazing Edge (stats),
+                Virulent, Igu's Cannon, Ground Pound
               </TableCell>
             </TableRow>
             <TableRow>
@@ -140,6 +140,25 @@ export default function Home() {
               <Grid container justify="space-between" spacing={3}>
                 <Grid item>
                   <Typography color="textSecondary" gutterBottom variant="h6">
+                    January 31, 2021
+                  </Typography>
+                  <Typography color="textPrimary" variant="h3">
+                    RCT
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Typography color="textSecondary" variant="caption">
+                Defeated sk8, KrazyKilla, Lucifer
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item lg={3} sm={3} xl={3} xs={12}>
+          <Card className={classes.card}>
+            <CardContent>
+              <Grid container justify="space-between" spacing={3}>
+                <Grid item>
+                  <Typography color="textSecondary" gutterBottom variant="h6">
                     January 16, 2021
                   </Typography>
                   <Typography color="textPrimary" variant="h3">
@@ -153,7 +172,6 @@ export default function Home() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item lg={3} sm={6} xl={3} xs={12}></Grid>
       </Grid>
     </div>
   );

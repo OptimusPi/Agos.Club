@@ -2,18 +2,18 @@
   "weapons": [
     {
       "name": "Agos Illusion",
-      "power": 0,
-      "stamina": 0,
-      "cooldown": 0,
-      "speed": 0,
-      "staminaCost": -1,
-      "value": 1,
-      "rarity": 7,
+      "power": 5,
+      "stamina": 1,
+      "cooldown": 1,
+      "speed": 3,
+      "staminaCost": 50,
+      "value": 349999,
+      "rarity": 8,
       "sources": "Rogue GM",
-      "description": "??",
+      "description": "The legendary lost item of Agos",
       "nicknames": "",
-      "traits": "",
-      "holders": ""
+      "traits": "Basic Echo",
+      "holders": "Xehil"
     },
     {
       "name": "Ancient Hydro Spear",
@@ -133,7 +133,7 @@
       "description": "Game Item",
       "nicknames": "DC",
       "traits": "",
-      "holders": ""
+      "holders": "NamelessHobo, Finn"
     },
     {
       "name": "Flower Flail",
@@ -197,17 +197,17 @@
     },
     {
       "name": "Kick",
-      "power": 0,
-      "stamina": 0,
-      "cooldown": 0,
-      "speed": 0,
-      "staminaCost": -1,
-      "value": 1,
-      "rarity": 1,
+      "power": 5,
+      "stamina": 5,
+      "cooldown": 5,
+      "speed": 5,
+      "staminaCost": 6,
+      "value": 1000000000,
+      "rarity": 8,
       "sources": "Lord Gufi",
-      "description": "??",
+      "description": "Zow!",
       "nicknames": "",
-      "traits": "",
+      "traits": "Pow!",
       "holders": ""
     },
     {
@@ -347,17 +347,17 @@
     },
     {
       "name": "Punch",
-      "power": 0,
-      "stamina": 0,
-      "cooldown": 0,
-      "speed": 0,
-      "staminaCost": -1,
-      "value": 1,
-      "rarity": 1,
+      "power": 5,
+      "stamina": 5,
+      "cooldown": 5,
+      "speed": 5,
+      "staminaCost": 4,
+      "value": 1000000000,
+      "rarity": 8,
       "sources": "Lord Gufi",
-      "description": "??",
+      "description": "Wam!",
       "nicknames": "",
-      "traits": "",
+      "traits": "Bam!",
       "holders": ""
     },
     {
