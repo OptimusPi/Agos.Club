@@ -49,7 +49,12 @@ export default function Weapons() {
 const getColumns = () => {
   return [
     { title: 'Name', field: 'name' },
-    { title: 'Rarity', field: 'rarity', lookup: getRarityLookup() },
+    {
+      title: 'Rarity',
+      field: 'rarity',
+      lookup: getRarityLookup(),
+      customSort: (a, b) => a.rarity - b.rarity,
+    },
     { title: 'Sources', field: 'sources' },
     { title: 'Strength', field: 'strength', type: 'numeric' },
     { title: 'Vitality', field: 'vitality', type: 'numeric' },
