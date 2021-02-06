@@ -132,11 +132,9 @@ export default function Maps() {
     <Box my={4} mx={4}>
       <MapPanel classes={classes} imgMapSource={grasslandsMap} imgIconSource={grasslandsIconUri} areaName="Grasslands">
         <TextLine textTag={'Normal Spawns'} text={'Novice Blig, Blig, Bleep, Flowa, Rogue GM'} />
-        <TextLine
-          textTag={'Anniversary Event Spawns'}
-          text={'Christmas Event Spawns: Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch'}
-        />
-        <TextLine textTag={'Halloween Spawns'} text={'Pumpkin, Skiddish Pumpkin, Giant Pumpkin'} />
+        <TextLine textTag={'Anniversary'} text={'Present'} />
+        <TextLine textTag={'Christmas'} text={'Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch'} />
+        <TextLine textTag={'Halloween'} text={'Pumpkin, Skiddish Pumpkin, Giant Pumpkin'} />
         <TextLine
           textTag={'Other'}
           text={'Rare Truffle, Inconspicuous Mushroom, Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'}
@@ -147,12 +145,9 @@ export default function Maps() {
           textTag={'Normal Spawns'}
           text={'Forest Guardian, Spirit, Ninja, Elder Spirit, Spirit Minion, Regular/Rare Forest Bird, Rogue GM'}
         />
-        <TextLine textTag={'Anniversary Event Spawns'} text={'Present'} />
-        <TextLine textTag={'Christmas Event Spawns'} text={'Presents, Santa, Grinch'} />
-        <TextLine
-          textTag={'Halloween Spawns'}
-          text={'Forest Guardian Ghost, Pumpkin, Skiddish Pumpkin, Giant Pumpkin'}
-        />
+        <TextLine textTag={'Anniversary'} text={'Present'} />
+        <TextLine textTag={'Christmas'} text={'Presents, Santa, Grinch'} />
+        <TextLine textTag={'Halloween'} text={'Forest Guardian Ghost, Pumpkin, Skiddish Pumpkin, Giant Pumpkin'} />
         <TextLine
           textTag={'Other'}
           text={
@@ -168,15 +163,9 @@ export default function Maps() {
         areaName="Mountain / Caves / Arena"
       >
         <TextLine textTag={'Normal Spawns'} text={'Rizard, Arctic Fox, Rogue GM'} />
-        <TextLine textTag={'Anniversary Event Spawns'} text={'Present'} />
-        <TextLine
-          textTag={'Christmas Event Spawns'}
-          text={'Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch'}
-        />
-        <TextLine
-          textTag={'Halloween Spawns'}
-          text={'Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch'}
-        />
+        <TextLine textTag={'Anniversary'} text={'Present'} />
+        <TextLine textTag={'Christmas'} text={'Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch'} />
+        <TextLine textTag={'Halloween'} text={'Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch'} />
         <TextLine textTag={'Other'} text={'Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'} />
       </MapPanel>
       <Accordion>
@@ -199,9 +188,9 @@ export default function Maps() {
               'Soldier, Volunteer/Trainee/Standard/Elite/Distinguished/Royal Castle Guard, Wise Sentry, Mighty Gatekeeper, Sorceress'
             }
           />
-          <TextLine textTag={'Anniversary Event Spawns'} text={'Present'} />
-          <TextLine textTag={'Christmas Event Spawns'} text={'Unknown'} />
-          <TextLine textTag={'Halloween Spawns'} text={'Unknown'} />
+          <TextLine textTag={'Anniversary'} text={'Present'} />
+          <TextLine textTag={'Christmas'} text={'Unknown'} />
+          <TextLine textTag={'Halloween'} text={'Unknown'} />
           <TextLine textTag={'Other'} text={'Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'} />
         </AccordionDetails>
       </Accordion>
@@ -222,9 +211,9 @@ export default function Maps() {
             textTag={'Normal Spawns'}
             text={'Desert Dweller, Desert Rancher, Desert Enforcer, Colossal Urchin'}
           />
-          <TextLine textTag={'Anniversary Event Spawns'} text={'Present'} />
-          <TextLine textTag={'Christmas Event Spawns'} text={'Unknown'} />
-          <TextLine textTag={'Halloween Spawns'} text={'Unknown'} />
+          <TextLine textTag={'Anniversary'} text={'Present'} />
+          <TextLine textTag={'Christmas'} text={'Unknown'} />
+          <TextLine textTag={'Halloween'} text={'Unknown'} />
           <TextLine
             textTag={'Other'}
             text={

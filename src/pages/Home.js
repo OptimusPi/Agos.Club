@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('sm')]: {
       backgroundImage: `url(${dekuTransSrc})`,
-      backgroundPosition: 'center',
+      backgroundPosition: '0px 50px',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'auto 100%',
     },
@@ -89,7 +89,7 @@ export default function Home() {
             <TableRow>
               <TableCell className={classes.bold}>Correction?</TableCell>
               <TableCell>
-                <Typography variant="p" color="secondary" gutterBottom>
+                <Typography variant="body2" color="secondary" gutterBottom>
                   Let me know on the game discord channel{' '}
                   <a
                     href="https://discord.com/channels/301473545735897108/795724403291193364"

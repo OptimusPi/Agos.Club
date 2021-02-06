@@ -19,7 +19,7 @@ export default function MobCard({ mobInfo }) {
 
   return (
     <Paper className={classes.root} elevation={2}>
-      <Typography variant="h5">
+      <Typography variant="h4">
         {mobInfo.name} {mobInfo.nicknames && '(' + mobInfo.nicknames + ')'}
       </Typography>
       <Typography variant="subtitle2" gutterBottom>
