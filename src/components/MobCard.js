@@ -3,6 +3,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
+import TextLine from '../components/TextLine';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,31 +22,13 @@ export default function MobCard({ mobInfo }) {
       <Typography variant="h5">
         {mobInfo.name} {mobInfo.nicknames && '(' + mobInfo.nicknames + ')'}
       </Typography>
-      <Typography variant="subtitle1" gutterBottom>
+      <Typography variant="subtitle2" gutterBottom>
         {mobInfo.description}
       </Typography>
-      {mobInfo.defense && (
-        <Box display="flex">
-          <Typography variant="body1">Defense:&nbsp;</Typography>
-          <Typography variant="body1">{mobInfo.defense}</Typography>
-        </Box>
-      )}
-      <Box display="flex">
-        <Typography variant="body1">Health:&nbsp;</Typography>
-        <Typography variant="body1">{mobInfo.vitality}</Typography>
-      </Box>
-      {mobInfo.abilities && (
-        <Box display="flex">
-          <Typography variant="body1">Abilities:&nbsp;</Typography>
-          <Typography variant="body1">{mobInfo.abilities}</Typography>
-        </Box>
-      )}
-      {mobInfo.dots && (
-        <Box display="flex">
-          <Typography variant="body1">DOTs:&nbsp;</Typography>
-          <Typography variant="body1">{mobInfo.dots}</Typography>
-        </Box>
-      )}
+      {mobInfo.defense && <TextLine textTag="Defense" text={mobInfo.defense} />}
+      {mobInfo.vitality && <TextLine textTag="Health" text={mobInfo.vitality} />}
+      {mobInfo.abilities && <TextLine textTag="Abilities" text={mobInfo.abilities} />}
+      {mobInfo.dots && <TextLine textTag="DOTs" text={mobInfo.dots} />}
     </Paper>
   );
 }

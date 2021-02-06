@@ -87,28 +87,6 @@ export default function Home() {
         <Table size="small">
           <TableBody>
             <TableRow>
-              <TableCell className={classes.bold}>Areas</TableCell>
-              <TableCell>Castle, Desert, Beach; fix mobile issues</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className={classes.bold}>Weapons</TableCell>
-              <TableCell>
-                Combos / Damage / DOTs; Oil Dagger, Kingdom Slayer, Blazing Edge, Virulent, Igu's Cannon, Ground Pound
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className={classes.bold}>Hats</TableCell>
-              <TableCell>HYGFBN3, Sorceress Hat, Wise Sentry Helmet, Mighty Keeper Helmet</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className={classes.bold}>Mobs</TableCell>
-              <TableCell>Many images and data</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className={classes.bold}>More</TableCell>
-              <TableCell>Abilities, Cosmetics, Consumables, Secrets</TableCell>
-            </TableRow>
-            <TableRow>
               <TableCell className={classes.bold}>Correction?</TableCell>
               <TableCell>
                 <Typography variant="p" color="secondary" gutterBottom>
@@ -122,6 +100,28 @@ export default function Home() {
                   </a>
                 </Typography>
               </TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell className={classes.bold}>Areas</TableCell>
+              <TableCell>Castle, Desert, Beach maps</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell className={classes.bold}>Weapons</TableCell>
+              <TableCell>
+                Damage & DOTs; Oil Dagger, Kingdom Slayer, Blazing Edge, Virulent, Igu's Cannon, Ground Pound
+              </TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell className={classes.bold}>Hats</TableCell>
+              <TableCell>HYGFBN3, Sorceress Hat, Wise Sentry Helmet, Mighty Keeper Helmet</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell className={classes.bold}>Mobs</TableCell>
+              <TableCell>Rare / Regular / Spoiled Forest Bird Egg image, Rogue GM image; Many data points</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell className={classes.bold}>More</TableCell>
+              <TableCell>Abilities, Cosmetics, Consumables, Combos, Secrets & More</TableCell>
             </TableRow>
           </TableBody>
         </Table>

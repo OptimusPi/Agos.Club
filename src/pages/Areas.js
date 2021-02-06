@@ -7,6 +7,7 @@ import ZoomOutMapIcon from '@material-ui/icons/ZoomOutMap';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 
+import TextLine from '../components/TextLine';
 import grasslandsMap from '../assets/map/map1.png';
 import forestMap from '../assets/map/map2.png';
 import mountainMap from '../assets/map/map3.png';
@@ -130,27 +131,35 @@ export default function Maps() {
   return (
     <Box my={4} mx={4}>
       <MapPanel classes={classes} imgMapSource={grasslandsMap} imgIconSource={grasslandsIconUri} areaName="Grasslands">
-        <Typography>Normal Spawns: Novice Blig, Blig, Bleep, Flowa, Rogue GM</Typography>
-        <Typography>Anniversary Event Spawns: Present</Typography>
-        <Typography>
-          Christmas Event Spawns: Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch
-        </Typography>
-        <Typography>Halloween Spawns: Pumpkin, Skiddish Pumpkin, Giant Pumpkin</Typography>
-        <Typography>
-          Other: Rare Truffle, Inconspicuous Mushroom, Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest
-        </Typography>
+        <TextLine textTag={'Normal Spawns'} text={'Novice Blig, Blig, Bleep, Flowa, Rogue GM'} />
+        <TextLine
+          textTag={'Anniversary Event Spawns'}
+          text={'Christmas Event Spawns: Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch'}
+        />
+        <TextLine textTag={'Halloween Spawns'} text={'Pumpkin, Skiddish Pumpkin, Giant Pumpkin'} />
+        <TextLine
+          textTag={'Other'}
+          text={'Rare Truffle, Inconspicuous Mushroom, Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'}
+        />
       </MapPanel>
       <MapPanel classes={classes} imgMapSource={forestMap} imgIconSource={forestIconUri} areaName="Forest">
-        <Typography>
-          Normal Spawns: Forest Guardian, Spirit, Ninja, Elder Spirit, Spirit Minion, Forest Bird, Rogue GM
-        </Typography>
-        <Typography>Anniversary Event Spawns: Present</Typography>
-        <Typography>Christmas Event Spawns: Presents, Santa, Grinch</Typography>
-        <Typography>Halloween Spawns: Forest Guardian Ghost, Pumpkin, Skiddish Pumpkin, Giant Pumpkin</Typography>
-        <Typography>
-          Other: Regular/Rare/Spoiled Bird Egg, Rare Truffle, Inconspicuous Mushroom, Weak Chest, Wood Chest, Steel
-          Chest, Gold Chest, Giant Chest
-        </Typography>
+        <TextLine
+          textTag={'Normal Spawns'}
+          text={'Forest Guardian, Spirit, Ninja, Elder Spirit, Spirit Minion, Regular/Rare Forest Bird, Rogue GM'}
+        />
+        <TextLine textTag={'Anniversary Event Spawns'} text={'Present'} />
+        <TextLine textTag={'Christmas Event Spawns'} text={'Presents, Santa, Grinch'} />
+        <TextLine
+          textTag={'Halloween Spawns'}
+          text={'Forest Guardian Ghost, Pumpkin, Skiddish Pumpkin, Giant Pumpkin'}
+        />
+        <TextLine
+          textTag={'Other'}
+          text={
+            // eslint-disable-next-line max-len
+            'Regular/Rare/Spoiled Bird Egg, Rare Truffle, Inconspicuous Mushroom, Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'
+          }
+        />
       </MapPanel>
       <MapPanel
         classes={classes}
@@ -158,13 +167,17 @@ export default function Maps() {
         imgIconSource={mountainIconUri}
         areaName="Mountain / Caves / Arena"
       >
-        <Typography>Normal Spawns: Rizard, Arctic Fox, Rogue GM</Typography>
-        <Typography>Anniversary Event Spawns: Present</Typography>
-        <Typography>
-          Christmas Event Spawns: Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch
-        </Typography>
-        <Typography>Halloween Spawns: Pumpkin, Skiddish Pumpkin, Giant Pumpkin</Typography>
-        <Typography>Other: Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest</Typography>
+        <TextLine textTag={'Normal Spawns'} text={'Rizard, Arctic Fox, Rogue GM'} />
+        <TextLine textTag={'Anniversary Event Spawns'} text={'Present'} />
+        <TextLine
+          textTag={'Christmas Event Spawns'}
+          text={'Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch'}
+        />
+        <TextLine
+          textTag={'Halloween Spawns'}
+          text={'Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch'}
+        />
+        <TextLine textTag={'Other'} text={'Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'} />
       </MapPanel>
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
@@ -176,7 +189,20 @@ export default function Maps() {
           </Box>
         </AccordionSummary>
         <AccordionDetails className={classes.mapPanel}>
-          <Typography>Todo</Typography>
+          <Typography variant="subtitle1" className={classes.mapNote}>
+            Note: Map not yet available
+          </Typography>
+          <TextLine
+            textTag={'Normal Spawns'}
+            text={
+              // eslint-disable-next-line max-len
+              'Soldier, Volunteer/Trainee/Standard/Elite/Distinguished/Royal Castle Guard, Wise Sentry, Mighty Gatekeeper, Sorceress'
+            }
+          />
+          <TextLine textTag={'Anniversary Event Spawns'} text={'Present'} />
+          <TextLine textTag={'Christmas Event Spawns'} text={'Unknown'} />
+          <TextLine textTag={'Halloween Spawns'} text={'Unknown'} />
+          <TextLine textTag={'Other'} text={'Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'} />
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -189,7 +215,23 @@ export default function Maps() {
           </Box>
         </AccordionSummary>
         <AccordionDetails className={classes.mapPanel}>
-          <Typography>Todo</Typography>
+          <Typography variant="subtitle1" className={classes.mapNote}>
+            Note: Map not yet available
+          </Typography>
+          <TextLine
+            textTag={'Normal Spawns'}
+            text={'Desert Dweller, Desert Rancher, Desert Enforcer, Colossal Urchin'}
+          />
+          <TextLine textTag={'Anniversary Event Spawns'} text={'Present'} />
+          <TextLine textTag={'Christmas Event Spawns'} text={'Unknown'} />
+          <TextLine textTag={'Halloween Spawns'} text={'Unknown'} />
+          <TextLine
+            textTag={'Other'}
+            text={
+              // eslint-disable-next-line max-len
+              'Castle Made of Sand, igufeds Totally Awesome Looking Ship, Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'
+            }
+          />
         </AccordionDetails>
       </Accordion>
     </Box>
