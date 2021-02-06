@@ -77,7 +77,7 @@ export default function Mobs() {
         <AccordionDetails>
           <Grid container justify="flex-start" alignItems="center" spacing={4}>
             {getMobData().map((item, index) => {
-              if (item.area.includes('Grasslands') || item.area.includes('Everywhere'))
+              if (item.area.includes('Grasslands'))
                 return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
               return <div key={index}></div>;
             })}
@@ -96,7 +96,7 @@ export default function Mobs() {
         <AccordionDetails>
           <Grid container justify="flex-start" alignItems="center" spacing={4}>
             {getMobData().map((item, index) => {
-              if (item.area.includes('Forest') || item.area.includes('Everywhere'))
+              if (item.area.includes('Forest'))
                 return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
               return null;
             })}
@@ -115,7 +115,7 @@ export default function Mobs() {
         <AccordionDetails>
           <Grid container justify="flex-start" alignItems="center" spacing={4}>
             {getMobData().map((item, index) => {
-              if (item.area.includes('Mountain') || item.area.includes('Everywhere'))
+              if (item.area.includes('Mountain'))
                 return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
               return null;
             })}
@@ -134,7 +134,7 @@ export default function Mobs() {
         <AccordionDetails>
           <Grid container justify="flex-start" alignItems="center" spacing={4}>
             {getMobData().map((item, index) => {
-              if (item.area.includes('Castle') || item.area.includes('Everywhere'))
+              if (item.area.includes('Castle'))
                 return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
               return null;
             })}
@@ -153,7 +153,7 @@ export default function Mobs() {
         <AccordionDetails>
           <Grid container justify="flex-start" alignItems="center" spacing={4}>
             {getMobData().map((item, index) => {
-              if (item.area.includes('Desert') || item.area.includes('Beach') || item.area.includes('Everywhere'))
+              if (item.area.includes('Desert') || item.area.includes('Beach'))
                 return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
               return null;
             })}
@@ -191,7 +191,8 @@ export default function Mobs() {
         <AccordionDetails>
           <Grid container justify="flex-start" alignItems="center" spacing={4}>
             {getMobData().map((item, index) => {
-              if (item.type.includes('event')) return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
+              if (item.type.includes('event') || item.area.includes('RogueGM'))
+                return <MobGridItem mobDatum={item} classes={classes} key={item.name} />;
               return null;
             })}
           </Grid>

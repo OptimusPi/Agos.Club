@@ -24,22 +24,28 @@ export default function MobCard({ mobInfo }) {
       <Typography variant="subtitle1" gutterBottom>
         {mobInfo.description}
       </Typography>
+      {mobInfo.defense && (
+        <Box display="flex">
+          <Typography variant="body1">Defense:&nbsp;</Typography>
+          <Typography variant="body1">{mobInfo.defense}</Typography>
+        </Box>
+      )}
       <Box display="flex">
-        <Typography variant="body1">Defense:&nbsp;</Typography>
-        <Typography variant="body1">{mobInfo.defense}</Typography>
-      </Box>
-      <Box display="flex">
-        <Typography variant="body1">Vitality:&nbsp;</Typography>
+        <Typography variant="body1">Health:&nbsp;</Typography>
         <Typography variant="body1">{mobInfo.vitality}</Typography>
       </Box>
-      <Box display="flex">
-        <Typography variant="body1">Abilities:&nbsp;</Typography>
-        <Typography variant="body1">{mobInfo.abilities}</Typography>
-      </Box>
-      <Box display="flex">
-        <Typography variant="body1">DOTs:&nbsp;</Typography>
-        <Typography variant="body1">{mobInfo.dots}</Typography>
-      </Box>
+      {mobInfo.abilities && (
+        <Box display="flex">
+          <Typography variant="body1">Abilities:&nbsp;</Typography>
+          <Typography variant="body1">{mobInfo.abilities}</Typography>
+        </Box>
+      )}
+      {mobInfo.dots && (
+        <Box display="flex">
+          <Typography variant="body1">DOTs:&nbsp;</Typography>
+          <Typography variant="body1">{mobInfo.dots}</Typography>
+        </Box>
+      )}
     </Paper>
   );
 }

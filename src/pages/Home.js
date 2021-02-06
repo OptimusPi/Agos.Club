@@ -93,16 +93,12 @@ export default function Home() {
             <TableRow>
               <TableCell className={classes.bold}>Weapons</TableCell>
               <TableCell>
-                Combos / Damage / DOTs; Oil Dagger (stats), Kingdom Slayer (image & stats), Blazing Edge (stats),
-                Virulent, Igu's Cannon, Ground Pound
+                Combos / Damage / DOTs; Oil Dagger, Kingdom Slayer, Blazing Edge, Virulent, Igu's Cannon, Ground Pound
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Hats</TableCell>
-              <TableCell>
-                Sorceress Hat (stats), HYGFBN3 (image), Wise Sentry Helmet (stats and image), Mighty Keeper Helmet
-                (stats and image), Dragon Helm, GM Helm igu, GM Helm Arkyn
-              </TableCell>
+              <TableCell>Sorceress Hat, HYGFBN3, Wise Sentry Helmet, Mighty Keeper Helmet</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Mobs</TableCell>

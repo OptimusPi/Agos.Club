@@ -1226,7 +1226,7 @@
       "agility": 0,
       "intelligence": 0,
       "defense": 0,
-      "sources": "Wise Gatekeeper",
+      "sources": "Wise Sentry",
       "description": "??",
       "nicknames": "WSH",
       "traits": "",
@@ -1286,8 +1286,8 @@
       "area": "Grasslands",
       "description": "Soooo weak. Stop killing these after like level 10.",
       "defense": "Unknown",
-      "vitality": "Unknown",
-      "abilities": "Oink Oink",
+      "vitality": "65 HP",
+      "abilities": "Oink",
       "dots": "As if"
     },
     {
@@ -1297,7 +1297,7 @@
       "area": "Grasslands",
       "description": "Pesky little pigs. At lease they provide a good source of XP when leveling to 100. Kill these to spawn a Bleep.",
       "defense": "Unknown",
-      "vitality": "Unknown",
+      "vitality": "118 HP",
       "abilities": "Oink Oink",
       "dots": "As if"
     },
@@ -1306,22 +1306,22 @@
       "nicknames": "",
       "type": "mob",
       "area": "Grasslands",
-      "description": "Todo",
+      "description": "Big Blue Sheep. I might drop something good!",
       "defense": "Todo",
       "vitality": "Todo",
       "abilities": "Todo",
-      "dots": "Todo"
+      "dots": "None"
     },
     {
       "name": "Flowa",
       "nicknames": "",
       "type": "mob",
       "area": "Grasslands",
-      "description": "Todo",
+      "description": "Hit me when I'm small to watch me grow.",
       "defense": "Todo",
       "vitality": "Todo",
       "abilities": "Todo",
-      "dots": "Todo"
+      "dots": "Poisen, damage over time"
     },
     {
       "name": "Forest Guardian",
@@ -1330,7 +1330,7 @@
       "area": "Forest",
       "description": "Todo",
       "defense": "Todo",
-      "vitality": "Todo",
+      "vitality": "300 HP",
       "abilities": "Todo",
       "dots": "Todo"
     },
@@ -1343,7 +1343,7 @@
       "defense": "Todo",
       "vitality": "Todo",
       "abilities": "Todo",
-      "dots": "Todo"
+      "dots": "25 Bleed, damage over time"
     },
     {
       "name": "Forest Spirit",
@@ -1352,9 +1352,9 @@
       "area": "Forest",
       "description": "Todo",
       "defense": "Todo",
-      "vitality": "Todo",
+      "vitality": "1850 HP",
       "abilities": "Todo",
-      "dots": "Todo"
+      "dots": "Fear, involuntary movement, no controlled moving or attacking"
     },
     {
       "name": "Elder Spirit",
@@ -1365,7 +1365,7 @@
       "defense": "Todo",
       "vitality": "Todo",
       "abilities": "Todo",
-      "dots": "Todo"
+      "dots": "Fear, involuntary movement, no controlled moving or attacking"
     },
     {
       "name": "Spirit Minion",
@@ -1375,8 +1375,8 @@
       "description": "Todo",
       "defense": "Todo",
       "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "abilities": "",
+      "dots": "None"
     },
     {
       "name": "Forest Bird",
@@ -1384,10 +1384,10 @@
       "type": "mob",
       "area": "Forest",
       "description": "Try to hit me!",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "",
+      "abilities": "Fly and shit",
+      "dots": "Poisen, damage over time"
     },
     {
       "name": "Rare Forest Bird",
@@ -1395,10 +1395,10 @@
       "type": "mob",
       "area": "Forest",
       "description": "Try to hit me!",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "",
+      "abilities": "Fly and shit",
+      "dots": "Poisen, damage over time"
     },
     {
       "name": "Rizard",
@@ -1409,7 +1409,7 @@
       "defense": "Todo",
       "vitality": "Todo",
       "abilities": "Todo",
-      "dots": "Todo"
+      "dots": "None"
     },
     {
       "name": "Arctic Fox",
@@ -1420,7 +1420,7 @@
       "defense": "Todo",
       "vitality": "Todo",
       "abilities": "Todo",
-      "dots": "Todo"
+      "dots": "None"
     },
     {
       "name": "Soldier",
@@ -1431,7 +1431,7 @@
       "defense": "Todo",
       "vitality": "Todo",
       "abilities": "Todo",
-      "dots": "Todo"
+      "dots": "None"
     },
     {
       "name": "Volunteer Castle Guard",
@@ -1511,7 +1511,7 @@
       "dots": "Todo"
     },
     {
-      "name": "Wise Gatekeeper",
+      "name": "Wise Sentry",
       "nicknames": "White Knight",
       "type": "mob",
       "area": "Castle",
@@ -1552,7 +1552,7 @@
       "defense": "Todo",
       "vitality": "Todo",
       "abilities": "Todo",
-      "dots": "Todo"
+      "dots": "None"
     },
     {
       "name": "Desert Rancher",
@@ -1563,7 +1563,7 @@
       "defense": "Todo",
       "vitality": "Todo",
       "abilities": "Todo",
-      "dots": "Todo"
+      "dots": "Stun, immobilizes, no moving or attacking"
     },
     {
       "name": "Desert Enforcer",
@@ -1574,7 +1574,7 @@
       "defense": "Todo",
       "vitality": "Todo",
       "abilities": "Todo",
-      "dots": "Todo"
+      "dots": "Blind, screen is hard to see"
     },
     {
       "name": "Colossal Urchin",
@@ -1591,7 +1591,7 @@
       "name": "Rogue GM",
       "nicknames": "Garfield",
       "type": "boss, mob",
-      "area": "Everywhere",
+      "area": "RogueGM",
       "description": "Todo",
       "defense": "Todo",
       "vitality": "Todo",
@@ -1604,10 +1604,10 @@
       "type": "destroyable",
       "area": "Grasslands, Forest",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Inconspicuous Mushroom",
@@ -1615,10 +1615,10 @@
       "type": "destroyable",
       "area": "Grasslands, Forest",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Forest Bird Egg",
@@ -1626,10 +1626,10 @@
       "type": "destroyable",
       "area": "Forest",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Rare Forest Bird Egg",
@@ -1637,10 +1637,10 @@
       "type": "destroyable",
       "area": "Forest",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Spoiled Forest Bird Egg",
@@ -1648,10 +1648,10 @@
       "type": "destroyable",
       "area": "Forest",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": "Poisen, damage over time"
     },
     {
       "name": "Castle Made of Sand",
@@ -1659,10 +1659,10 @@
       "type": "destroyable",
       "area": "Beach",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "igufeds Totally Awesome Looking Ship",
@@ -1670,10 +1670,10 @@
       "type": "destroyable",
       "area": "Beach",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "25 hits",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Weak Chest",
@@ -1681,10 +1681,10 @@
       "type": "destroyable",
       "area": "Everywhere",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Wood Chest",
@@ -1692,10 +1692,10 @@
       "type": "destroyable",
       "area": "Everywhere",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Steel Chest",
@@ -1703,10 +1703,10 @@
       "type": "destroyable",
       "area": "Everywhere",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "15 hits",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Gold Chest",
@@ -1714,10 +1714,10 @@
       "type": "destroyable",
       "area": "Everywhere",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Giant Chest",
@@ -1725,10 +1725,10 @@
       "type": "destroyable",
       "area": "Everywhere",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "100 hits",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Anniversary Present",
@@ -1736,10 +1736,10 @@
       "type": "event, destroyable",
       "area": "",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "3 hits",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Pumpkin",
@@ -1747,10 +1747,10 @@
       "type": "event, mob",
       "area": "",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Giant Pumpkin",
@@ -1758,10 +1758,10 @@
       "type": "event, mob",
       "area": "",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "100 hits",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Skiddish Pumpkin",
@@ -1769,10 +1769,10 @@
       "type": "event, destroyable",
       "area": "",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Forest Guardian Ghost",
@@ -1780,10 +1780,10 @@
       "type": "event, destroyable",
       "area": "",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "Hide",
+      "dots": ""
     },
     {
       "name": "Bag of Treats",
@@ -1791,10 +1791,10 @@
       "type": "event, destroyable",
       "area": "",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Grinch",
@@ -1805,7 +1805,7 @@
       "defense": "Todo",
       "vitality": "Todo",
       "abilities": "Todo",
-      "dots": "Todo"
+      "dots": ""
     },
     {
       "name": "Santa",
@@ -1816,7 +1816,7 @@
       "defense": "Todo",
       "vitality": "Todo",
       "abilities": "Todo",
-      "dots": "Todo"
+      "dots": ""
     },
     {
       "name": "Chubby Snowman",
@@ -1824,10 +1824,10 @@
       "type": "event, mob",
       "area": "",
       "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Present",
@@ -1835,21 +1835,10 @@
       "type": "event, destroyable",
       "area": "",
       "description": "Red, Blue, Green, Purple, Silver, Gold",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
-    },
-    {
-      "name": "Giant Present",
-      "nicknames": "",
-      "type": "event, destroyable",
-      "area": "",
-      "description": "Todo",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
     },
     {
       "name": "Premium Present",
@@ -1857,10 +1846,21 @@
       "type": "event, destroyable",
       "area": "",
       "description": "Gold & Silver",
-      "defense": "Todo",
-      "vitality": "Todo",
-      "abilities": "Todo",
-      "dots": "Todo"
+      "defense": "",
+      "vitality": "1 hit",
+      "abilities": "",
+      "dots": ""
+    },
+    {
+      "name": "Giant Present",
+      "nicknames": "",
+      "type": "event, destroyable",
+      "area": "",
+      "description": "Todo",
+      "defense": "",
+      "vitality": "100 hits",
+      "abilities": "",
+      "dots": ""
     }
   ]
 }
