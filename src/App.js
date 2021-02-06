@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Home from './pages/Home';
-import Maps from './pages/Maps';
+import Areas from './pages/Areas';
 import Hats from './pages/Hats';
 import Mobs from './pages/Mobs';
 import More from './pages/More';
@@ -20,8 +20,8 @@ export default function App() {
           <Route exact path={['/']}>
             <Home />
           </Route>
-          <Route exact path={['/maps']}>
-            <Maps />
+          <Route exact path={['/areas']}>
+            <Areas />
           </Route>
           <Route exact path={['/weapons']}>
             <Weapons />

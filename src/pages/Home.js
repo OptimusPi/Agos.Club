@@ -87,7 +87,7 @@ export default function Home() {
         <Table size="small">
           <TableBody>
             <TableRow>
-              <TableCell className={classes.bold}>Maps</TableCell>
+              <TableCell className={classes.bold}>Areas</TableCell>
               <TableCell>Castle, Desert, Beach; fix mobile issues</TableCell>
             </TableRow>
             <TableRow>
@@ -98,11 +98,11 @@ export default function Home() {
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Hats</TableCell>
-              <TableCell>Sorceress Hat, HYGFBN3, Wise Sentry Helmet, Mighty Keeper Helmet</TableCell>
+              <TableCell>HYGFBN3, Sorceress Hat, Wise Sentry Helmet, Mighty Keeper Helmet</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Mobs</TableCell>
-              <TableCell>Many images and all data</TableCell>
+              <TableCell>Many images and data</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>More</TableCell>

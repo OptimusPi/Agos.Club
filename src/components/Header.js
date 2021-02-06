@@ -67,11 +67,11 @@ const MainMenu = ({ classes }) => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} component={Link} to="/maps">
+        <MenuItem onClick={handleClose} component={Link} to="/areas">
           <ListItemIcon>
             <img alt="maps" src={mapsIconUri} width={30} height={30} />
           </ListItemIcon>
-          <ListItemText primary="Maps" />
+          <ListItemText primary="Areas" />
         </MenuItem>
         <MenuItem onClick={handleClose} component={Link} to="/weapons">
           <ListItemIcon>
@@ -128,9 +128,9 @@ export default function Header() {
               className={classes.marginRight}
               startIcon={<img alt={name} width={50} height={50} src={mapsIconUri} />}
               component={Link}
-              to="/maps"
+              to="/areas"
             >
-              Maps
+              Areas
             </Button>
             <Button
               className={classes.marginRight}
