@@ -117,7 +117,9 @@ export default function Home() {
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Mobs</TableCell>
-              <TableCell>Rare / Regular / Spoiled Forest Bird Egg image, Rogue GM image; Many data points</TableCell>
+              <TableCell>
+                Data; Rare / Regular / Spoiled Forest Bird Egg image, Rogue GM image, sorceress image
+              </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>More</TableCell>

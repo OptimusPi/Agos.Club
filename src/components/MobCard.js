@@ -1,7 +1,5 @@
 import React from 'react';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import { Paper, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import TextLine from '../components/TextLine';
 
@@ -10,7 +8,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.primary.light,
     padding: theme.spacing(2),
     margin: theme.spacing(1),
-    maxWidth: '100%',
   },
 }));
 

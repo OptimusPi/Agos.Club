@@ -129,7 +129,7 @@ export default function Maps() {
   const classes = useStyles();
 
   return (
-    <Box my={4} mx={4}>
+    <Box my={2} mx={2}>
       <MapPanel classes={classes} imgMapSource={grasslandsMap} imgIconSource={grasslandsIconUri} areaName="Grasslands">
         <TextLine textTag={'Normal Spawns'} text={'Novice Blig, Blig, Bleep, Flowa, Rogue GM'} />
         <TextLine textTag={'Anniversary'} text={'Present'} />

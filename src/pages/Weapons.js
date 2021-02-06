@@ -1,46 +1,17 @@
 import React from 'react';
-import MaterialTable from 'material-table';
 import { Box } from '@material-ui/core';
-import { getTableIcons } from '../utils/table';
+import Table from '../components/Table';
 import { getWeaponData } from '../utils/data';
-import WeaponsCard from '../components/WeaponsCard';
 import { getWeaponImageFromName } from '../utils/images';
 
 export default function Weapons() {
   return (
     <Box my={2} mx={2}>
-      <MaterialTable
-        title="Weapons"
-        options={{
-          toolbar: true,
-          showTitle: true,
-          selection: false,
-          filtering: true,
-          search: false,
-          sorting: true,
-          paging: false,
-          headerStyle: { position: 'sticky', top: 0 },
-          exportButton: { csv: true },
-          exportFileName: 'Agos Weapons Data',
-          maxBodyHeight: 'calc(100vh - 200px)',
-        }}
-        icons={getTableIcons()}
-        onRowClick={(event, rowData, togglePanel) => togglePanel()}
-        columns={getColumns()}
-        data={getWeaponData()}
-        detailPanel={(rowData) => {
-          return (
-            <WeaponsCard
-              name={rowData.name}
-              description={rowData.description}
-              holders={rowData.holders}
-              nicknames={rowData.nicknames}
-              traits={rowData.traits}
-              value={rowData.value}
-              image={getWeaponImageFromName(rowData.name)}
-            />
-          );
-        }}
+      <Table
+        tableName="Weapons"
+        dataCall={getWeaponData}
+        getImageFromNameCall={getWeaponImageFromName}
+        getColumnsCall={getColumns}
       />
     </Box>
   );

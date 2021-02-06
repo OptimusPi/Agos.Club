@@ -23,12 +23,6 @@ import moreIconUri from '../assets/icons/more.png';
 import logoUri from '../assets/logo.png';
 
 const useStyles = makeStyles((theme) => ({
-  headerMenuButton: {
-    marginRight: theme.spacing(2),
-  },
-  marginRight: {
-    marginRight: theme.spacing(1),
-  },
   flexGrow: {
     flexGrow: 1,
   },
@@ -125,43 +119,26 @@ export default function Header() {
           </Hidden>
           <Hidden smDown>
             <Button
-              className={classes.marginRight}
-              startIcon={<img alt={name} width={50} height={50} src={mapsIconUri} />}
+              startIcon={<img alt="areas" width={50} height={50} src={mapsIconUri} />}
               component={Link}
               to="/areas"
             >
               Areas
             </Button>
             <Button
-              className={classes.marginRight}
-              startIcon={<img alt={name} style={{ width: 50, height: 50 }} src={weaponsIconUri} />}
+              startIcon={<img alt="weapons" width={50} height={50} src={weaponsIconUri} />}
               component={Link}
               to="/weapons"
             >
               Weapons
             </Button>
-            <Button
-              className={classes.marginRight}
-              startIcon={<img alt={name} style={{ width: 50, height: 50 }} src={hatsIconUri} />}
-              component={Link}
-              to="/hats"
-            >
+            <Button startIcon={<img alt="hats" width={50} height={50} src={hatsIconUri} />} component={Link} to="/hats">
               Hats
             </Button>
-            <Button
-              className={classes.marginRight}
-              startIcon={<img alt={name} style={{ width: 50, height: 50 }} src={mobsIconUri} />}
-              component={Link}
-              to="/mobs"
-            >
+            <Button startIcon={<img alt="mobs" width={50} height={50} src={mobsIconUri} />} component={Link} to="/mobs">
               Mobs
             </Button>
-            <Button
-              className={classes.marginRight}
-              startIcon={<img alt={name} style={{ width: 50, height: 50 }} src={moreIconUri} />}
-              component={Link}
-              to="/more"
-            >
+            <Button startIcon={<img alt="more" width={50} height={50} src={moreIconUri} />} component={Link} to="/more">
               More
             </Button>
           </Hidden>

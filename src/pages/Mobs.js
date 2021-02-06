@@ -64,7 +64,7 @@ export default function Mobs() {
   const classes = useStyles();
 
   return (
-    <Box my={4} mx={4}>
+    <Box my={2} mx={2}>
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
           <Box display="flex" alignItems="center">

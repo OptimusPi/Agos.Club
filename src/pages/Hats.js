@@ -1,46 +1,17 @@
 import React from 'react';
-import MaterialTable from 'material-table';
 import { Box } from '@material-ui/core';
-import { getTableIcons } from '../utils/table';
+import Table from '../components/Table';
 import { getHatData } from '../utils/data';
-import HatsCard from '../components/HatsCard';
 import { getHatImageFromName } from '../utils/images';
 
-export default function Weapons() {
+export default function Hats() {
   return (
     <Box my={2} mx={2}>
-      <MaterialTable
-        title="Hats"
-        options={{
-          toolbar: true,
-          showTitle: true,
-          selection: false,
-          filtering: true,
-          search: false,
-          sorting: true,
-          paging: false,
-          headerStyle: { position: 'sticky', top: 0 },
-          exportButton: true,
-          exportFileName: 'Agos Hats Data',
-          maxBodyHeight: 'calc(100vh - 200px)',
-        }}
-        icons={getTableIcons()}
-        onRowClick={(event, rowData, togglePanel) => togglePanel()}
-        columns={getColumns()}
-        data={getHatData()}
-        detailPanel={(rowData) => {
-          return (
-            <HatsCard
-              name={rowData.name}
-              description={rowData.description}
-              holders={rowData.holders}
-              nicknames={rowData.nicknames}
-              traits={rowData.traits}
-              value={rowData.value}
-              image={getHatImageFromName(rowData.name)}
-            />
-          );
-        }}
+      <Table
+        tableName="Hats"
+        dataCall={getHatData}
+        getImageFromNameCall={getHatImageFromName}
+        getColumnsCall={getColumns}
       />
     </Box>
   );
