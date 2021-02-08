@@ -103,13 +103,11 @@ export default function Home() {
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Areas</TableCell>
-              <TableCell>Castle, Desert, Beach maps</TableCell>
+              <TableCell>Castle, Dungeon, Desert, Beach maps</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Weapons</TableCell>
-              <TableCell>
-                Damage & DOTs; Oil Dagger, Kingdom Slayer, Blazing Edge, Virulent, Igu's Cannon, Ground Pound
-              </TableCell>
+              <TableCell>Damage & DOTs; Oil Dagger, Kingdom Slayer, Blazing Edge, Virulent, Ground Pound</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Hats</TableCell>
@@ -117,9 +115,7 @@ export default function Home() {
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Mobs</TableCell>
-              <TableCell>
-                Data; Rare / Regular / Spoiled Forest Bird Egg image, Rogue GM image, sorceress image
-              </TableCell>
+              <TableCell>Sorceress; Data</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>More</TableCell>

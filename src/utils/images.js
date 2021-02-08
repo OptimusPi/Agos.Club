@@ -32,6 +32,7 @@ import spiritForce from '../assets/weapons/spirit_force.png';
 import treeTrimmer from '../assets/weapons/tree_trimmer.png';
 import whip from '../assets/weapons/whip.png';
 import woodenStick from '../assets/weapons/wooden_club.png';
+import igusCannon from '../assets/weapons/igus_cannon.png';
 
 import anniversaryHat from '../assets/hats/anniversary_hat.png';
 import bitHat from '../assets/hats/bit_hat.png';
@@ -121,6 +122,8 @@ import mightyGatekeeper from '../assets/mob/mighty_gatekeeper.png';
 import wiseSentry from '../assets/mob/wise_sentry.png';
 import forestGhost from '../assets/mob/forest_guardian_ghost.png';
 import pumpkin from '../assets/mob/pumpkin.png';
+import egg from '../assets/mob/egg.png';
+import garf from '../assets/mob/garfield.png';
 
 const getWeaponImageFromName = (name) => {
   if (name === 'Ancient Hydro Spear') return ancientHydroSpear;
@@ -155,6 +158,7 @@ const getWeaponImageFromName = (name) => {
   else if (name === 'Whip') return whip;
   else if (name === 'Wooden Stick') return woodenStick;
   else if (name === "Sailor's Sabre") return sailorsSabre;
+  else if (name === "Igu's Cannon") return igusCannon;
   else return emptyItem;
 };
 
@@ -237,7 +241,7 @@ const getMobImageFromName = (name) => {
   else if (name === 'Desert Rancher') return carl;
   else if (name === 'Desert Enforcer') return desertEnforcer;
   else if (name === 'Colossal Urchin') return urchin;
-  else if (name === 'Rogue GM') return emptyMob;
+  else if (name === 'Rogue GM') return garf;
   else if (name === 'Santa') return santa;
   else if (name === 'Grinch') return grinch;
   else if (name === 'Giant Present') return giantPresent;
@@ -260,6 +264,7 @@ const getMobImageFromName = (name) => {
   else if (name === 'Skiddish Pumpkin') return skiddishPumpkin;
   else if (name === 'Wise Sentry') return wiseSentry;
   else if (name === 'Forest Guardian Ghost') return forestGhost;
+  else if (name.includes('Egg')) return egg;
   else return emptyMob;
 };
 

@@ -160,7 +160,7 @@ export default function Maps() {
         classes={classes}
         imgMapSource={mountainMap}
         imgIconSource={mountainIconUri}
-        areaName="Mountain / Caves / Arena"
+        areaName="Mountain & Caves & Arena"
       >
         <TextLine textTag={'Normal Spawns'} text={'Rizard, Arctic Fox, Rogue GM'} />
         <TextLine textTag={'Anniversary'} text={'Present'} />
@@ -173,7 +173,7 @@ export default function Maps() {
           <Box display="flex" alignItems="center">
             <img className={classes.imgRounded} alt="Castle" src={castleIconUri} />
             <Typography variant="subtitle1" className={classes.heading}>
-              Castle
+              Castle & Dungeon
             </Typography>
           </Box>
         </AccordionSummary>

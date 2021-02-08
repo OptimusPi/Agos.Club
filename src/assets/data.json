@@ -1534,7 +1534,7 @@
     },
     {
       "name": "Castle Sorceress",
-      "nicknames": "Sorc",
+      "nicknames": "",
       "type": "mob",
       "area": "Castle",
       "description": "I've never seen one?",
@@ -1622,7 +1622,7 @@
     },
     {
       "name": "Forest Bird Egg",
-      "nicknames": "Egg",
+      "nicknames": "",
       "type": "destroyable",
       "area": "Forest",
       "description": "Hit me to clear the poisen",
@@ -1633,7 +1633,7 @@
     },
     {
       "name": "Rare Forest Bird Egg",
-      "nicknames": "Egg",
+      "nicknames": "",
       "type": "destroyable",
       "area": "Forest",
       "description": "Hit me to clear the poisen",
@@ -1644,7 +1644,7 @@
     },
     {
       "name": "Spoiled Forest Bird Egg",
-      "nicknames": "Egg",
+      "nicknames": "",
       "type": "destroyable",
       "area": "Forest",
       "description": "Hit me to get your dose of poisen",
