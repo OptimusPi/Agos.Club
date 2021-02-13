@@ -14,6 +14,7 @@ import {
 import { makeStyles } from '@material-ui/core/styles';
 import dekuSrc from '../assets/deku_tree.png';
 import dekuTransSrc from '../assets/deku_tree_trans.png';
+import tournamentWinner from '../assets/misc/tournament_winner.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -131,10 +132,32 @@ export default function Home() {
         <Grid item lg={3} sm={3} xl={3} xs={12}>
           <Card className={classes.card}>
             <CardContent>
+              <Grid container justify="flex-start" alignItems="center" spacing={2}>
+                <Grid item>
+                  <img alt="tourney_winner" src={tournamentWinner} />
+                </Grid>
+                <Grid item>
+                  <Typography color="textSecondary" gutterBottom variant="h6">
+                    #8: February 13, 2021
+                  </Typography>
+                  <Typography color="textPrimary" variant="h3">
+                    -J-
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Typography color="textSecondary" variant="caption">
+                Defeated RCT, KrazyKilla, sk8
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item lg={3} sm={3} xl={3} xs={12}>
+          <Card className={classes.card}>
+            <CardContent>
               <Grid container justify="space-between" spacing={3}>
                 <Grid item>
                   <Typography color="textSecondary" gutterBottom variant="h6">
-                    January 31, 2021
+                    #7: January 31, 2021
                   </Typography>
                   <Typography color="textPrimary" variant="h3">
                     RCT
@@ -153,7 +176,7 @@ export default function Home() {
               <Grid container justify="space-between" spacing={3}>
                 <Grid item>
                   <Typography color="textSecondary" gutterBottom variant="h6">
-                    January 16, 2021
+                    #6: January 16, 2021
                   </Typography>
                   <Typography color="textPrimary" variant="h3">
                     sk8

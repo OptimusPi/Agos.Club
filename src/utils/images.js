@@ -33,6 +33,7 @@ import treeTrimmer from '../assets/weapons/tree_trimmer.png';
 import whip from '../assets/weapons/whip.png';
 import woodenStick from '../assets/weapons/wooden_club.png';
 import igusCannon from '../assets/weapons/igus_cannon.png';
+import groundPound from '../assets/weapons/fist.png';
 
 import anniversaryHat from '../assets/hats/anniversary_hat.png';
 import bitHat from '../assets/hats/bit_hat.png';
@@ -159,6 +160,7 @@ const getWeaponImageFromName = (name) => {
   else if (name === 'Wooden Stick') return woodenStick;
   else if (name === "Sailor's Sabre") return sailorsSabre;
   else if (name === "Igu's Cannon") return igusCannon;
+  else if (name == 'Ground Pound') return groundPound;
   else return emptyItem;
 };
 
