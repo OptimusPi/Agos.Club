@@ -103,20 +103,16 @@ export default function Home() {
               </TableCell>
             </TableRow>
             <TableRow>
-              <TableCell className={classes.bold}>Areas</TableCell>
-              <TableCell>Castle, Dungeon, Desert, Beach maps</TableCell>
-            </TableRow>
-            <TableRow>
               <TableCell className={classes.bold}>Weapons</TableCell>
               <TableCell>Damage & DOTs; Oil Dagger, Kingdom Slayer, Blazing Edge, Virulent, Ground Pound</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Hats</TableCell>
-              <TableCell>HYGFBN3, Sorceress Hat, Wise Sentry Helmet, Mighty Keeper Helmet</TableCell>
+              <TableCell>Sorceress Hat, Wise Sentry Helmet, Mighty Keeper Helmet</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Mobs</TableCell>
-              <TableCell>Sorceress; Data</TableCell>
+              <TableCell>Most Data</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>More</TableCell>

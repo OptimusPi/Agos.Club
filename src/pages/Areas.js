@@ -11,11 +11,17 @@ import TextLine from '../components/TextLine';
 import grasslandsMap from '../assets/map/map1.png';
 import forestMap from '../assets/map/map2.png';
 import mountainMap from '../assets/map/map3.png';
+import castleMap from '../assets/map/map4.png';
+import dungeonMap from '../assets/map/map7.png';
+import desertMap from '../assets/map/map5.png';
+import beachMap from '../assets/map/map6.png';
 import forestIconUri from '../assets/mob_page/forest.png';
 import grasslandsIconUri from '../assets/mob_page/grasslands.png';
 import mountainIconUri from '../assets/mob_page/mountain.png';
 import castleIconUri from '../assets/mob_page/castle.png';
 import desertIconUri from '../assets/mob_page/desert.png';
+import beachIconUri from '../assets/mob_page/beach.png';
+import dungeonIconUri from '../assets/mob_page/dungeon.png';
 
 const useStyles = makeStyles((theme) => ({
   mapPanel: {
@@ -168,61 +174,41 @@ export default function Maps() {
         <TextLine textTag={'Halloween'} text={'Regular Presents, Premium Presents, Chubby Snowman, Santa, Grinch'} />
         <TextLine textTag={'Other'} text={'Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'} />
       </MapPanel>
-      <Accordion>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
-          <Box display="flex" alignItems="center">
-            <img className={classes.imgRounded} alt="Castle" src={castleIconUri} />
-            <Typography variant="subtitle1" className={classes.heading}>
-              Castle & Dungeon
-            </Typography>
-          </Box>
-        </AccordionSummary>
-        <AccordionDetails className={classes.mapPanel}>
-          <Typography variant="subtitle1" className={classes.mapNote}>
-            Note: Map not yet available
-          </Typography>
-          <TextLine
-            textTag={'Normal Spawns'}
-            text={
-              // eslint-disable-next-line max-len
-              'Soldier, Volunteer/Trainee/Standard/Elite/Distinguished/Royal Castle Guard, Wise Sentry, Mighty Gatekeeper, Sorceress'
-            }
-          />
-          <TextLine textTag={'Anniversary'} text={'Present'} />
-          <TextLine textTag={'Christmas'} text={'Unknown'} />
-          <TextLine textTag={'Halloween'} text={'Unknown'} />
-          <TextLine textTag={'Other'} text={'Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'} />
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
-          <Box display="flex" alignItems="center">
-            <img className={classes.imgRounded} alt="Desert & Beach" src={desertIconUri} />
-            <Typography variant="subtitle1" className={classes.heading}>
-              Desert & Beach
-            </Typography>
-          </Box>
-        </AccordionSummary>
-        <AccordionDetails className={classes.mapPanel}>
-          <Typography variant="subtitle1" className={classes.mapNote}>
-            Note: Map not yet available
-          </Typography>
-          <TextLine
-            textTag={'Normal Spawns'}
-            text={'Desert Dweller, Desert Rancher, Desert Enforcer, Colossal Urchin'}
-          />
-          <TextLine textTag={'Anniversary'} text={'Present'} />
-          <TextLine textTag={'Christmas'} text={'Unknown'} />
-          <TextLine textTag={'Halloween'} text={'Unknown'} />
-          <TextLine
-            textTag={'Other'}
-            text={
-              // eslint-disable-next-line max-len
-              'Castle Made of Sand, igufeds Totally Awesome Looking Ship, Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'
-            }
-          />
-        </AccordionDetails>
-      </Accordion>
+      <MapPanel classes={classes} imgMapSource={castleMap} imgIconSource={castleIconUri} areaName="Castle">
+        <TextLine
+          textTag={'Normal Spawns'}
+          text={
+            'Soldier, Volunteer/Trainee/Standard/Elite/Distinguished/Royal Castle Guard, Wise Sentry, Mighty Gatekeeper'
+          }
+        />
+        <TextLine textTag={'Anniversary'} text={'Present'} />
+        <TextLine textTag={'Christmas'} text={'Unknown'} />
+        <TextLine textTag={'Halloween'} text={'Unknown'} />
+        <TextLine textTag={'Other'} text={'Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'} />
+      </MapPanel>
+      <MapPanel classes={classes} imgMapSource={dungeonMap} imgIconSource={dungeonIconUri} areaName="Dungeon">
+        <TextLine textTag={'Normal Spawns'} text={'Sorceress'} />
+      </MapPanel>
+      <MapPanel classes={classes} imgMapSource={desertMap} imgIconSource={desertIconUri} areaName="Desert">
+        <TextLine textTag={'Normal Spawns'} text={'Desert Dweller, Desert Rancher, Desert Enforcer'} />
+        <TextLine textTag={'Anniversary'} text={'Present'} />
+        <TextLine textTag={'Christmas'} text={'Unknown'} />
+        <TextLine textTag={'Halloween'} text={'Unknown'} />
+        <TextLine textTag={'Other'} text={'Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'} />
+      </MapPanel>
+      <MapPanel classes={classes} imgMapSource={beachMap} imgIconSource={beachIconUri} areaName="Beach">
+        <TextLine textTag={'Normal Spawns'} text={'Colossal Urchin'} />
+        <TextLine textTag={'Anniversary'} text={'Present'} />
+        <TextLine textTag={'Christmas'} text={'Unknown'} />
+        <TextLine textTag={'Halloween'} text={'Unknown'} />
+        <TextLine
+          textTag={'Other'}
+          text={
+            // eslint-disable-next-line max-len
+            'Castle Made of Sand, igufeds Totally Awesome Looking Ship, Weak Chest, Wood Chest, Steel Chest, Gold Chest, Giant Chest'
+          }
+        />
+      </MapPanel>
     </Box>
   );
 }

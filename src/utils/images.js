@@ -80,6 +80,7 @@ import witchsHat from '../assets/hats/witchs_hat.png';
 import wizardsHat from '../assets/hats/wizards_hat.png';
 import woodenMask from '../assets/hats/wooden_mask.png';
 import wrensRoost from '../assets/hats/wrens_roost.png';
+import HYGFBN3 from '../assets/hats/HYGFBN3.png';
 
 import emptyMob from '../assets/mob/_empty_mob.png';
 import blig from '../assets/mob/blig.png';
@@ -125,6 +126,7 @@ import forestGhost from '../assets/mob/forest_guardian_ghost.png';
 import pumpkin from '../assets/mob/pumpkin.png';
 import egg from '../assets/mob/egg.png';
 import garf from '../assets/mob/garfield.png';
+import sorceress from '../assets/mob/sorceress.png';
 
 const getWeaponImageFromName = (name) => {
   if (name === 'Ancient Hydro Spear') return ancientHydroSpear;
@@ -187,7 +189,7 @@ const getHatImageFromName = (name) => {
   else if (name === 'Headguard') return headguard;
   else if (name === 'Headphones') return headphones;
   else if (name === 'HeliHat') return heliHat;
-  else if (name === 'HYGFBN3') return emptyItem;
+  else if (name === 'HYGFBN3') return HYGFBN3;
   else if (name === 'Leaf Hat') return leafHat;
   else if (name === 'Mighty Keeper Helmet') return mightyKeeperHelmet;
   else if (name === 'Newspaper Hat') return newspaperHat;
@@ -236,9 +238,8 @@ const getMobImageFromName = (name) => {
   else if (name === 'Distinguished Castle Guard') return castleGuard;
   else if (name === 'Noble Castle Guard') return castleGuard;
   else if (name === 'Royal Castle Guard') return castleGuard;
-  else if (name === 'Wise Gatekeeper') return emptyMob;
   else if (name === 'Mighty Gatekeeper') return mightyGatekeeper;
-  else if (name === 'Castle Sorceress') return emptyMob;
+  else if (name === 'Castle Sorceress') return sorceress;
   else if (name === 'Desert Dweller') return jeff;
   else if (name === 'Desert Rancher') return carl;
   else if (name === 'Desert Enforcer') return desertEnforcer;
