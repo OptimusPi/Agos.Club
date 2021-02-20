@@ -13,3 +13,7 @@ export const getHatData = () => {
 export const getMobData = () => {
   return dataObject().mobs;
 };
+
+export const getComboData = () => {
+  return dataObject().combos;
+};
