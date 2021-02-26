@@ -1862,5 +1862,107 @@
       "abilities": "",
       "dots": ""
     }
+  ],
+  "combos": [
+    {
+      "name": "Martial Artist",
+      "combo": "Punch ➡️ Punch ➡️ Kick",
+      "effects": "Adds ~46% Bonus Damage to Kick"
+    },
+    {
+      "name": "Kickboxer",
+      "combo": "Kick ➡️ Kick ➡️ Punch",
+      "effects": "Adds ~44% Bonus Damage to Punch"
+    },
+    {
+      "name": "Stabby",
+      "combo": "Chef's Knife ➡️ Chef's Knife ➡️ Chef's Knife ➡️ Chef's Knife ➡️ Chef's Knife",
+      "effects": "Adds ~144% Bonus Damage to 5th Chef's Knife"
+    },
+    {
+      "name": "What a shoddy combo..",
+      "combo": "Shoddy Sword ➡️ Shoddy Sword",
+      "effects": "Returns 1 Stamina (~9% of cost) on 2nd Shoddy Sword"
+    },
+    {
+      "name": "Extra! Extra!",
+      "combo": "Newspaper ➡️ Newspaper",
+      "effects": "Adds ~64% Bonus Damage to 2nd Newspaper"
+    },
+    {
+      "name": "Rock n' Roll",
+      "combo": "Heavy Stone ➡️ Newspaper",
+      "effects": "Adds ~248% Bonus Damage to Newspaper"
+    },
+    {
+      "name": "Timber!",
+      "combo": "Maple 2x4 ➡️ Oak 2x4",
+      "effects": "Returns 8 Stamina (~38% of cost) on Oak 2x4"
+    },
+    {
+      "name": "Clean Sweep",
+      "combo": "Broom ➡️ Broom",
+      "effects": "Returns 7 Stamina (~47% of cost) on 2nd Broom"
+    },
+    {
+      "name": "Splinters",
+      "combo": "Wooden Stick ➡️ Maple 2x4",
+      "effects": "Adds ~35% Bonus Damage to Maple 2x4"
+    },
+    {
+      "name": "Revving up..",
+      "combo": "Kick ➡️ Classic Sword",
+      "effects": "Returns 5 Stamina (25% of cost) on Classic Sword"
+    },
+    {
+      "name": "VROOOOM!",
+      "combo": "Kick ➡️ Classic Sword ➡️ Kodachi",
+      "effects": "Returns 5 Stamina (25% of cost) on Classic Sword, Adds ~25% Bonus Damage to Kodachi"
+    },
+    {
+      "name": "You Can Run..",
+      "combo": "Kodachi ➡️ Classic Sword",
+      "effects": "Adds ~19% Bonus Damage to Classic Sword"
+    },
+    {
+      "name": "..But You Can't Hide",
+      "combo": "Kodachi ➡️ Classic Sword ➡️ Recurve Bow",
+      "effects": "Adds ~19% Bonus Damage to Classic Sword, Adds ~36% Bonus Damage to Recurve Bow"
+    },
+    {
+      "name": "Skeet Shooter",
+      "combo": "Carved Axe ➡️ Recurve Bow",
+      "effects": "Returns 10 Stamina (40% of cost) on Recurve Bow"
+    },
+    {
+      "name": "You Have My Sword and My Bow..",
+      "combo": "Classic Sword ➡️ Recurve Bow",
+      "effects": "Returns 10 Stamina (40% of cost) on Recurve Bow"
+    },
+    {
+      "name": "..And My Axe!",
+      "combo": "Classic Sword ➡️ Recurve Bow ➡️ Carved Axe",
+      "effects": "Returns 10 Stamina (40% of cost) on Recurve Bow, Returns 17 Stamina (~49% of cost) on Carved Axe"
+    },
+    {
+      "name": "Whip It",
+      "combo": "Whip ➡️ Whip",
+      "effects": "Adds ~28% Bonus Damage to Whip"
+    },
+    {
+      "name": "Stay Back!",
+      "combo": "Rubber Sledge ➡️ Whip",
+      "effects": "Adds ~28% Bonus Damage to Whip"
+    },
+    {
+      "name": "Merry Christmas..",
+      "combo": "Peppermint Candy Cane ➡️ Spearmint Candy Cane ➡️ Orangemint Candy Cane",
+      "effects": "Adds ~185% Bonus Damage to Orangemint Candy Cane"
+    },
+    {
+      "name": "And a Happy New Year",
+      "combo": "Peppermint Candy Cane ➡️ Spearmint Candy Cane ➡️ Orangemint Candy Cane ➡️ Multimint Candy Cane",
+      "effects": "Adds ~185% Bonus Damage to Orangemint Candy Cane, Adds ~182% Bonus damage to Multimint Candy Cane"
+    }
   ]
 }

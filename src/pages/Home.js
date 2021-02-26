@@ -104,7 +104,7 @@ export default function Home() {
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Weapons</TableCell>
-              <TableCell>Damage & DOTs; Oil Dagger, Kingdom Slayer, Blazing Edge, Virulent, Ground Pound</TableCell>
+              <TableCell>Oil Dagger, Kingdom Slayer, Blazing Edge, Virulent, Ground Pound, Damage & DOTs</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Hats</TableCell>
@@ -116,7 +116,7 @@ export default function Home() {
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>More</TableCell>
-              <TableCell>Abilities, Cosmetics, Consumables, Combos, Secrets & More</TableCell>
+              <TableCell>Abilities, Cosmetics, Consumables, Secrets</TableCell>
             </TableRow>
           </TableBody>
         </Table>
