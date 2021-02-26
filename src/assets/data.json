@@ -32,18 +32,18 @@
     },
     {
       "name": "Blazing Edge",
-      "power": 0,
-      "stamina": 0,
-      "cooldown": 0,
-      "speed": 0,
-      "staminaCost": -1,
-      "value": 1,
+      "power": 4,
+      "stamina": 1,
+      "cooldown": 1,
+      "speed": 1,
+      "staminaCost": 40,
+      "value": 130548,
       "rarity": 8,
       "sources": "Desert Enforcer",
-      "description": "??",
+      "description": "Game Item",
       "nicknames": "BE",
-      "traits": "",
-      "holders": ""
+      "traits": "Advanced Piercing, Greater Burn, 3 target hit",
+      "holders": "-J-"
     },
     {
       "name": "Broom",
