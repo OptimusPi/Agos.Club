@@ -1,20 +1,9 @@
 import React from 'react';
-import {
-  Typography,
-  Grid,
-  Card,
-  CardContent,
-  Paper,
-  Table,
-  TableContainer,
-  TableCell,
-  TableRow,
-  TableBody,
-} from '@material-ui/core';
+import { Typography, Paper, Table, TableContainer, TableCell, TableRow, TableBody } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import dekuSrc from '../assets/deku_tree.png';
 import dekuTransSrc from '../assets/deku_tree_trans.png';
-import tournamentWinner from '../assets/misc/tournament_winner.png';
+import TournamentGrid from '../components/TournamentGrid';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -40,27 +29,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       width: '100%',
     },
-  },
-  grid: {
-    paddingTop: theme.spacing(),
-    paddingBottom: theme.spacing(3),
-  },
-  card: {
-    height: '100%',
-  },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
-  title: {
-    fontSize: 14,
-  },
-  pos: {
-    marginBottom: 12,
-  },
-  differenceValue: {
-    marginRight: theme.spacing(1),
   },
   bold: {
     fontWeight: 'bold',
@@ -124,68 +92,7 @@ export default function Home() {
       <Typography variant="h5" component="h2" style={{ marginTop: '2rem', marginBottom: '.5rem' }}>
         Tournament Winners!
       </Typography>
-      <Grid className={classes.grid} container spacing={3}>
-        <Grid item lg={3} sm={3} xl={3} xs={12}>
-          <Card className={classes.card}>
-            <CardContent>
-              <Grid container justify="flex-start" alignItems="center" spacing={2}>
-                <Grid item>
-                  <img alt="tourney_winner" src={tournamentWinner} />
-                </Grid>
-                <Grid item>
-                  <Typography color="textSecondary" gutterBottom variant="h6">
-                    #8: February 13, 2021
-                  </Typography>
-                  <Typography color="textPrimary" variant="h3">
-                    -J-
-                  </Typography>
-                </Grid>
-              </Grid>
-              <Typography color="textSecondary" variant="caption">
-                Defeated RCT, KrazyKilla, sk8
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item lg={3} sm={3} xl={3} xs={12}>
-          <Card className={classes.card}>
-            <CardContent>
-              <Grid container justify="space-between" spacing={3}>
-                <Grid item>
-                  <Typography color="textSecondary" gutterBottom variant="h6">
-                    #7: January 31, 2021
-                  </Typography>
-                  <Typography color="textPrimary" variant="h3">
-                    RCT
-                  </Typography>
-                </Grid>
-              </Grid>
-              <Typography color="textSecondary" variant="caption">
-                Defeated sk8, KrazyKilla, Lucifer
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item lg={3} sm={3} xl={3} xs={12}>
-          <Card className={classes.card}>
-            <CardContent>
-              <Grid container justify="space-between" spacing={3}>
-                <Grid item>
-                  <Typography color="textSecondary" gutterBottom variant="h6">
-                    #6: January 16, 2021
-                  </Typography>
-                  <Typography color="textPrimary" variant="h3">
-                    sk8
-                  </Typography>
-                </Grid>
-              </Grid>
-              <Typography color="textSecondary" variant="caption">
-                Defeated TickTockMan, Aleksandher, RCT, Jethro
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-      </Grid>
+      <TournamentGrid />
     </div>
   );
 }
