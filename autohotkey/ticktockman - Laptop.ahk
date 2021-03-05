@@ -1,4 +1,5 @@
 ^r::Reload ; reset all running scripts
+^Escape::Suspend, Toggle ; Toggle Suspend
 
 ; Equip Ninja Mask
 F1:: 
