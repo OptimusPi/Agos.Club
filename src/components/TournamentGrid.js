@@ -33,6 +33,25 @@ export default function TournamentGrid() {
             <Grid container justify="flex-start" alignItems="center" spacing={2}>
               <Grid item>
                 <Typography color="textSecondary" gutterBottom variant="h6">
+                  #10: March 13, 2021
+                </Typography>
+                <Typography color="textPrimary" variant="h3">
+                  <img height="50" alt="tourney_winner" src={tournamentWinner} /> Jmac
+                </Typography>
+              </Grid>
+            </Grid>
+            <Typography color="textSecondary" variant="caption">
+              Defeated KrazyKilla, Sienna420, sk8, Fisuman, Syco
+            </Typography>
+          </CardContent>
+        </Card>
+      </Grid>
+      <Grid item xl={3} lg={3} sm={6} xs={12}>
+        <Card className={classes.card}>
+          <CardContent>
+            <Grid container justify="flex-start" alignItems="center" spacing={2}>
+              <Grid item>
+                <Typography color="textSecondary" gutterBottom variant="h6">
                   #9: February 27, 2021
                 </Typography>
                 <Typography color="textPrimary" variant="h3">
