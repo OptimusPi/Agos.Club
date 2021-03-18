@@ -1053,6 +1053,21 @@
       "holders": ""
     },
     {
+      "name": "Royal Guard Helm",
+      "value": -1,
+      "rarity": 6,
+      "strength": 0,
+      "vitality": 4,
+      "agility": 0,
+      "intelligence": 0,
+      "defense": 6,
+      "sources": "Royal Castle Guards",
+      "description": "Game Item",
+      "nicknames": "Helm",
+      "traits": "Hyper Decaf, -177 Stam",
+      "holders": "Fisuman"
+    },
+    {
       "name": "Rudolf's Antlers",
       "value": 1,
       "rarity": 6,
@@ -1094,7 +1109,7 @@
       "sources": "Regular Present, Premium Present, Giant Present, Santa",
       "description": "Ho Ho Ho",
       "nicknames": "",
-      "traits": "Ultra Rotting, Hyper Caffeine, Basic Layers",
+      "traits": "Ultra Rotting, Hyper Caffeine, Basic Layers, +100 Stam, -100 HP",
       "holders": ""
     },
     {

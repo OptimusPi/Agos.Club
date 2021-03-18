@@ -36,12 +36,12 @@ export default function TournamentGrid() {
                   #10: March 13, 2021
                 </Typography>
                 <Typography color="textPrimary" variant="h3">
-                  <img height="50" alt="tourney_winner" src={tournamentWinner} /> Jmac
+                  <img height="50" alt="tourney_winner" src={tournamentWinner} /> -J-
                 </Typography>
               </Grid>
             </Grid>
             <Typography color="textSecondary" variant="caption">
-              Defeated KrazyKilla, Sienna420, sk8, Fisuman, Syco
+              Defeated sk8, KrazyKilla, Syco, Sienna420, Fisuman
             </Typography>
           </CardContent>
         </Card>
