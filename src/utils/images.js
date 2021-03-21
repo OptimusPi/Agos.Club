@@ -82,6 +82,7 @@ import wizardsHat from '../assets/hats/wizards_hat.png';
 import woodenMask from '../assets/hats/wooden_mask.png';
 import wrensRoost from '../assets/hats/wrens_roost.png';
 import HYGFBN3 from '../assets/hats/HYGFBN3.png';
+import royalGuardHelm from '../assets/hats/royal_guard_helm.png';
 
 import emptyMob from '../assets/mob/_empty_mob.png';
 import blig from '../assets/mob/blig.png';
@@ -201,6 +202,7 @@ const getHatImageFromName = (name) => {
   else if (name === 'Red Stained Mask') return redStainedMask;
   else if (name === 'Reindeer Antlers') return raindeerAntlers;
   else if (name === 'Ribbow') return ribbow;
+  else if (name === 'Royal Guard Helm') return royalGuardHelm;
   else if (name === "Rudolf's Antlers") return rudolfAntlers;
   else if (name === "Santa's Hat") return santaHat;
   else if (name === 'Shark Helm') return sharkHelm;

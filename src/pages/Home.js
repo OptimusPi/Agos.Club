@@ -47,7 +47,8 @@ export default function Home() {
         Fansite
       </Typography>
       <Typography variant="subtitle2" color="secondary" gutterBottom>
-        Brought to you by TickTockMan. Special thanks to Lucifer. Special f***-off to that guy who took down our data spreadsheet.
+        Brought to you by TickTockMan. Special thanks to Lucifer. Special f***-off to that guy who took down our data
+        spreadsheet.
       </Typography>
       <Typography variant="h5" component="h2" style={{ marginTop: '2rem', marginBottom: '.5rem' }}>
         Known Missing Content
@@ -80,7 +81,7 @@ export default function Home() {
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Mobs</TableCell>
-              <TableCell>Most Data</TableCell>
+              <TableCell>Damage, Health, Defense data</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>More</TableCell>

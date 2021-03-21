@@ -1054,7 +1054,7 @@
     },
     {
       "name": "Royal Guard Helm",
-      "value": -1,
+      "value": 79999,
       "rarity": 6,
       "strength": 0,
       "vitality": 4,
@@ -1063,8 +1063,8 @@
       "defense": 6,
       "sources": "Royal Castle Guards",
       "description": "Game Item",
-      "nicknames": "Helm",
-      "traits": "Hyper Decaf, -177 Stam",
+      "nicknames": "",
+      "traits": "Hyper Decaf, -77 Stam",
       "holders": "Fisuman"
     },
     {
