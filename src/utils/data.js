@@ -17,3 +17,7 @@ export const getMobData = () => {
 export const getComboData = () => {
   return dataObject().combos;
 };
+
+export const getTournamentData = () => {
+  return dataObject().tournament;
+};

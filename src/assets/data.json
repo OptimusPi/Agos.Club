@@ -1979,5 +1979,37 @@
       "combo": "Peppermint Candy Cane ➡️ Spearmint Candy Cane ➡️ Orangemint Candy Cane ➡️ Multimint Candy Cane",
       "effects": "Adds ~185% Bonus Damage to Orangemint Candy Cane, Adds ~182% Bonus damage to Multimint Candy Cane"
     }
+  ],
+  "tournament": [
+    {
+      "number": 10,
+      "date": "March 13, 2021",
+      "winner": "-J-",
+      "defeated": "sk8, KrazyKilla, Syco, Sienna420, Fisuman"
+    },
+    {
+      "number": 9,
+      "date": "February 27, 2021",
+      "winner": "-J-",
+      "defeated": "KrazyKilla, Finn, sk8, Fisuman"
+    },
+    {
+      "number": 8,
+      "date": "February 13, 2021",
+      "winner": "-J-",
+      "defeated": "RCT, KrazyKilla, sk8"
+    },
+    {
+      "number": 7,
+      "date": "January 31, 2021",
+      "winner": "RCT",
+      "defeated": "sk8, KrazyKilla, Lucifer"
+    },
+    {
+      "number": 6,
+      "date": "January 16, 2021",
+      "winner": "sk8",
+      "defeated": "TickTockMan, Aleksandher, RCT, Jethro"
+    }
   ]
 }
