@@ -1,0 +1,22 @@
+domains:
+  - domain: agos.club
+    type: PRIMARY
+    zone: agos.club
+name: agos-club
+region: nyc
+static_sites:
+  - build_command: npm run build
+    environment_slug: node-js
+    github:
+      branch: main
+      deploy_on_push: true
+      repo: rhampt/Agos.Club
+    name: agos-club
+    routes:
+      - path: /
+      - path: /maps
+      - path: /areas
+      - path: /weapons
+      - path: /hats
+      - path: /mobs
+      - path: /more
