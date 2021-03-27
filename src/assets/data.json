@@ -1291,6 +1291,21 @@
       "nicknames": "",
       "traits": "Greater Antidote, Superb Specs",
       "holders": ""
+    },
+    {
+      "name": "Bejeweled 10 Gallon Hat",
+      "value": 1,
+      "rarity": 7,
+      "strength": 0,
+      "vitality": 0,
+      "agility": 0,
+      "intelligence": 0,
+      "defense": 0,
+      "sources": "Jose",
+      "description": "??",
+      "nicknames": "Jewely",
+      "traits": "",
+      "holders": ""
     }
   ],
   "mobs": [
@@ -1590,6 +1605,17 @@
       "vitality": "Todo",
       "abilities": "Unknown",
       "dots": "Dodge; Blind, screen is hard to see"
+    },
+    {
+      "name": "Unknown Miniboss",
+      "nicknames": "Jose",
+      "type": "mob",
+      "area": "Desert",
+      "description": "Give me a name and image at least damn it",
+      "defense": "Todo",
+      "vitality": "Todo",
+      "abilities": "Unknown",
+      "dots": "??"
     },
     {
       "name": "Colossal Urchin",
