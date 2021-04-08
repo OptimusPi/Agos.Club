@@ -190,7 +190,7 @@ export default function Maps() {
         <TextLine textTag={'Normal Spawns'} text={'Sorceress'} />
       </MapPanel>
       <MapPanel classes={classes} imgMapSource={desertMap} imgIconSource={desertIconUri} areaName="Desert">
-        <TextLine textTag={'Normal Spawns'} text={'Desert Dweller, Desert Rancher, Desert Enforcer'} />
+        <TextLine textTag={'Normal Spawns'} text={'Desert Dweller, Desert Rancher, Desert Enforcer, Desperado'} />
         <TextLine textTag={'Anniversary'} text={'Present'} />
         <TextLine textTag={'Christmas'} text={'Unknown'} />
         <TextLine textTag={'Halloween'} text={'Unknown'} />

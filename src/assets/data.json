@@ -309,7 +309,7 @@
       "staminaCost": -1,
       "value": 1,
       "rarity": 7,
-      "sources": "??",
+      "sources": "Desert Enforcer",
       "description": "??",
       "nicknames": "",
       "traits": "",
@@ -1607,15 +1607,15 @@
       "dots": "Dodge; Blind, screen is hard to see"
     },
     {
-      "name": "Unknown Miniboss",
+      "name": "Desperado",
       "nicknames": "Jose",
       "type": "mob",
       "area": "Desert",
-      "description": "Give me a name and image at least damn it",
+      "description": "I'm the new sheriff in town",
       "defense": "Todo",
       "vitality": "Todo",
       "abilities": "Unknown",
-      "dots": "??"
+      "dots": "Unknown"
     },
     {
       "name": "Colossal Urchin",
@@ -2006,7 +2006,20 @@
       "effects": "Adds ~185% Bonus Damage to Orangemint Candy Cane, Adds ~182% Bonus damage to Multimint Candy Cane"
     }
   ],
+  "consumables": [
+    {
+      "name": "Firework Lootbox",
+      "description": "A loot box containing a random firework. May also contain a Roman Candle PvP Weapon. Right click to open.",
+      "details": "Gives you one firework or maybe a roman candle."
+    }
+  ],
   "tournament": [
+    {
+      "number": 11,
+      "date": "April 3, 2021",
+      "winner": "-J-",
+      "defeated": "sk8, Zehil, KrazyKilla, Fisuman, Beast"
+    },
     {
       "number": 10,
       "date": "March 13, 2021",

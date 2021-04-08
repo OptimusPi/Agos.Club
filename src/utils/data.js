@@ -21,3 +21,7 @@ export const getComboData = () => {
 export const getTournamentData = () => {
   return dataObject().tournament;
 };
+
+export const getConsumablesData = () => {
+  return dataObject().consumables;
+};

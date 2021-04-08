@@ -1,3 +1,4 @@
+/* eslint-disable import/first */
 import emptyItem from '../assets/empty_item.png';
 
 import ancientHydroSpear from '../assets/weapons/ancient_hydro_spear.png';
@@ -247,6 +248,7 @@ const getMobImageFromName = (name) => {
   else if (name === 'Desert Dweller') return jeff;
   else if (name === 'Desert Rancher') return carl;
   else if (name === 'Desert Enforcer') return desertEnforcer;
+  else if (name === 'Desperado') return emptyMob;
   else if (name === 'Colossal Urchin') return urchin;
   else if (name === 'Rogue GM') return garf;
   else if (name === 'Santa') return santa;
@@ -275,4 +277,11 @@ const getMobImageFromName = (name) => {
   else return emptyMob;
 };
 
-export { getWeaponImageFromName, getHatImageFromName, getMobImageFromName };
+import fireworkLootbox from '../assets/consumables/lootbox_firework_1.png';
+
+const getConsumableImageFromName = (name) => {
+  if (name === 'Firework Lootbox') return fireworkLootbox;
+  else return emptyItem;
+};
+
+export { getWeaponImageFromName, getHatImageFromName, getMobImageFromName, getConsumableImageFromName };
