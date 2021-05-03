@@ -45,7 +45,7 @@ export default function TournamentGrid() {
                   </Grid>
                 </Grid>
                 <Typography color="textSecondary" variant="caption">
-                  Defeated {item.defeated}
+                  Participants: {item.defeated}
                 </Typography>
               </CardContent>
             </Card>
