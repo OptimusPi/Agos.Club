@@ -27,16 +27,26 @@ const getColumns = () => {
       customSort: (a, b) => a.rarity - b.rarity,
     },
     { title: 'Sources', field: 'sources' },
-    { title: 'Strength', field: 'strength', type: 'numeric' },
-    { title: 'Vitality', field: 'vitality', type: 'numeric' },
-    { title: 'Agility', field: 'agility', type: 'numeric' },
-    { title: 'Intelligence', field: 'intelligence', type: 'numeric' },
-    { title: 'Defense', field: 'defense', type: 'numeric' },
+    { title: 'Strength', field: 'strength', type: 'numeric', render: (rowData) => render(rowData.strength) },
+    { title: 'Vitality', field: 'vitality', type: 'numeric', render: (rowData) => render(rowData.vitality) },
+    { title: 'Agility', field: 'agility', type: 'numeric', render: (rowData) => render(rowData.agility) },
+    {
+      title: 'Intelligence',
+      field: 'intelligence',
+      type: 'numeric',
+      render: (rowData) => render(rowData.intelligence),
+    },
+    { title: 'Defense', field: 'defense', type: 'numeric', render: (rowData) => render(rowData.defense) },
   ];
+};
+
+const render = (dataPoint) => {
+  return dataPoint === -1 ? '?' : dataPoint;
 };
 
 const getRarityLookup = () => {
   return {
+    0: 'Unobtainable',
     1: 'Very Common',
     2: 'Common',
     3: 'Uncommon',
@@ -45,5 +55,6 @@ const getRarityLookup = () => {
     6: 'Very Rare',
     7: 'Ultra Rare',
     8: 'Hyper Rare',
+    100: 'Unknown',
   };
 };

@@ -36,6 +36,7 @@ const getStarLookup = () => {
 
 const getRarityLookup = () => {
   return {
+    0: 'Unobtainable',
     1: 'Very Common',
     2: 'Common',
     3: 'Uncommon',
@@ -44,5 +45,6 @@ const getRarityLookup = () => {
     6: 'Very Rare',
     7: 'Ultra Rare',
     8: 'Hyper Rare',
+    100: 'Unknown',
   };
 };

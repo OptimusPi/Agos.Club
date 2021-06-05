@@ -40,15 +40,16 @@ export default function Home() {
   return (
     <div className={classes.root}>
       <Typography variant="h4" color="secondary">
-        The{' '}
-        <a href="https://agos.world" rel="noreferrer" target="_blank">
-          Agos
-        </a>{' '}
-        Fansite
+        The Agos Fansite
       </Typography>
       <Typography variant="subtitle2" color="secondary" gutterBottom>
-        Brought to you by TickTockMan. Special thanks to Lucifer. Special f***-off to that guy who took down our data
-        spreadsheet.
+        Brought to you by TickTockMan. Special thanks to Lucifer and KrazyKilla.
+        <br />
+        <br />
+        Visit the official&nbsp;
+        <a href="https://agos.world" rel="noreferrer" target="_blank" style={{ textDecoration: 'underline' }}>
+          game website
+        </a>
       </Typography>
       <Typography variant="h5" component="h2" style={{ marginTop: '2rem', marginBottom: '.5rem' }}>
         Known Missing Content
@@ -72,16 +73,20 @@ export default function Home() {
               </TableCell>
             </TableRow>
             <TableRow>
+              <TableCell className={classes.bold}>Features in Development</TableCell>
+              <TableCell>Stat Mixer, Light/Dark Themes, Stars, Status Scraper</TableCell>
+            </TableRow>
+            <TableRow>
               <TableCell className={classes.bold}>Weapons</TableCell>
               <TableCell>Oil Dagger, Kingdom Slayer, Virulent, Ground Pound, Damage & DOTs</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Hats</TableCell>
-              <TableCell>Sorceress Hat, Wise Sentry Helmet, Mighty Keeper Helmet</TableCell>
+              <TableCell>Dragon Helm, Wise Sentry Helmet, Mighty Keeper Helmet</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>Mobs</TableCell>
-              <TableCell>Damage, Health, Defense data</TableCell>
+              <TableCell>Damage, Health, Defense Info</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className={classes.bold}>More</TableCell>

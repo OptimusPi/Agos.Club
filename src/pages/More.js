@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Tabs, Tab, Typography, Box } from '@material-ui/core';
 import CombosTable from '../components/CombosTable';
 import ConsumablesGrid from '../components/ConsumablesGrid';
+import StatMixer from '../components/StatMixer';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -58,26 +59,30 @@ export default function More() {
           scrollButtons="auto"
           aria-label="scrollable auto tabs"
         >
-          <Tab label="Combos" {...a11yProps(0)} />
-          <Tab label="Abilities" {...a11yProps(1)} />
-          <Tab label="Cosmetics" {...a11yProps(2)} />
-          <Tab label="Consumables" {...a11yProps(3)} />
-          <Tab label="Secrets" {...a11yProps(4)} />
+          <Tab label="Stat Mixer" {...a11yProps(0)} />
+          <Tab label="Combos" {...a11yProps(1)} />
+          <Tab label="Abilities" {...a11yProps(2)} />
+          <Tab label="Cosmetics" {...a11yProps(3)} />
+          <Tab label="Consumables" {...a11yProps(4)} />
+          <Tab label="Secrets" {...a11yProps(5)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <CombosTable />
+        <StatMixer />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Coming soon...
+        <CombosTable />
       </TabPanel>
       <TabPanel value={value} index={2}>
         Coming soon...
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <ConsumablesGrid />
+        Coming soon...
       </TabPanel>
       <TabPanel value={value} index={4}>
+        <ConsumablesGrid />
+      </TabPanel>
+      <TabPanel value={value} index={5}>
         Coming soon...
       </TabPanel>
     </Box>
