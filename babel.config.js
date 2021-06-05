@@ -1,6 +1,6 @@
 module.exports = (api) => {
   // This caches the Babel config
-  api.cache.using(() => process.env.NODE_ENV)
+  api.cache.using(() => process.env.NODE_ENV);
   return {
     presets: [
       [
@@ -33,14 +33,8 @@ module.exports = (api) => {
       },
       production: {
         only: ['src'],
-        plugins: [
-          // 'transform-react-remove-prop-types',
-          // '@babel/plugin-transform-react-inline-elements',
-          // '@babel/plugin-transform-react-constant-elements',
-        ],
+        plugins: [],
       },
     },
-    // Applies the react-refresh Babel plugin on non-production modes only
-    // ...(!api.env('production') && { plugins: ['react-refresh/babel'] }),
-  }
-}
+  };
+};

@@ -1,16 +1,10 @@
-// const format = require('prettier-eslint')
-
-// Define restricted globals (global variables that are not allowed)
 const restrictedGlobals = ['addEventListener'];
 
 const options = {
   root: true,
-
   parser: 'babel-eslint',
-
   plugins: ['prettier', 'import', 'jsx-a11y', 'react'],
-
-  extends: ['plugin:prettier/recommended', 'prettier/react'],
+  extends: ['plugin:prettier/recommended'],
   globals: {
     React: true,
     document: true,
@@ -21,9 +15,8 @@ const options = {
   env: {
     browser: true,
     commonjs: true,
-    es2020: true,
+    es2021: true,
     node: true,
-    // "jest/globals": true,
   },
 
   parserOptions: {
@@ -36,13 +29,9 @@ const options = {
 
   settings: {
     react: {
-      // Regex for Component Factory to use, default to 'createReactClass'
       createClass: 'createReactClass',
-      // Pragma to use, default to 'React'
       pragma: 'React',
-      // React version. 'detect' automatically picks the version you have installed.
       version: 'detect',
-      // Flow version
       flowVersion: '0.53',
     },
   },
@@ -53,16 +42,15 @@ const options = {
       {
         singleQuote: true,
         printWidth: 120,
-        arrowParens: 'always', // Can be avoid to have e => {}
+        arrowParens: 'always',
         semi: true,
-        trailingComma: 'all', // none, es5, all
+        trailingComma: 'all',
         bracketSpacing: true,
         jsxBracketSameLine: false,
         endOfLine: 'auto',
       },
     ],
-    // http://eslint.org/docs/rules/
-    'array-callback-return': 'warn', // ['warn', 'always'],
+    'array-callback-return': 'warn',
     'comma-dangle': 0,
     'default-case': ['warn', { commentPattern: '^no default$' }],
     'dot-location': ['warn', 'property'],
