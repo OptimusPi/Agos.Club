@@ -3,6 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
+import Select from '@material-ui/core/Select';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,6 +22,13 @@ const useStyles = makeStyles((theme) => ({
   slider: {
     width: '300px',
   },
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+  },
+  selectEmpty: {
+    marginTop: theme.spacing(2),
+  },
 }));
 
 export default function CombosTable() {
@@ -28,30 +39,50 @@ export default function CombosTable() {
   const [agi, setAgi] = React.useState(1);
   const [vit, setVit] = React.useState(1);
   const [int, setInt] = React.useState(1);
+  const [hp, setHp] = React.useState(196);
+  const [stam, setStam] = React.useState(195);
+  const [def, setDef] = React.useState(0);
+
+  const [hat, setHat] = React.useState('');
+
+  const handleChangeHat = (event) => {
+    setHat(event.target.value);
+  };
 
   const handleChange = (event, newValue, type) => {
     if (type === 'str' && newValue + agi + vit + int <= MAX_TOTAL_VAL) {
       setStr(newValue);
-      setUnused(unused - (newValue - str));
     } else if (type === 'agi' && newValue + str + vit + int <= MAX_TOTAL_VAL) {
       setAgi(newValue);
-      setUnused(unused - (newValue - agi));
     } else if (type === 'vit' && newValue + str + agi + int <= MAX_TOTAL_VAL) {
       setVit(newValue);
-      setUnused(unused - (newValue - vit));
     } else if (type === 'int' && newValue + str + agi + vit <= MAX_TOTAL_VAL) {
       setInt(newValue);
-      setUnused(unused - (newValue - int));
     }
   };
+
+  React.useEffect(() => {
+    setUnused(MAX_TOTAL_VAL - (str + vit + agi + int));
+    setStam(195 + int * 5);
+    setHp(196 + 4 * vit);
+    setDef(Math.floor(vit / 6));
+  }, [str, vit, agi, int]);
 
   return (
     <div className={classes.root}>
       <Typography>
-        <b>Calc is a work-in-progress</b>
+        <b>Work-in-progress</b>
       </Typography>
       <br />
       <br />
+      <FormControl className={classes.formControl}>
+        <InputLabel id="demo-simple-select-label">Hat</InputLabel>
+        <Select labelId="demo-simple-select-label" id="demo-simple-select" value={hat} onChange={handleChangeHat}>
+          <MenuItem value={10}>Ten</MenuItem>
+          <MenuItem value={20}>Twenty</MenuItem>
+          <MenuItem value={30}>Thirty</MenuItem>
+        </Select>
+      </FormControl>
       <Grid container spacing={2} direction="column">
         <Grid item className={classes.sliderRow}>
           <Typography>Unused</Typography>
@@ -119,10 +150,13 @@ export default function CombosTable() {
           />
         </Grid>
         <Grid item className={classes.sliderRow}>
-          <Typography>HP</Typography>
+          <Typography>Defense&nbsp;{def}</Typography>
         </Grid>
         <Grid item className={classes.sliderRow}>
-          <Typography>Stamina</Typography>
+          <Typography>HP&nbsp;{hp}</Typography>
+        </Grid>
+        <Grid item className={classes.sliderRow}>
+          <Typography>Stamina&nbsp;{stam}</Typography>
         </Grid>
       </Grid>
     </div>
