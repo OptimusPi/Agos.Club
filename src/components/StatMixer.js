@@ -48,6 +48,11 @@ export default function CombosTable() {
 
   return (
     <div className={classes.root}>
+      <Typography>
+        <b>Calc is a work-in-progress</b>
+      </Typography>
+      <br />
+      <br />
       <Grid container spacing={2} direction="column">
         <Grid item className={classes.sliderRow}>
           <Typography>Unused</Typography>
