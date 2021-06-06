@@ -1,5 +1,4 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const commonPaths = require('./paths');
 
 module.exports = {
@@ -20,7 +19,6 @@ module.exports = {
           sourceMap: true,
         },
       }),
-      new OptimizeCSSAssetsPlugin(),
     ],
     // Automatically split vendor and commons
     // https://twitter.com/wSokra/status/969633336732905474
