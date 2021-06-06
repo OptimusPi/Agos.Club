@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Tabs, Tab, Typography, Box } from '@material-ui/core';
+import { AppBar, Tabs, Tab, Box } from '@material-ui/core';
 import CombosTable from '../components/CombosTable';
 import ConsumablesGrid from '../components/ConsumablesGrid';
 import StatMixer from '../components/StatMixer';
