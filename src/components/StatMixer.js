@@ -62,7 +62,7 @@ export default function CombosTable() {
   const [int, setInt] = React.useState(1);
   const [hp, setHp] = React.useState(196);
   const [stam, setStam] = React.useState(195);
-  const [def, setDef] = React.useState(0);
+  const [def, setDef] = React.useState(1);
   const [lvl, setLvl] = React.useState(1);
 
   const [hat, setHat] = React.useState('');
@@ -109,6 +109,7 @@ export default function CombosTable() {
             <Slider
               className={classes.slider}
               value={lvl}
+              color="secondary"
               onChange={(event, newValue) => handleChange(event, newValue, 'lvl')}
               aria-labelledby="discrete-slider"
               valueLabelDisplay="on"
@@ -122,6 +123,7 @@ export default function CombosTable() {
             <Slider
               className={classes.slider}
               value={str}
+              color="secondary"
               onChange={(event, newValue) => handleChange(event, newValue, 'str')}
               aria-labelledby="discrete-slider"
               valueLabelDisplay="on"
@@ -135,6 +137,7 @@ export default function CombosTable() {
             <Slider
               className={classes.slider}
               value={vit}
+              color="secondary"
               onChange={(event, newValue) => handleChange(event, newValue, 'vit')}
               aria-labelledby="discrete-slider"
               valueLabelDisplay="on"
@@ -148,6 +151,7 @@ export default function CombosTable() {
             <Slider
               className={classes.slider}
               value={agi}
+              color="secondary"
               onChange={(event, newValue) => handleChange(event, newValue, 'agi')}
               aria-labelledby="discrete-slider"
               valueLabelDisplay="on"
@@ -161,6 +165,7 @@ export default function CombosTable() {
             <Slider
               className={classes.slider}
               value={int}
+              color="secondary"
               onChange={(event, newValue) => handleChange(event, newValue, 'int')}
               aria-labelledby="discrete-slider"
               valueLabelDisplay="on"
@@ -202,14 +207,23 @@ export default function CombosTable() {
             </div>
           </Grid>
           <Grid item style={{ width: '100%' }}>
-            <div className={clsx(classes.rectangle, classes.colorGreen)}>
+            <div className={clsx(classes.rectangle, classes.colorRed)}>
               <Typography align="right">HP:&nbsp;{hp}</Typography>
             </div>
           </Grid>
           <Grid item style={{ width: '100%' }}>
-            <div className={clsx(classes.rectangle, classes.colorRed)}>
+            <div className={clsx(classes.rectangle, classes.colorGreen)}>
               <Typography align="right">Stam:&nbsp;{stam}</Typography>
             </div>
+          </Grid>
+          <Grid item style={{ width: '100%' }}>
+            <Typography align="left">Speed: TBD</Typography>
+          </Grid>
+          <Grid item style={{ width: '100%' }}>
+            <Typography align="left">Jump: TBD</Typography>
+          </Grid>
+          <Grid item style={{ width: '100%' }}>
+            <Typography align="left">Gravity: TBD</Typography>
           </Grid>
         </Grid>
       </Grid>
