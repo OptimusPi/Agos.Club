@@ -302,18 +302,18 @@
     },
     {
       "name": "Oil Dagger",
-      "power": 0,
-      "stamina": 0,
-      "cooldown": 0,
-      "speed": 0,
-      "staminaCost": -1,
+      "power": 2,
+      "stamina": 3,
+      "cooldown": 5,
+      "speed": 5,
+      "staminaCost": 20,
       "value": 1,
-      "rarity": 7,
+      "rarity": 6,
       "sources": "Desert Enforcer",
-      "description": "??",
-      "nicknames": "",
+      "description": "Game Item",
+      "nicknames": "Dagger",
       "traits": "",
-      "holders": ""
+      "holders": "Logan"
     },
     {
       "name": "Orangemint Candy Cane",
@@ -951,16 +951,16 @@
       "name": "Mighty Keeper Helmet",
       "value": 1,
       "rarity": 100,
-      "strength": -1,
-      "vitality": -1,
-      "agility": -1,
-      "intelligence": -1,
-      "defense": -1,
+      "strength": 4,
+      "vitality": 4,
+      "agility": 0,
+      "intelligence": 0,
+      "defense": 3,
       "sources": "Mighty Gatekeeper",
       "description": "??",
       "nicknames": "MKH",
-      "traits": "",
-      "holders": ""
+      "traits": "-65 Stam",
+      "holders": "KrazyKilla"
     },
     {
       "name": "Newspaper Hat",
@@ -2024,6 +2024,12 @@
     }
   ],
   "tournament": [
+    {
+      "number": 17,
+      "date": "June 26, 2021",
+      "winner": "KrazyKilla",
+      "defeated": "Fishuman, Logan, Helioman, Josh, Fei, Sienna420, BeastMac, ddt123, Zario777"
+    },
     {
       "number": 16,
       "date": "June 12, 2021",
