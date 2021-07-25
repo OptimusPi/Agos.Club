@@ -2025,7 +2025,13 @@
   ],
   "tournament": [
     {
-      "number": 17,
+      "number": 19,
+      "date": "July 24, 2021",
+      "winner": "BeastMac",
+      "defeated": "sk8, Logan, Aleksandher, Jmac, Helioman"
+    },
+    {
+      "number": 18,
       "date": "July 10, 2021",
       "winner": "Fisuman",
       "defeated": "BeastMac, Fei, Zario777, RCT"
