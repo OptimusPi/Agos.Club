@@ -2025,6 +2025,12 @@
   ],
   "tournament": [
     {
+      "number": 20,
+      "date": "September 5, 2021",
+      "winner": "KrazyKilla",
+      "defeated": "Fisuman"
+    },
+    {
       "number": 19,
       "date": "July 24, 2021",
       "winner": "BeastMac",
