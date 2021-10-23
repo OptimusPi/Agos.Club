@@ -2023,90 +2023,96 @@
       "details": "Gives you one firework or maybe a roman candle."
     }
   ],
-  "tournament": [
-    {
-      "number": 19,
-      "date": "July 24, 2021",
-      "winner": "BeastMac",
-      "defeated": "Fisuman, sk8, Logan, Aleksandher, Jmac, Helioman"
-    },
-    {
-      "number": 18,
-      "date": "July 10, 2021",
-      "winner": "Fisuman",
-      "defeated": "BeastMac, Fei, Zario777, RCT"
-    },
-    {
-      "number": 17,
-      "date": "June 26, 2021",
-      "winner": "KrazyKilla",
-      "defeated": "Fishuman, Logan, Helioman, Josh, Fei, Sienna420, BeastMac, ddt123, Zario777"
-    },
-    {
-      "number": 16,
-      "date": "June 12, 2021",
-      "winner": "KrazyKilla",
-      "defeated": "Fisuman, Xehil, sk8, RCT, Jmac"
-    },
-    {
-      "number": 15,
-      "date": "May 29, 2021",
-      "winner": "KrazyKilla",
-      "defeated": "Finn, KingBoo, Aedan, Fisuman, BeastMac, sk8"
-    },
-    {
-      "number": 14,
-      "date": "May 15, 2021",
-      "winner": "sk8",
-      "defeated": "Prosper, Zario777, BeastMac, Finn, KrazyQuick, MacBeast, Fisuman"
-    },
-    {
-      "number": 13,
-      "date": "May 1, 2021",
-      "winner": "Lucifer",
-      "defeated": "Aleksandher, Sienna420, Finn, Ganymede, Xehil, BeastMac, RCT, Bread, Fisuman, KrazyKilla, sk8"
-    },
-    {
-      "number": 12,
-      "date": "April 17, 2021",
-      "winner": "sk8",
-      "defeated": "Fisuman, Aleksandher, Prosper, KrazyKilla, Finn, Sienna420"
-    },
-    {
-      "number": 11,
-      "date": "April 3, 2021",
-      "winner": "-J-",
-      "defeated": "sk8, Zehil, KrazyKilla, Fisuman, Beast"
-    },
-    {
-      "number": 10,
-      "date": "March 13, 2021",
-      "winner": "-J-",
-      "defeated": "sk8, KrazyKilla, Syco, Sienna420, Fisuman"
-    },
-    {
-      "number": 9,
-      "date": "February 27, 2021",
-      "winner": "-J-",
-      "defeated": "KrazyKilla, Finn, sk8, Fisuman"
-    },
-    {
-      "number": 8,
-      "date": "February 13, 2021",
-      "winner": "-J-",
-      "defeated": "RCT, KrazyKilla, sk8"
-    },
-    {
-      "number": 7,
-      "date": "January 31, 2021",
-      "winner": "RCT",
-      "defeated": "sk8, KrazyKilla, Lucifer"
-    },
-    {
-      "number": 6,
-      "date": "January 16, 2021",
-      "winner": "sk8",
-      "defeated": "TickTockMan, Aleksandher, RCT, Jethro"
-    }
-  ]
+  "tournament": 
+  {
+    "Jmac": [
+      {
+        "number": 13,
+        "date": "May 1, 2021",
+        "winner": "Lucifer",
+        "defeated": "Aleksandher, Sienna420, Finn, Ganymede, Xehil, BeastMac, RCT, Bread, Fisuman, KrazyKilla, sk8"
+      }
+    ],
+    "Lucifer": [
+      {
+        "number": 19,
+        "date": "July 24, 2021",
+        "winner": "BeastMac",
+        "defeated": "Fisuman, sk8, Logan, Aleksandher, Jmac, Helioman"
+      },
+      {
+        "number": 18,
+        "date": "July 10, 2021",
+        "winner": "Fisuman",
+        "defeated": "BeastMac, Fei, Zario777, RCT"
+      },
+      {
+        "number": 17,
+        "date": "June 26, 2021",
+        "winner": "KrazyKilla",
+        "defeated": "Fishuman, Logan, Helioman, Josh, Fei, Sienna420, BeastMac, ddt123, Zario777"
+      },
+      {
+        "number": 16,
+        "date": "June 12, 2021",
+        "winner": "KrazyKilla",
+        "defeated": "Fisuman, Xehil, sk8, RCT, Jmac"
+      },
+      {
+        "number": 15,
+        "date": "May 29, 2021",
+        "winner": "KrazyKilla",
+        "defeated": "Finn, KingBoo, Aedan, Fisuman, BeastMac, sk8"
+      },
+      {
+        "number": 14,
+        "date": "May 15, 2021",
+        "winner": "sk8",
+        "defeated": "Prosper, Zario777, BeastMac, Finn, KrazyQuick, MacBeast, Fisuman"
+      },
+
+      {
+        "number": 12,
+        "date": "April 17, 2021",
+        "winner": "sk8",
+        "defeated": "Fisuman, Aleksandher, Prosper, KrazyKilla, Finn, Sienna420"
+      },
+      {
+        "number": 11,
+        "date": "April 3, 2021",
+        "winner": "-J-",
+        "defeated": "sk8, Zehil, KrazyKilla, Fisuman, Beast"
+      },
+      {
+        "number": 10,
+        "date": "March 13, 2021",
+        "winner": "-J-",
+        "defeated": "sk8, KrazyKilla, Syco, Sienna420, Fisuman"
+      },
+      {
+        "number": 9,
+        "date": "February 27, 2021",
+        "winner": "-J-",
+        "defeated": "KrazyKilla, Finn, sk8, Fisuman"
+      },
+      {
+        "number": 8,
+        "date": "February 13, 2021",
+        "winner": "-J-",
+        "defeated": "RCT, KrazyKilla, sk8"
+      },
+      {
+        "number": 7,
+        "date": "January 31, 2021",
+        "winner": "RCT",
+        "defeated": "sk8, KrazyKilla, Lucifer"
+      },
+      {
+        "number": 6,
+        "date": "January 16, 2021",
+        "winner": "sk8",
+        "defeated": "TickTockMan, Aleksandher, RCT, Jethro"
+      }
+    ]
+  }
 }
