@@ -1,77 +1,52 @@
 import React from 'react';
-import MaterialTable from 'material-table';
-import { Box, Typography } from '@material-ui/core';
-import { getTableIcons } from '../utils/table';
+import { Box } from '@material-ui/core';
+import Table from '../components/Table';
 import { getHatData } from '../utils/data';
-import HatsCard from '../components/HatsCard';
 import { getHatImageFromName } from '../utils/images';
 
-export default function Weapons() {
+export default function Hats() {
   return (
-    <Box my={4} mx={4}>
-      <Typography variant="subtitle1" color="secondary" gutterBottom>
-        Note: Please let me know if something is wrong or if you have any suggestions in{' '}
-        <a href="https://discord.com/channels/301473545735897108/795724403291193364" target="_blank">
-          #fan_based
-        </a>
-      </Typography>
-      <MaterialTable
-        title="Agos Hats"
-        options={{
-          toolbar: true,
-          showTitle: true,
-          selection: false,
-          filtering: true,
-          search: false,
-          sorting: true,
-          pageSize: 10,
-          pageSizeOptions: [10, 20, 50],
-          headerStyle: { position: 'sticky', top: 0 },
-          maxBodyHeight: '80vh',
-          exportButton: true,
-          exportFileName: 'Agos Hats Data',
-        }}
-        icons={getTableIcons()}
-        onRowClick={(event, rowData, togglePanel) => togglePanel()}
-        columns={getColumns()}
-        data={getHatData()}
-        detailPanel={(rowData) => {
-          return (
-            <HatsCard
-              name={rowData.name}
-              description={rowData.description}
-              holders={rowData.holders}
-              nicknames={rowData.nicknames}
-              traits={rowData.traits}
-              image={getHatImageFromName(rowData.name)}
-            />
-          );
-        }}
+    <Box my={2} mx={2}>
+      <Table
+        tableName="Hats"
+        dataCall={getHatData}
+        getImageFromNameCall={getHatImageFromName}
+        getColumnsCall={getColumns}
       />
     </Box>
   );
 }
 
-function formatNumber(num) {
-  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
-}
-
 const getColumns = () => {
   return [
     { title: 'Name', field: 'name' },
-    { title: 'Rarity', field: 'rarity', lookup: getRarityLookup() },
     {
-      title: 'Sell Value',
-      field: 'value',
-      type: 'number',
-      render: (rowData) => '$' + formatNumber(rowData.value) + ' coinz',
+      title: 'Rarity',
+      field: 'rarity',
+      lookup: getRarityLookup(),
+      customSort: (a, b) => a.rarity - b.rarity,
     },
     { title: 'Sources', field: 'sources' },
+    { title: 'Strength', field: 'strength', type: 'numeric', render: (rowData) => render(rowData.strength) },
+    { title: 'Vitality', field: 'vitality', type: 'numeric', render: (rowData) => render(rowData.vitality) },
+    { title: 'Agility', field: 'agility', type: 'numeric', render: (rowData) => render(rowData.agility) },
+    {
+      title: 'Intelligence',
+      field: 'intelligence',
+      type: 'numeric',
+      render: (rowData) => render(rowData.intelligence),
+    },
+    { title: 'Defense', field: 'defense', type: 'numeric', render: (rowData) => render(rowData.defense) },
   ];
+};
+
+const render = (dataPoint) => {
+  return dataPoint === -1 ? '?' : dataPoint;
 };
 
 const getRarityLookup = () => {
   return {
+    0: 'Unobtainable',
     1: 'Very Common',
     2: 'Common',
     3: 'Uncommon',
@@ -79,6 +54,7 @@ const getRarityLookup = () => {
     5: 'Rare',
     6: 'Very Rare',
     7: 'Ultra Rare',
-    9: 'Hyper Rare',
+    8: 'Hyper Rare',
+    100: 'Unknown',
   };
 };

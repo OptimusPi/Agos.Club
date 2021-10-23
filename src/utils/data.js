@@ -9,3 +9,19 @@ export const getWeaponData = () => {
 export const getHatData = () => {
   return dataObject().hats;
 };
+
+export const getMobData = () => {
+  return dataObject().mobs;
+};
+
+export const getComboData = () => {
+  return dataObject().combos;
+};
+
+export const getTournamentData = () => {
+  return dataObject().tournament;
+};
+
+export const getConsumablesData = () => {
+  return dataObject().consumables;
+};
