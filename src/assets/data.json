@@ -2030,7 +2030,7 @@
         "number": 4,
         "date": "May 1, 2021",
         "winner": "Lucifer",
-        "defeated": "Aleksandher, Sienna420, Finn, Ganymede, Xehil, BeastMac, RCT, Bread, Fisuman, KrazyKilla, sk8"
+        "defeated": "sk8, Finn, Bread, RCT, KrazyKilla, Xehil, BeastMac, Aleksandher, Sienna420, Fisuman, Ganymede"
       },
       {
         "number": 3,
@@ -2040,18 +2040,24 @@
       },
       {
         "number": 2,
-        "date": "May 1, 2021",
+        "date": "August 29, 2020",
         "winner": "Lucifer",
-        "defeated": "Aleksandher, Sienna420, Finn, Ganymede, Xehil, BeastMac, RCT, Bread, Fisuman, KrazyKilla, sk8"
+        "defeated": "bribs, Knight, Zario777, Jethro, sayers6, slyer, Tsunami, EliteChao, TrogBoo, takelot, Logan, Xehil"
       },
       {
         "number": 1,
-        "date": "May 1, 2021",
-        "winner": "Lucifer",
-        "defeated": "Aleksandher, Sienna420, Finn, Ganymede, Xehil, BeastMac, RCT, Bread, Fisuman, KrazyKilla, sk8"
+        "date": "May 23, 2020",
+        "winner": "Warlord",
+        "defeated": "Lucifer, bribs, Beast, NamelessHobo, slyer, Rathun"
       }
     ],
     "Lucifer": [
+      {
+        "number": 20,
+        "date": "September 4, 2021",
+        "winner": "KrazyKilla",
+        "defeated": "Fisuman"
+      },
       {
         "number": 19,
         "date": "July 24, 2021",
