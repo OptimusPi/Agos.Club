@@ -24,13 +24,51 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function TournamentGrid() {
-  const classes = useStyles();
+
+const classes = useStyles();
+const tournaments = getTournamentData();
+const jmac = tournaments.Jmac;
+const lucifer = tournaments.Lucifer;
 
   return (
+    <>
+      <h1>Jmac Tournaments</h1>
+      <Grid className={classes.root} container spacing={3}>
+        {jmac.map((item, index) => {
+          const cardClassName = index === 0 ? clsx(classes.card, classes.latestWinner) : classes.card;
+          return (
+            <>
+              <Grid item xl={3} lg={3} sm={6} xs={12}>
+                <Card className={cardClassName}>
+                  <CardContent>
+                    <Grid container justify="flex-start" alignItems="center" spacing={2}>
+                      <Grid item>
+                        <Typography color="textSecondary" gutterBottom variant="h6">
+                          #{item.number}: {item.date}
+                        </Typography>
+                        <Typography color="textPrimary" variant="h3">
+                          {index === 0 && <img height="50" alt="tourney_winner" src={tournamentWinner} />} {item.winner}
+                        </Typography>
+                      </Grid>
+                    </Grid>
+                    <Typography color="textSecondary" variant="caption">
+                      Participants: {item.defeated}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </>
+          );
+        })}
+      </Grid>
+
+    <h1>Lucifer Tournaments</h1>
     <Grid className={classes.root} container spacing={3}>
-      {getTournamentData().map((item, index) => {
-        const cardClassName = index === 0 ? clsx(classes.card, classes.latestWinner) : classes.card;
-        return (
+    {lucifer.map((item, index) => {
+      const cardClassName = index === 0 ? clsx(classes.card, classes.latestWinner) : classes.card;
+      return (
+        <>
+       
           <Grid item xl={3} lg={3} sm={6} xs={12}>
             <Card className={cardClassName}>
               <CardContent>
@@ -50,8 +88,10 @@ export default function TournamentGrid() {
               </CardContent>
             </Card>
           </Grid>
-        );
-      })}
+        </>
+      );
+    })}
     </Grid>
+  </>
   );
 }
