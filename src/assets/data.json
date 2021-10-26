@@ -2060,57 +2060,62 @@
       },
       {
         "number": 19,
-        "date": "July 24, 2021",
-        "winner": "BeastMac",
-        "defeated": "Fisuman, sk8, Logan, Aleksandher, Jmac, Helioman"
+        "date": "August 7, 2021",
+        "winner": "RCT",
+        "defeated": "sk8, Fisuman, elHefe"
       },
       {
         "number": 18,
+        "date": "July 24, 2021",
+        "winner": "BeastMac",
+        "defeated": "Fisuman, Helioman, sk8, Jmac, Logan, Aleksandher"
+      },
+      {
+        "number": 17,
         "date": "July 10, 2021",
         "winner": "Fisuman",
         "defeated": "BeastMac, Fei, Zario777, RCT"
       },
       {
-        "number": 17,
+        "number": 16,
         "date": "June 26, 2021",
         "winner": "KrazyKilla",
-        "defeated": "Fishuman, Logan, Helioman, Josh, Fei, Sienna420, BeastMac, ddt123, Zario777"
-      },
-      {
-        "number": 16,
-        "date": "June 12, 2021",
-        "winner": "KrazyKilla",
-        "defeated": "Fisuman, Xehil, sk8, RCT, Jmac"
+        "defeated": "BeastMac, Zario777, Fei, Fishuman, ddt123, Helioman, Josh, Sienna420, Logan"
       },
       {
         "number": 15,
-        "date": "May 29, 2021",
+        "date": "June 12, 2021",
         "winner": "KrazyKilla",
-        "defeated": "Finn, KingBoo, Aedan, Fisuman, BeastMac, sk8"
+        "defeated": "Jmac, Xehil, Fisuman, sk8, RCT"
       },
       {
         "number": 14,
+        "date": "May 29, 2021",
+        "winner": "KrazyKilla",
+        "defeated": "sk8, Fisuman, KingBoo, Finn, Aedan, BeastMac"
+      },
+      {
+        "number": 13,
         "date": "May 15, 2021",
         "winner": "sk8",
-        "defeated": "Prosper, Zario777, BeastMac, Finn, KrazyQuick, MacBeast, Fisuman"
+        "defeated": "Fisuman, BeastMac, Finn, MacBeast, Zario777, KrazyQuick, Prosper"
       },
-
       {
         "number": 12,
         "date": "April 17, 2021",
         "winner": "sk8",
-        "defeated": "Fisuman, Aleksandher, Prosper, KrazyKilla, Finn, Sienna420"
+        "defeated": "Fisuman, Aleksandher, Finn, KrazyKilla, Sienna420, Prosper"
       },
       {
         "number": 11,
         "date": "April 3, 2021",
         "winner": "-J-",
-        "defeated": "sk8, Zehil, KrazyKilla, Fisuman, Beast"
+        "defeated": "sk8, Xehil, KrazyKilla, Fisuman, Beast"
       },
       {
         "number": 10,
         "date": "March 13, 2021",
-        "winner": "-J-",
+        "winner": "Jmac",
         "defeated": "sk8, KrazyKilla, Syco, Sienna420, Fisuman"
       },
       {
@@ -2123,19 +2128,49 @@
         "number": 8,
         "date": "February 13, 2021",
         "winner": "-J-",
-        "defeated": "RCT, KrazyKilla, sk8"
+        "defeated": "sk8, KrazyKilla, Aleksandher, Warlord, Sienna420, RCT, Dronzin"
       },
       {
         "number": 7,
-        "date": "January 31, 2021",
+        "date": "January 30, 2021",
         "winner": "RCT",
-        "defeated": "sk8, KrazyKilla, Lucifer"
+        "defeated": "Finn, Aleksandher, KrazyKilla, sk8, TickTockMan, Dronzin"
       },
       {
         "number": 6,
         "date": "January 16, 2021",
         "winner": "sk8",
-        "defeated": "TickTockMan, Aleksandher, RCT, Jethro"
+        "defeated": "Jethro, Aleksandher, Bread, KrazyKilla, RCT, TickTockMan"
+      },
+      {
+        "number": 5,
+        "date": "November 7, 2020",
+        "winner": "Bribs & Jethro",
+        "defeated": "sk8 & Finn, TickTockMan & KrazyKilla"
+      },
+      {
+        "number": 4,
+        "date": "October 24, 2020",
+        "winner": "Xehil",
+        "defeated": "KingBoo, -J-, RCT, Jethro, Finn, Jobo (Roz), sk8, Sienna420"
+      },
+      {
+        "number": 3,
+        "date": "October 10, 2020",
+        "winner": "Jethro",
+        "defeated": "ddt123, Zario777, TickTockMan, sayers6, KrazyKilla, Sienna420, slyer"
+      },
+      {
+        "number": 2,
+        "date": "September 26, 2020",
+        "winner": "Knight",
+        "defeated": "Jethro, Rathun, KrazyKilla, -J-"
+      },
+      {
+        "number": 1,
+        "date": "September 12, 2020",
+        "winner": "TrogBoo",
+        "defeated": "-J-, Jethro, Warlord, ddt123, sayers6, Rathun, Tsunami"
       }
     ]
   }
