@@ -89,7 +89,7 @@ export default function CombosTable() {
 
   React.useEffect(() => {
     setUnused(MAX_TOTAL_VAL - (str + vit + agi + int));
-    setStam(200 + 5 * (int - 1) + lvl - 1);
+    setStam(265 + 5 * (int - 1) + lvl - 1);
     setHp(200 + 4 * (vit - 1) + lvl - 1);
   }, [str, vit, agi, int]);
 
