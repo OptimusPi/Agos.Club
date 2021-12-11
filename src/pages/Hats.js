@@ -26,7 +26,7 @@ const getColumns = () => {
       lookup: getRarityLookup(),
       customSort: (a, b) => a.rarity - b.rarity,
     },
-    { title: 'Sources', field: 'sources' },
+    { title: 'Sources', field: 'sources', render: (rowData) => renderSources(rowData.sources) },
     { title: 'Strength', field: 'strength', type: 'numeric', render: (rowData) => render(rowData.strength) },
     { title: 'Vitality', field: 'vitality', type: 'numeric', render: (rowData) => render(rowData.vitality) },
     { title: 'Agility', field: 'agility', type: 'numeric', render: (rowData) => render(rowData.agility) },
@@ -42,6 +42,20 @@ const getColumns = () => {
 
 const render = (dataPoint) => {
   return dataPoint === -1 ? '?' : dataPoint;
+};
+
+const renderSources = (dataPoint) => {
+
+  if (typeof dataPoint !== "array")
+    return dataPoint;
+
+  let first = true;
+
+  dataPoint.map(source => {
+    let comma = first ? "" : ", "; 
+    first = false;
+    return comma + source;
+  })
 };
 
 const getRarityLookup = () => {

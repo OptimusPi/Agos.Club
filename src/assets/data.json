@@ -611,7 +611,7 @@
       "agility": 2,
       "intelligence": 0,
       "defense": 4,
-      "sources": "Bleep, Perry's Shop",
+      "sources": ["Bleep", "Perry's Shop"],
       "description": "Tackle your problems head first!",
       "nicknames": "Horns",
       "traits": "",
